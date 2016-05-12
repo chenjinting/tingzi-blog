@@ -1,4 +1,4 @@
-<!doctype html public "-//w3c//dtd xhtml 1.0 frameset//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-frameset.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html public "-//w3c//dtd xhtml 1.0 frameset//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-frameset.dtd">
 <html>
     <head>
         <meta http-equiv=content-type content="text/html; charset=utf-8" />
@@ -9,10 +9,10 @@
         <title>管理中心 v1.0</title>
     </head>
     <frameset border=0 framespacing=0 rows="60, *" frameborder=0>
-        <frame name=head src="{:U('__MODULE__/Index/head')}" frameborder=0 noresize scrolling=no>
+        <frame name=head src="<?php echo U('/Admin/Index/head');?>" frameborder=0 noresize scrolling=no>
             <frameset cols="170, *">
-                <frame name=left src="{:U('__MODULE__/Index/left')}" frameborder=0 noresize />
-                <frame name=main src="{:U('__MODULE__/Index/right')}" frameborder=0 noresize scrolling=yes />
+                <frame name=left src="<?php echo U('/Admin/Index/left');?>" frameborder=0 noresize />
+                <frame name=main src="<?php echo U('/Admin/Index/right');?>" frameborder=0 noresize scrolling=yes />
             </frameset>
     </frameset>
     <noframes>
