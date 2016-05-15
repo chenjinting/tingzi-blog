@@ -14,7 +14,7 @@ return array(
 	'URL_MODEL'					      =>			2,                         // 设置URL访问模式		
 
 	      
-	'URL_ROUTER_ON'				      =>			true,                      // 启用路由功能
+	// 'URL_ROUTER_ON'				      =>			true,                      // 启用路由功能
 
 
 	/* 数据库配置 */
