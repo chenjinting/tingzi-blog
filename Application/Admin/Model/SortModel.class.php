@@ -5,6 +5,7 @@ use Think\Model;
  * 对数据表Sort的模型操作
  */
 class SortModel extends Model{
+	
 	/**
 	 * [$_validate 添加分类时自动验证]
 	 * @var array

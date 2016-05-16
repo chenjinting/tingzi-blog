@@ -38,6 +38,10 @@ class LoginController extends Controller {
         $this->display();
     }
 
+    /**
+     * [logout 退出]
+     * @return [type] [description]
+     */
     public function logout(){
         session(null);
         $this->success('退出成功！',U('Login/login'),1);

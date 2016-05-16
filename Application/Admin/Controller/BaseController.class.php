@@ -7,14 +7,14 @@ class BaseController extends Controller {
 
     public function __construct(){
         parent::__construct();  //必须调用父类的构造方法
-        $this->checklogin();
+        $this->checklogin_status();
     }
 
     /**
      * [checklogin 检测是否登录]
      * @return [type] [description]
      */
-    public function checklogin(){
+    public function checklogin_status(){
         if(!$_SESSION['admin']){    //未登录状态
             $this->error('请先登录！',U('Login/login'),1);  
         }else{

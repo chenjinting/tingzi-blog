@@ -45,7 +45,7 @@ class SortController extends BaseController {
                 if($sort->add($data)){
                     $this->success("成功新增一个栏目！",U('showlist'),1);
                 }else{
-                    $this->error("新增失败，请重新添加！");
+                    $this->error("新增分类失败，请重新添加！");
                 }
             }else{
                 $this->error($sort->getError());
@@ -62,6 +62,7 @@ class SortController extends BaseController {
      * @return [type] [description]
      */
     public function modifysort(){
+        /* 修改提交 */
         if(IS_POST){
             $data['sortname'] = I('sortname');
             $data['id'] = I('sortid');
@@ -70,7 +71,7 @@ class SortController extends BaseController {
                 if($sort->save($data)){
                     $this->success("成功修改分类名称！",U('showlist'),1);
                 }else{
-                    $this->error("修改失败，请重新操作！");
+                    $this->error("修改分类名称失败，请重新操作！");
                 }
             }else{
                 $this->error($sort->getError());
@@ -78,6 +79,7 @@ class SortController extends BaseController {
 
             return;
         }
+        /* 获取分类名称显示在修改界面输入框 */
         $sortname = I('sortname');
         $sortid = I('id');
         $this->assign('sortname',$sortname);
