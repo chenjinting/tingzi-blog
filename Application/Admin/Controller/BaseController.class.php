@@ -2,6 +2,9 @@
 namespace Admin\Controller;
 use Think\Controller;
 
+/**
+ * 登录检测，基于登录状态的所有控制器均继承于该控制器
+ */
 class BaseController extends Controller {
 
 

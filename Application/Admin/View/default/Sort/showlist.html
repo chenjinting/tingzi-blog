@@ -33,8 +33,8 @@
                     <tr id="product1">
                         <td>{$i+$firstRow}</td>
                         <td><a href="#">{$sort.sortname}</a></td>
-                        <td><a href="{:U('__CONTROLLER__/modifysort',array('id'=>$sort['id'],'sortname'=>$sort['sortname']))}">修改</a></td>
-                        <td><a href="{:U('__CONTROLLER__/deletesort',array('id'=>$sort['id']))}" onclick="return confirm('你真的要删除这个分类吗？');">删除</a></td>
+                        <td><a href="{:U('__CONTROLLER__/modifysort',array('id'=>$sort['sortid'],'sortname'=>$sort['sortname']))}">修改</a></td>
+                        <td><a href="{:U('__CONTROLLER__/deletesort',array('id'=>$sort['sortid']))}" onclick="return confirm('你真的要删除这个分类吗？');">删除</a></td>
                     </tr>
                     </volist>
 

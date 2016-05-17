@@ -32,8 +32,8 @@
                     <?php if(is_array($sortlist)): $i = 0; $__LIST__ = $sortlist;if( count($__LIST__)==0 ) : echo "还没有分类噢，快添加分类吧~" ;else: foreach($__LIST__ as $key=>$sort): $mod = ($i % 2 );++$i;?><tr id="product1">
                         <td><?php echo ($i+$firstRow); ?></td>
                         <td><a href="#"><?php echo ($sort["sortname"]); ?></a></td>
-                        <td><a href="<?php echo U('/Admin/Sort/modifysort',array('id'=>$sort['id'],'sortname'=>$sort['sortname']));?>">修改</a></td>
-                        <td><a href="<?php echo U('/Admin/Sort/deletesort',array('id'=>$sort['id']));?>" onclick="return confirm('你真的要删除这个分类吗？');">删除</a></td>
+                        <td><a href="<?php echo U('/Admin/Sort/modifysort',array('id'=>$sort['sortid'],'sortname'=>$sort['sortname']));?>">修改</a></td>
+                        <td><a href="<?php echo U('/Admin/Sort/deletesort',array('id'=>$sort['sortid']));?>" onclick="return confirm('你真的要删除这个分类吗？');">删除</a></td>
                     </tr><?php endforeach; endif; else: echo "还没有分类噢，快添加分类吧~" ;endif; ?>
 
                     <tr>

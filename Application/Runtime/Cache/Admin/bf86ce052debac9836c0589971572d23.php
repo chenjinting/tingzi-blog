@@ -36,36 +36,42 @@
                 <tbody>
                     <tr style="font-weight: bold;">
                         <td>序号</td>
-                        <td>文章名称</td>
-                        <td>库存</td>
-                        <td>价格</td>
-                        <td>图片</td>
-                        <td>缩略图</td>
-                        <td>品牌</td>
-                        <td>创建时间</td>
-                        <td align="center">操作</td>
+                        <td>封面</td>
+                        <td>文章标题</td>
+                        <td>文章分类</td>
+                        <td>作者</td>
+                        <td>发布时间</td>
+                        <td colspan="2" align="center">操作</td>
                     </tr>
 
-                    <tr id="product1">
-                        <td>1</td>
-                        <td><a href="#">苹果（APPLE）iPhone 4S</a></td>
-                        <td>100</td>
-                        <td>3888</td>
-                        <td><img src="<?php echo (ADMIN_IMG_URL); ?>20121018-174034-58977.jpg" height="60" width="60"></td>
-                        <td><img src="<?php echo (ADMIN_IMG_URL); ?>20121018-174034-97960.jpg" height="40" width="40"></td>
-                        <td>苹果apple</td>
-                        <td>2012-10-18 17:40:34</td>
-                        <td><a href="<?php echo U('/Admin/Article/modifyarticle');?>">修改</a></td>
-                        <td><a href="javascript:;" onclick="delete_product(1)">删除</a></td>
-                    </tr>
+                    <?php if(is_array($articlelist)): $i = 0; $__LIST__ = $articlelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr id="product1">
+                        <td><?php echo ($i+$firstRow); ?></td>
+                        <td><img src="/Uploads/<?php echo ((isset($vo["coverpic"]) && ($vo["coverpic"] !== ""))?($vo["coverpic"]):'default.jpg'); ?>" height="60" width="60"></td>
+                        <td><a href="#"><?php echo ($vo["title"]); ?></a></td>
+                        <td><?php echo ($vo["sortname"]); ?></td>                  
+                        <td><?php echo ($vo["author"]); ?></td>
+                        <td><?php echo (date("Y-m-d",$vo["time"])); ?></td>
+                        <td><a href="<?php echo U('/Admin/Article/modifyarticle',array('id'=>$vo['id']));?>">修改</a></td>
+                        <td><a href="<?php echo U('/Admin/Article/deletearticle',array('id'=>$vo['id']));?>" onclick="return confirm('你真的要删除这篇文章吗？');">删除</a></td>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
                     
+                    
+
                     <tr>
                         <td colspan="20" style="text-align: center;">
-                            [1]
+                            <?php echo ($page); ?>
                         </td>
                     </tr>
                 </tbody>
             </table>
+
+            <div style="height: 30px;text-align: center;">
+                <?php if(empty($articlelist)): ?><p>
+                        还没有文章噢，快写篇文章吧~
+                    </p><?php endif; ?>
+            </div>
+
         </div>
     </body>
 </html>

@@ -3,6 +3,9 @@ namespace Admin\Controller;
 use Think\Controller;
 use Think\Verify;
 
+/**
+ * 后台登录、退出
+ */
 class LoginController extends Controller {
 
     /**

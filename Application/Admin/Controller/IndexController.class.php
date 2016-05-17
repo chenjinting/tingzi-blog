@@ -2,6 +2,9 @@
 namespace Admin\Controller;
 use Think\Controller;
 
+/**
+ * 后台主界面
+ */
 class IndexController extends BaseController {
 
 	// 加载后台管理首页index.html

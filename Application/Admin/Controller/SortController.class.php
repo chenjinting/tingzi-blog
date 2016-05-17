@@ -3,6 +3,9 @@ namespace Admin\Controller;
 use Think\Controller;
 use Think\Page;
 
+/**
+ * 文章分类管理
+ */
 class SortController extends BaseController {
 
     /**
@@ -12,9 +15,10 @@ class SortController extends BaseController {
     public function showlist(){
         $sort = D('Sort');
         $sortres = $sort->select();
+
         // 分页开始
         $count = $sort->count(); //查询满足要求的记录总数
-        $page = new Page($count,3); // 实例化分页类 传入总记录数和每页显示的记录数(3)
+        $page = new Page($count,9); // 实例化分页类 传入总记录数和每页显示的记录数(9)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');
@@ -65,7 +69,7 @@ class SortController extends BaseController {
         /* 修改提交 */
         if(IS_POST){
             $data['sortname'] = I('sortname');
-            $data['id'] = I('sortid');
+            $data['sortid'] = I('sortid');
             $sort = D('Sort');
             if($sort->create($data)){
                 if($sort->save($data)){
