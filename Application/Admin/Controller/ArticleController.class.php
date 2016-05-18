@@ -29,7 +29,7 @@ class ArticleController extends BaseController {
 
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $firstRow = $page->firstRow;    // 起始行数
-        $articlelist = $article->limit($firstRow.','.$page->listRows)->relation(true)->order('time DESC')->select();
+        $articlelist = $article->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
         $this->assign('firstRow',$firstRow);
         $this->assign('articlelist',$articlelist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
@@ -48,6 +48,7 @@ class ArticleController extends BaseController {
             $data['sortid'] = I('sortid'); // 获取文章分类id
             $data['content'] = I('content'); //获取文章详情内容
             $data['time'] = time(); //获取文章发布时间
+            $data['lastmodifytime'] = time(); // 新增文章时设置文章最后编辑时间即为文章发布时间
 
             /* 图片上传 */
             if($_FILES['coverpic']['tmp_name'] != ''){
@@ -102,6 +103,7 @@ class ArticleController extends BaseController {
             $data['author'] = I('author');
             $data['sortid'] = I('sortid');
             $data['content'] = I('content');
+            $data['lastmodifytime'] = time(); // 文章最后编辑时间
 
             /* 图片修改上传 */
             if($_FILES['coverpic']['tmp_name'] != ''){

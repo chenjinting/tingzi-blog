@@ -50,7 +50,7 @@
                         <td><img src="__UPLOAD__{$vo.coverpic|default='default.jpg'}" height="60" width="60"></td>
                         <td><a href="#">{$vo.title}</a></td>
                         <td>{$vo.sortname}</td>                  
-                        <td>{$vo.author}</td>
+                        <td>{$vo.author|default='佚名'}</td>
                         <td>{$vo.time|date="Y-m-d",###}</td>
                         <td><a href="{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">修改</a></td>
                         <td><a href="{:U('__CONTROLLER__/deletearticle',array('id'=>$vo['id']))}" onclick="return confirm('你真的要删除这篇文章吗？');">删除</a></td>

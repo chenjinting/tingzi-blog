@@ -49,7 +49,7 @@
                         <td><img src="/Uploads/<?php echo ((isset($vo["coverpic"]) && ($vo["coverpic"] !== ""))?($vo["coverpic"]):'default.jpg'); ?>" height="60" width="60"></td>
                         <td><a href="#"><?php echo ($vo["title"]); ?></a></td>
                         <td><?php echo ($vo["sortname"]); ?></td>                  
-                        <td><?php echo ($vo["author"]); ?></td>
+                        <td><?php echo ((isset($vo["author"]) && ($vo["author"] !== ""))?($vo["author"]):'佚名'); ?></td>
                         <td><?php echo (date("Y-m-d",$vo["time"])); ?></td>
                         <td><a href="<?php echo U('/Admin/Article/modifyarticle',array('id'=>$vo['id']));?>">修改</a></td>
                         <td><a href="<?php echo U('/Admin/Article/deletearticle',array('id'=>$vo['id']));?>" onclick="return confirm('你真的要删除这篇文章吗？');">删除</a></td>

@@ -21,9 +21,14 @@ define('APP_DEBUG',True);
 define('APP_PATH','./Application/');
 
 // Home路径常量设置
-define('CSS_URL', '/Application/Public/css/');
-define('IMG_URL', '/Application/Public/img/');
-define('JS_URL', '/Application/Public/js/');
+define('Home_CSS_URL', '/Application/Home/Public/css/');
+define('Home_IMG_URL', '/Application/Home/Public/img/');
+define('Home_JS_URL', '/Application/Home/Public/js/');
+
+// Blog路径常量设置
+define('BLOG_CSS_URL', '/Application/Blog/Public/css/');
+define('BLOG_IMG_URL', '/Application/Blog/Public/img/');
+define('BLOG_JS_URL', '/Application/Blog/Public/js/');
 
 // Admin路径常量设置
 define('ADMIN_CSS_URL', '/Application/Admin/Public/css/');

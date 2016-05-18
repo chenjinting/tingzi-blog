@@ -8,7 +8,7 @@ return array(
 	'DEFAULT_THEME'				      =>   		    'default',                  // 设置默认主题
 
 	/* 设置可访问模块以及默认模块 */
-	'MODULE_ALLOW_LIST'			      =>			array('Home','Admin'),
+	'MODULE_ALLOW_LIST'			      =>			array('Home','Admin','Blog'),
 	'DEFAULT_MODULE'			      =>			'Home',
        
 	'URL_MODEL'					      =>			2,                         // 设置URL访问模式		
@@ -38,4 +38,7 @@ return array(
     'TMPL_PARSE_STRING'               =>            array(
         '__UPLOAD__'                  =>            '/Uploads/',
     ),
+
+    /* 设置伪静态后缀 */
+    'URL_HTML_SUFFIX'                 =>            '',
 );
