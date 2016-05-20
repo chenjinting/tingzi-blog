@@ -10,11 +10,9 @@
             <tr height=56>
                 <td width=260><img height=56 src="<?php echo (ADMIN_IMG_URL); ?>header_left.jpg" 
                                    width=260></td>
-                <td style="font-weight: bold; color: #fff; padding-top: 20px" 
-                    align=middle>当前用户：<?php echo ($admin); ?> &nbsp;&nbsp; <a style="color: #fff" 
-                                                        href="" 
-                                                        target=main>修改口令</a> &nbsp;&nbsp; <a style="color: #fff" 
-                                                        href="<?php echo U('/Admin/Login/logout');?>" target=_top>退出系统</a> 
+                <td style="font-weight: bold; color: #fff; padding-top: 20px" align=middle>
+                    当前用户：<?php echo ($admin); ?> &nbsp;&nbsp; 
+                    <a style="color: #fff" href="<?php echo U('/Admin/Login/logout');?>" target=_top>退出系统</a> 
                 </td>
                 <td align=right width=268><img height=56 
                                                src="<?php echo (ADMIN_IMG_URL); ?>header_right.jpg" width=268></td></tr></table>

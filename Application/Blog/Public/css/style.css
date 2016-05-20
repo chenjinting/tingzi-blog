@@ -66,7 +66,8 @@ a{color:#333;text-decoration:none}a:hover{color:#01408d;}
 .nav li a{color:#FFF;line-height:20px;display:block;padding:12px 8px 8px;cursor:pointer}
 .nav li a:hover,.nav li:nth-child(4):hover{color:#FFF;background-color:#ff9501}
 .nav li.current-menu-item a,.nav li.current_page_item a{color:#fff;background-color:#ff9501;}
-.nav li:hover{background-color:#ff9501}
+.nav li:hover{background-color:#ff9501;}
+.nav li a.activeli{background-color:#ff9501;}
 .nav li:hover .sub-menu{display:block}
 
 .sub-menu{position:absolute;top:32px;left:0;border-radius:0 0 4px 4px;min-width:140px;z-index:10;display:none;padding:5px 0;background-color:#ff9501}

@@ -13,7 +13,6 @@ class ListController extends Controller {
         $sort = D('Sort');
         $sortid = I('sortid');
     	$sortres = $sort->select();
-    	$this->assign('sortres',$sortres);
 
     	$article = D('Article');
 
@@ -36,6 +35,9 @@ class ListController extends Controller {
         $this->assign('firstRow',$firstRow);
         $this->assign('articleres',$articleres);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
+        $this->assign('sortres',$sortres);
+        $this->assign('sortid',$sortid);
+
 
         $this->display('list');
     }

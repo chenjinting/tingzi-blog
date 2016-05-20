@@ -56,6 +56,14 @@
                                     <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
                                 </td>
                                 <td>
+                                    <a class="menuchild" href="<?php echo U('/Admin/Tag/showlist');?>" target="main">标签管理</a>
+                                </td>
+                            </tr>
+                            <tr height="20">
+                                <td width="30" align="center">
+                                    <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
+                                </td>
+                                <td>
                                     <a class="menuchild" href="<?php echo U('/Admin/Admin/showlist');?>" target="main">管理员</a>
                                 </td>
                             </tr>

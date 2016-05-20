@@ -14,11 +14,11 @@
 
 <div class="topbar">
 	<div class="inner">
-		<a title="意空间阅读网_青春励志文章_励志文章阅读" href="" class="logo">意空间阅读网</a>
+		<a title="意空间阅读网_青春励志文章_励志文章阅读" href="<?php echo U('/Blog');?>" class="logo">意空间阅读网</a>
 		<ul class="nav">
 
 			<?php if(is_array($sortres)): $i = 0; $__LIST__ = $sortres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-180">
-					<a href="<?php echo U('/Blog/List/index',array('sortid'=>$vo['sortid']));?>"><?php echo ($vo["sortname"]); ?></a>
+					<a href="<?php echo U('/Blog/List/index',array('sortid'=>$vo['sortid']));?>" ><?php echo ($vo["sortname"]); ?></a>
 				</li><?php endforeach; endif; else: echo "" ;endif; ?>
 		</ul>
 

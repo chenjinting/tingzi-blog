@@ -40,6 +40,12 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>文章标签</td>
+                    <td>
+                        <?php if(is_array($tagres)): $i = 0; $__LIST__ = $tagres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><input class="articletag2" type="checkbox" name="tagid[]" value="<?php echo ($v["tagid"]); ?>" /><?php echo ($v["tagname"]); endforeach; endif; else: echo "" ;endif; ?>
+                    </td>
+                </tr>
+                <tr>
                     <td>文章图片</td>
                     <td><input type="file" name="coverpic" /></td>
                 </tr>

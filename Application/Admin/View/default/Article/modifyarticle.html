@@ -4,13 +4,31 @@
         <title>添加文章</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <link href="{$Think.const.ADMIN_CSS_URL}mine.css" type="text/css" rel="stylesheet">
+        <script src="{$Think.const.ADMIN_JS_URL}jquery.min.js"></script> 
+
+        <script type="text/javascript">
+            jQuery(function(){              
+                $('.articletag2').each(function(i){
+                    var articletag2 = $(this).val();
+
+                    $('.articletag1').each(function(){
+                        var articletag1 = $(this).val();
+
+                        if(articletag2 == articletag1){
+                            $('.articletag2').eq(i).attr('checked','checked');
+                        }
+                    });
+                });
+            })
+        </script>
+
     </head>
 
     <body>
 
         <div class="div_head">
             <span>
-                <span style="float:left">当前位置是：文章管理-》添加文章信息</span>
+                <span style="float:left">当前位置是：文章管理-》修改文章信息</span>
                 <span style="float:right;margin-right: 8px;font-weight: bold">
                     <a style="text-decoration: none" href="{:U('__CONTROLLER__/showlist')}">【返回】</a>
                 </span>
@@ -44,7 +62,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>文章图片</td>
+                    <td>文章标签</td>
+                    <td>
+                        <volist name="articletagid" id='vo'>
+                            <input class="articletag1" type="hidden" name="tagid[]" value="{$vo}" />
+                        </volist>
+
+                        <volist name="tagres" id='v'>
+                            <input class="articletag2" type="checkbox" name="tagid[]" value="{$v.tagid}" />{$v.tagname}
+                        </volist>           
+                    </td>
+                </tr>
+                <tr>
+                    <td>文章封面</td>
                     <td>
                         <input type="file" name="coverpic" />
                         <img src="__UPLOAD__{$articleres.coverpic|default='default.jpg'}" width="250px;" />

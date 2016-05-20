@@ -33,6 +33,7 @@ define('BLOG_JS_URL', '/Application/Blog/Public/js/');
 // Admin路径常量设置
 define('ADMIN_CSS_URL', '/Application/Admin/Public/css/');
 define('ADMIN_IMG_URL', '/Application/Admin/Public/img/');
+define('ADMIN_JS_URL', '/Application/Admin/Public/js/');
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

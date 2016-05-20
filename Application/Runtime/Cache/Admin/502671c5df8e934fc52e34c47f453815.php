@@ -4,13 +4,31 @@
         <title>添加文章</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <link href="<?php echo (ADMIN_CSS_URL); ?>mine.css" type="text/css" rel="stylesheet">
+        <script src="<?php echo (ADMIN_JS_URL); ?>jquery.min.js"></script> 
+
+        <script type="text/javascript">
+            jQuery(function(){              
+                $('.articletag2').each(function(i){
+                    var articletag2 = $(this).val();
+
+                    $('.articletag1').each(function(){
+                        var articletag1 = $(this).val();
+
+                        if(articletag2 == articletag1){
+                            $('.articletag2').eq(i).attr('checked','checked');
+                        }
+                    });
+                });
+            })
+        </script>
+
     </head>
 
     <body>
 
         <div class="div_head">
             <span>
-                <span style="float:left">当前位置是：文章管理-》添加文章信息</span>
+                <span style="float:left">当前位置是：文章管理-》修改文章信息</span>
                 <span style="float:right;margin-right: 8px;font-weight: bold">
                     <a style="text-decoration: none" href="<?php echo U('/Admin/Article/showlist');?>">【返回】</a>
                 </span>
@@ -42,7 +60,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>文章图片</td>
+                    <td>文章标签</td>
+                    <td>
+                        <?php if(is_array($articletagid)): $i = 0; $__LIST__ = $articletagid;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><input class="articletag1" type="hidden" name="tagid[]" value="<?php echo ($vo); ?>" /><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                        <?php if(is_array($tagres)): $i = 0; $__LIST__ = $tagres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><input class="articletag2" type="checkbox" name="tagid[]" value="<?php echo ($v["tagid"]); ?>" /><?php echo ($v["tagname"]); endforeach; endif; else: echo "" ;endif; ?>           
+                    </td>
+                </tr>
+                <tr>
+                    <td>文章封面</td>
                     <td>
                         <input type="file" name="coverpic" />
                         <img src="/Uploads/<?php echo ((isset($articleres["coverpic"]) && ($articleres["coverpic"] !== ""))?($articleres["coverpic"]):'default.jpg'); ?>" width="250px;" />

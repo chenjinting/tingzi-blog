@@ -35,7 +35,7 @@
                         <td colspan="2" align="center">操作</td>
                     </tr>
 
-                    <volist name="articlelist" id="vo" key="k">                   
+                    <volist name="articlelisttag" id="vo" key="k">                   
                     <tr id="product1">
                         <td>{$k+$firstRow}</td>
                         <td><img src="__UPLOAD__{$vo.coverpic|default='default.jpg'}" height="60" width="60"></td>
@@ -46,9 +46,9 @@
 
                         <td>
                         <volist name="vo['tag']" id="v">
-                            <a href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$v['tagid']))}">{$v['tagname']}</a><br />
+                            <a href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$v['tagid']))}">{$v['tagname']}</a><br /> 
                         </volist>
-                        </td>  
+                        </td>   
 
                         <td>{$vo.author|default='佚名'}</td>
                         <td>{$vo.time|date="Y-m-d",###}</td>
@@ -71,7 +71,7 @@
             </table>
 
             <div style="height: 30px;text-align: center;">
-                <empty name="articlelist">
+                <empty name="articlelisttag">
                     <p>
                         还没有文章噢，快写篇文章吧~
                     </p>

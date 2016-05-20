@@ -35,7 +35,7 @@
                         <td colspan="2" align="center">操作</td>
                     </tr>
 
-                    <volist name="articlelist" id="vo" key="k">                   
+                    <volist name="articlelistsort" id="vo" key="k">                   
                     <tr id="product1">
                         <td>{$k+$firstRow}</td>
                         <td><img src="__UPLOAD__{$vo.coverpic|default='default.jpg'}" height="60" width="60"></td>
@@ -43,13 +43,11 @@
                         <td>
                             <a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>
                         </td>
-
                         <td>
                         <volist name="vo['tag']" id="v">
-                            <a href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$v['tagid']))}">{$v['tagname']}</a><br />
+                        <a href="">{$v['tagname']}</a><br /> 
                         </volist>
-                        </td>  
-
+                        </td>                                    
                         <td>{$vo.author|default='佚名'}</td>
                         <td>{$vo.time|date="Y-m-d",###}</td>
                         <td>{$vo.lastmodifytime|date="Y-m-d",###}</td>
@@ -58,9 +56,6 @@
                         <td><a href="{:U('__CONTROLLER__/deletearticle',array('id'=>$vo['id']))}" onclick="return confirm('你真的要删除这篇文章吗？');">删除</a></td>
                     </tr>                   
                     </volist>
-
-                    
-                    
 
                     <tr>
                         <td colspan="20" style="text-align: center;">
@@ -71,7 +66,7 @@
             </table>
 
             <div style="height: 30px;text-align: center;">
-                <empty name="articlelist">
+                <empty name="articlelistsort">
                     <p>
                         还没有文章噢，快写篇文章吧~
                     </p>

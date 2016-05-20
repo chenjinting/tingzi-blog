@@ -35,7 +35,7 @@
                         <td colspan="2" align="center">操作</td>
                     </tr>
 
-                    <?php if(is_array($articlelist)): $k = 0; $__LIST__ = $articlelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr id="product1">
+                    <?php if(is_array($articlelisttag)): $k = 0; $__LIST__ = $articlelisttag;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr id="product1">
                         <td><?php echo ($k+$firstRow); ?></td>
                         <td><img src="/Uploads/<?php echo ((isset($vo["coverpic"]) && ($vo["coverpic"] !== ""))?($vo["coverpic"]):'default.jpg'); ?>" height="60" width="60"></td>
                         <td><a href="#"><?php echo ($vo["title"]); ?></a></td>
@@ -45,7 +45,7 @@
 
                         <td>
                         <?php if(is_array($vo['tag'])): $i = 0; $__LIST__ = $vo['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Admin/Article/showlisttag',array('tagid'=>$v['tagid']));?>"><?php echo ($v['tagname']); ?></a><br /><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </td>  
+                        </td>   
 
                         <td><?php echo ((isset($vo["author"]) && ($vo["author"] !== ""))?($vo["author"]):'佚名'); ?></td>
                         <td><?php echo (date("Y-m-d",$vo["time"])); ?></td>
@@ -67,7 +67,7 @@
             </table>
 
             <div style="height: 30px;text-align: center;">
-                <?php if(empty($articlelist)): ?><p>
+                <?php if(empty($articlelisttag)): ?><p>
                         还没有文章噢，快写篇文章吧~
                     </p><?php endif; ?>
             </div>

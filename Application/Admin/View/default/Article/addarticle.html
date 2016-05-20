@@ -42,6 +42,14 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>文章标签</td>
+                    <td>
+                        <volist name="tagres" id='v'>
+                            <input class="articletag2" type="checkbox" name="tagid[]" value="{$v.tagid}" />{$v.tagname}
+                        </volist>
+                    </td>
+                </tr>
+                <tr>
                     <td>文章图片</td>
                     <td><input type="file" name="coverpic" /></td>
                 </tr>

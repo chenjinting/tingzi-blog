@@ -9,16 +9,23 @@
 <script src="<?php echo (BLOG_JS_URL); ?>jquery.min.js"></script> 
 <title>人生哲理_人生哲理文章阅读_人生哲理语录句子大全_意空间阅读网</title><meta content="人生哲理_人生哲理文章阅读_人生哲理语录句子大全" name="keywords">
 <meta content="人生哲理栏目为广大网友奉献人生哲理名言，人生哲理故事，人生哲理文章，哲理名人名言名录大全。" name="description">
+
+<script type="text/javascript">
+    $(function(){
+        var current_url = "/Blog/List/index/sortid/<?php echo ($sortid); ?>";
+        $('.nav li a[href="'+current_url+'"]').addClass('activeli');
+    })
+ </script>
+
 </head>
 <body class="archive category category-philosophy-life category-18">
 
 <div class="topbar">
 	<div class="inner">
-		<a title="意空间阅读网_青春励志文章_励志文章阅读" href="" class="logo">意空间阅读网</a>
+		<a title="意空间阅读网_青春励志文章_励志文章阅读" href="<?php echo U('/Blog');?>" class="logo">意空间阅读网</a>
 		<ul class="nav">
-
 			<?php if(is_array($sortres)): $i = 0; $__LIST__ = $sortres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-180">
-					<a href="<?php echo U('/Blog/List/index',array('sortid'=>$vo['sortid']));?>"><?php echo ($vo["sortname"]); ?></a>
+					<a href="<?php echo U('/Blog/List/index',array('sortid'=>$vo['sortid']));?>" ><?php echo ($vo["sortname"]); ?></a>
 				</li><?php endforeach; endif; else: echo "" ;endif; ?>
 		</ul>
 

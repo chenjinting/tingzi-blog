@@ -43,7 +43,7 @@ class SortController extends BaseController {
      */
     public function addsort(){
         if(IS_POST){
-            $data['sortname'] = I('sortname');  // 获取栏目添加输入框的值
+            $data['sortname'] = I('sortname');  // 获取分类添加输入框的值
             $sort = D('Sort');
             if($sort->create($data)){
                 if($sort->add($data)){
@@ -99,9 +99,9 @@ class SortController extends BaseController {
         $sortid = I('id');
         $sort = D('Sort');
         if($sort->delete($sortid)){
-            $this->success("删除成功！",U('showlist'),1);
+            $this->success("删除分类成功！",U('showlist'),1);
         }else{
-            $this->error("删除失败！");
+            $this->error("删除分类失败！");
         }
     }
 
