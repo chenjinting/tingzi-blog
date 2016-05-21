@@ -19,7 +19,7 @@ class ArticleController extends BaseController {
         
         // 分页开始
         $count = $article->count(); //查询满足要求的记录总数
-        $page = new Page($count,9); // 实例化分页类 传入总记录数和每页显示的记录数(9)
+        $page = new Page($count,10); // 实例化分页类 传入总记录数和每页显示的记录数(10)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');
@@ -48,12 +48,13 @@ class ArticleController extends BaseController {
      */
     public function showlistsort(){
         $article = D('Article');
+        $sort = D('Sort');
         $sortid = I('sortid');
         $condition['sortid'] = $sortid;
 
         // 分页开始
         $count = $article->where($condition)->count(); //查询该分类下的记录总数
-        $page = new Page($count,9); // 实例化分页类 传入总记录数和每页显示的记录数(9)
+        $page = new Page($count,10); // 实例化分页类 传入总记录数和每页显示的记录数(10)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');
@@ -67,9 +68,14 @@ class ArticleController extends BaseController {
 
         // 该分类下所有文章
         $articlelistsort = $article->where($condition)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
+       
+        // 得到该分类名称
+        $articlesortname = $sort->where($condition)->getField('sortname',true);
+        $articlesortnamestr = implode($articlesortname);
         
         $this->assign('firstRow',$firstRow);
         $this->assign('articlelistsort',$articlelistsort);
+        $this->assign('articlesortnamestr',$articlesortnamestr);
         $this->assign('page',$pageshow);
 
         $this->display();
@@ -85,16 +91,20 @@ class ArticleController extends BaseController {
 
         $articletag = D('Articletag');
         $article = D('Article');
+        $tag = D('Tag');
         $tagid = I('tagid');
         $condition['tagid'] = $tagid;
         $articletagid = $articletag->where($condition)->getField('articleid',true); // 查询articletag表中该标签下的文章id数组（一维数组）
 
-        $map['id'] = array('in',$articletagid); 
+        $articletagname = $tag->where($condition)->getField('tagname',true);  // 获取该标签名称
+        $articletagnamestr = implode($articletagname); //得到的标签名称为数组，将其转化为字符串
+
+        $map['id'] = array('in',$articletagid);        
 
         // 分页开始
         $count = $articletag->where($condition)->count(); //查询该标签下的记录总数
         // echo $count;exit();
-        $page = new Page($count,9); // 实例化分页类 传入总记录数和每页显示的记录数(9)
+        $page = new Page($count,10); // 实例化分页类 传入总记录数和每页显示的记录数(10)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');
@@ -108,10 +118,10 @@ class ArticleController extends BaseController {
 
         // 该标签下所有文章
         $articlelisttag = $article->where($map)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
-        // print_r($articlelisttag);exit();
-        
+
         $this->assign('firstRow',$firstRow);
         $this->assign('articlelisttag',$articlelisttag);
+        $this->assign('articletagnamestr',$articletagnamestr);
         $this->assign('page',$pageshow);
 
         $this->display();
@@ -156,7 +166,7 @@ class ArticleController extends BaseController {
             if($article->create($data)){
                 $articleid = $article->relation(true)->add($data);
 
-                if($articleid){
+                if($articleid && $tagid){
 
                     $tagidstr = implode(',', $tagid); //把接收到的tagid转换为字符串
                     $tagidone = explode(',', $tagidstr); //把tagid转换后的字符串再转换为一维数组
@@ -185,6 +195,14 @@ class ArticleController extends BaseController {
                         $this->error('文章添加失败！');
                     }
                     
+                }else{
+
+                    if($articleid){
+                        $this->success('文章添加成功！',U('showlist'),1);
+                    }else{
+                        $this->error('文章添加失败！');
+                    }
+
                 }
                     
             }else{
@@ -192,12 +210,16 @@ class ArticleController extends BaseController {
             }
 
             return;
+
         }
 
         /* 获取所有分类 */
         $sort = D('Sort');
         $sortres = $sort->select();
         $this->assign('sortres',$sortres);
+
+        $article = D('Article');
+
         /* 获取所有标签 */
         $tag = D('Tag');
         $tagres = $tag->select();
@@ -247,7 +269,7 @@ class ArticleController extends BaseController {
             if($article->create($data)){
                 $articlesave = $article->relation(true)->save($data);
 
-                if($articlesave !== false){
+                if($articlesave && $tagid){
 
                     $tagidstr = implode(',', $tagid); //把接收到的tagid转换为字符串
 
@@ -261,6 +283,7 @@ class ArticleController extends BaseController {
                     );
 
                     $deleteresult = $Articletag->relation(true)->where(array('articleid'=>$data2['articleid']))->delete();
+
                     foreach($tagidone as $value){
                         $data2['tagid'] = $value;
 
@@ -272,29 +295,26 @@ class ArticleController extends BaseController {
 
                     }
 
-                    // exit();
-
-                    if($addresult !== false){
+                    if($addresult){
                         $this->success('文章修改成功！',U('showlist'),1);
                     }else{
                         $this->error('文章修改失败！');
                     }
                     
+                }else{
+
+                    $deleteresult = $Articletag->relation(true)->where(array('articleid'=>$data2['articleid']))->delete();
+
+                    if($deleteresult){
+                        $this->success('文章修改成功！',U('showlist'),1);
+                    }else{
+                        $this->error('文章修改失败！');
+                    }
                 }
                     
             }else{
                 $this->error($article->getError());
             }
-
-            // if($article->create($data)){
-            //     if($article->save($data)){
-            //         $this->success('文章修改成功！',U('showlist'),1);
-            //     }else{
-            //         $this->error('文章修改失败！');
-            //     }
-            // }else{
-            //     $this->error($article->getError());
-            // }
 
             return;
         }

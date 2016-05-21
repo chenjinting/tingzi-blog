@@ -8,8 +8,9 @@
         <table cellspacing=0 cellpadding=0 width="100%" 
                background="<?php echo (ADMIN_IMG_URL); ?>header_bg.jpg" border=0>
             <tr height=56>
-                <td width=260><img height=56 src="<?php echo (ADMIN_IMG_URL); ?>header_left.jpg" 
-                                   width=260></td>
+                <td width=260>
+                    <a href="<?php echo U('/Admin/Index/index');?>"><img height=56 src="<?php echo (ADMIN_IMG_URL); ?>header_left.jpg" width=260></a>
+                </td>
                 <td style="font-weight: bold; color: #fff; padding-top: 20px" align=middle>
                     当前用户：<?php echo ($admin); ?> &nbsp;&nbsp; 
                     <a style="color: #fff" href="<?php echo U('/Admin/Login/logout');?>" target=_top>退出系统</a> 

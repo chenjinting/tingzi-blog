@@ -31,7 +31,7 @@
 
                     <?php if(is_array($taglist)): $i = 0; $__LIST__ = $taglist;if( count($__LIST__)==0 ) : echo "还没有标签噢，快添加标签吧~" ;else: foreach($__LIST__ as $key=>$tag): $mod = ($i % 2 );++$i;?><tr id="product1">
                         <td><?php echo ($i+$firstRow); ?></td>
-                        <td><a href="#"><?php echo ($tag["tagname"]); ?></a></td>
+                        <td><a href="<?php echo U('/Admin/Article/showlisttag',array('tagid'=>$tag['tagid']));?>"><?php echo ($tag["tagname"]); ?></a></td>
                         <td><a href="<?php echo U('/Admin/Tag/modifytag',array('tagid'=>$tag['tagid'],'tagname'=>$tag['tagname']));?>">修改</a></td>
                         <td><a href="<?php echo U('/Admin/Tag/deletetag',array('tagid'=>$tag['tagid']));?>" onclick="return confirm('你真的要删除这个标签吗？');">删除</a></td>
                     </tr><?php endforeach; endif; else: echo "还没有标签噢，快添加标签吧~" ;endif; ?>
@@ -43,6 +43,7 @@
                     </tr>
                 </tbody>
             </table>
+            
         </div>
     </body>
 </html>

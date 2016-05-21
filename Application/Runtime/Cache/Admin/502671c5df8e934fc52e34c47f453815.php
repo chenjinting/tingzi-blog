@@ -71,7 +71,7 @@
                     <td>文章封面</td>
                     <td>
                         <input type="file" name="coverpic" />
-                        <img src="/Uploads/<?php echo ((isset($articleres["coverpic"]) && ($articleres["coverpic"] !== ""))?($articleres["coverpic"]):'default.jpg'); ?>" width="250px;" />
+                        <img src="/Uploads/<?php echo ($articleres["coverpic"]); ?>" width="250px;" />
                     </td>
                 </tr>
                 <tr>

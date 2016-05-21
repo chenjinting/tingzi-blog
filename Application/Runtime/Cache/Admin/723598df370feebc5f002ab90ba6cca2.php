@@ -14,6 +14,7 @@
         <div class="div_head">
             <span>
                 <span style="float: left;">当前位置是：文章管理-》文章列表</span>
+                <p>当前标签为：<?php echo ($articletagnamestr); ?></p>
                 <span style="float: right; margin-right: 8px; font-weight: bold;">
                     <a style="text-decoration: none;" href="<?php echo U('/Admin/Article/addarticle');?>">【添加文章】</a>
                 </span>
@@ -37,8 +38,8 @@
 
                     <?php if(is_array($articlelisttag)): $k = 0; $__LIST__ = $articlelisttag;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr id="product1">
                         <td><?php echo ($k+$firstRow); ?></td>
-                        <td><img src="/Uploads/<?php echo ((isset($vo["coverpic"]) && ($vo["coverpic"] !== ""))?($vo["coverpic"]):'default.jpg'); ?>" height="60" width="60"></td>
-                        <td><a href="#"><?php echo ($vo["title"]); ?></a></td>
+                        <td><img src="/Uploads/<?php echo ($vo["coverpic"]); ?>" height="60" width="60"></td>
+                        <td><a href="<?php echo U('/Admin/Article/modifyarticle',array('id'=>$vo['id']));?>"><?php echo ($vo["title"]); ?></a></td>
                         <td>
                             <a href="<?php echo U('/Admin/Article/showlistsort',array('sortid'=>$vo['sortid']));?>"><?php echo ($vo["sortname"]); ?></a>
                         </td>
@@ -47,7 +48,7 @@
                         <?php if(is_array($vo['tag'])): $i = 0; $__LIST__ = $vo['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Admin/Article/showlisttag',array('tagid'=>$v['tagid']));?>"><?php echo ($v['tagname']); ?></a><br /><?php endforeach; endif; else: echo "" ;endif; ?>
                         </td>   
 
-                        <td><?php echo ((isset($vo["author"]) && ($vo["author"] !== ""))?($vo["author"]):'佚名'); ?></td>
+                        <td><?php echo ($vo["author"]); ?></td>
                         <td><?php echo (date("Y-m-d",$vo["time"])); ?></td>
                         <td><?php echo (date("Y-m-d",$vo["lastmodifytime"])); ?></td>
 

@@ -38,8 +38,8 @@
                     <volist name="articlelist" id="vo" key="k">                   
                     <tr id="product1">
                         <td>{$k+$firstRow}</td>
-                        <td><img src="__UPLOAD__{$vo.coverpic|default='default.jpg'}" height="60" width="60"></td>
-                        <td><a href="#">{$vo.title}</a></td>
+                        <td><img src="__UPLOAD__{$vo.coverpic}" height="60" width="60"></td>
+                        <td><a href="{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">{$vo.title}</a></td>
                         <td>
                             <a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>
                         </td>
@@ -50,7 +50,7 @@
                         </volist>
                         </td>  
 
-                        <td>{$vo.author|default='佚名'}</td>
+                        <td>{$vo.author}</td>
                         <td>{$vo.time|date="Y-m-d",###}</td>
                         <td>{$vo.lastmodifytime|date="Y-m-d",###}</td>
 

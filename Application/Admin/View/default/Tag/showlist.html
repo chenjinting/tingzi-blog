@@ -32,7 +32,7 @@
                     <volist name='taglist' id='tag' empty='还没有标签噢，快添加标签吧~'>
                     <tr id="product1">
                         <td>{$i+$firstRow}</td>
-                        <td><a href="#">{$tag.tagname}</a></td>
+                        <td><a href="{:U('__MODULE__/Article/showlisttag',array('tagid'=>$tag['tagid']))}">{$tag.tagname}</a></td>
                         <td><a href="{:U('__CONTROLLER__/modifytag',array('tagid'=>$tag['tagid'],'tagname'=>$tag['tagname']))}">修改</a></td>
                         <td><a href="{:U('__CONTROLLER__/deletetag',array('tagid'=>$tag['tagid']))}" onclick="return confirm('你真的要删除这个标签吗？');">删除</a></td>
                     </tr>
@@ -45,6 +45,7 @@
                     </tr>
                 </tbody>
             </table>
+            
         </div>
     </body>
 </html>

@@ -14,6 +14,7 @@
         <div class="div_head">
             <span>
                 <span style="float: left;">当前位置是：文章管理-》文章列表</span>
+                <p>当前分类为：<?php echo ($articlesortnamestr); ?></p>
                 <span style="float: right; margin-right: 8px; font-weight: bold;">
                     <a style="text-decoration: none;" href="<?php echo U('/Admin/Article/addarticle');?>">【添加文章】</a>
                 </span>
@@ -35,18 +36,16 @@
                         <td colspan="2" align="center">操作</td>
                     </tr>
 
-                    <?php if(is_array($articlelist)): $k = 0; $__LIST__ = $articlelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr id="product1">
+                    <?php if(is_array($articlelistsort)): $k = 0; $__LIST__ = $articlelistsort;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr id="product1">
                         <td><?php echo ($k+$firstRow); ?></td>
                         <td><img src="/Uploads/<?php echo ($vo["coverpic"]); ?>" height="60" width="60"></td>
-                        <td><a href="<?php echo U('/Admin/Article/modifyarticle',array('id'=>$vo['id']));?>"><?php echo ($vo["title"]); ?></a></td>
+                        <td><a href="#<?php echo U('/Admin/Article/modifyarticle',array('id'=>$vo['id']));?>"><?php echo ($vo["title"]); ?></a></td>
                         <td>
                             <a href="<?php echo U('/Admin/Article/showlistsort',array('sortid'=>$vo['sortid']));?>"><?php echo ($vo["sortname"]); ?></a>
                         </td>
-
                         <td>
                         <?php if(is_array($vo['tag'])): $i = 0; $__LIST__ = $vo['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Admin/Article/showlisttag',array('tagid'=>$v['tagid']));?>"><?php echo ($v['tagname']); ?></a><br /><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </td>  
-
+                        </td>                                    
                         <td><?php echo ($vo["author"]); ?></td>
                         <td><?php echo (date("Y-m-d",$vo["time"])); ?></td>
                         <td><?php echo (date("Y-m-d",$vo["lastmodifytime"])); ?></td>
@@ -54,9 +53,6 @@
                         <td><a href="<?php echo U('/Admin/Article/modifyarticle',array('id'=>$vo['id']));?>">修改</a></td>
                         <td><a href="<?php echo U('/Admin/Article/deletearticle',array('id'=>$vo['id']));?>" onclick="return confirm('你真的要删除这篇文章吗？');">删除</a></td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-                    
-                    
 
                     <tr>
                         <td colspan="20" style="text-align: center;">
@@ -67,7 +63,7 @@
             </table>
 
             <div style="height: 30px;text-align: center;">
-                <?php if(empty($articlelist)): ?><p>
+                <?php if(empty($articlelistsort)): ?><p>
                         还没有文章噢，快写篇文章吧~
                     </p><?php endif; ?>
             </div>

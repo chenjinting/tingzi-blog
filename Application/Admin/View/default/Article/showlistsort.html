@@ -14,6 +14,7 @@
         <div class="div_head">
             <span>
                 <span style="float: left;">当前位置是：文章管理-》文章列表</span>
+                <p>当前分类为：{$articlesortnamestr}</p>
                 <span style="float: right; margin-right: 8px; font-weight: bold;">
                     <a style="text-decoration: none;" href="{:U('__CONTROLLER__/addarticle')}">【添加文章】</a>
                 </span>
@@ -38,17 +39,17 @@
                     <volist name="articlelistsort" id="vo" key="k">                   
                     <tr id="product1">
                         <td>{$k+$firstRow}</td>
-                        <td><img src="__UPLOAD__{$vo.coverpic|default='default.jpg'}" height="60" width="60"></td>
-                        <td><a href="#">{$vo.title}</a></td>
+                        <td><img src="__UPLOAD__{$vo.coverpic}" height="60" width="60"></td>
+                        <td><a href="#{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">{$vo.title}</a></td>
                         <td>
                             <a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>
                         </td>
                         <td>
                         <volist name="vo['tag']" id="v">
-                        <a href="">{$v['tagname']}</a><br /> 
+                        <a href="{:U('__MODULE__/Article/showlisttag',array('tagid'=>$v['tagid']))}">{$v['tagname']}</a><br /> 
                         </volist>
                         </td>                                    
-                        <td>{$vo.author|default='佚名'}</td>
+                        <td>{$vo.author}</td>
                         <td>{$vo.time|date="Y-m-d",###}</td>
                         <td>{$vo.lastmodifytime|date="Y-m-d",###}</td>
 
