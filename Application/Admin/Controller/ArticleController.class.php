@@ -158,9 +158,6 @@ class ArticleController extends BaseController {
 
                 if($articleid){
 
-                    $articleidarray = array(); // 声明一个接收文章id的空数组
-                    array_push($articleidarray,$articleid); // 向接收文章id的空数组中添加文章id，形成新数组
-
                     $tagidstr = implode(',', $tagid); //把接收到的tagid转换为字符串
                     $tagidone = explode(',', $tagidstr); //把tagid转换后的字符串再转换为一维数组
 
@@ -181,7 +178,7 @@ class ArticleController extends BaseController {
                         }
 
                     }
-                    
+
                     if($addresult){
                         $this->success('文章添加成功！',U('showlist'),1);
                     }else{
@@ -211,15 +208,6 @@ class ArticleController extends BaseController {
 
 
     /**
-     * [_after_addarticle addarticle方法的后置操作，用于在articletag表里新增一条记录]
-     * @return [type] [description]
-     */
-    public function _after_addarticle(){
-
-    }
-
-
-    /**
      * [modifyarticle 修改文章]
      * @return [type] [description]
      */
@@ -229,9 +217,12 @@ class ArticleController extends BaseController {
 
         if(IS_POST){
             $data['id'] = I('id');
+            $data2['articleid'] = I('id');
             $data['title'] = I('title');
             $data['author'] = I('author');
             $data['sortid'] = I('sortid');
+            // $tagidselected = I('tagidselected'); // 获取文章标签id
+            $tagid = I('tagid'); // 获取文章标签id
             $data['content'] = I('content');
             $data['lastmodifytime'] = time(); // 文章最后编辑时间
 
@@ -251,15 +242,59 @@ class ArticleController extends BaseController {
                 }
             }
 
+            $Articletag = D('Articletag');
+
             if($article->create($data)){
-                if($article->save($data)){
-                    $this->success('文章修改成功！',U('showlist'),1);
-                }else{
-                    $this->error('文章修改失败！');
+                $articlesave = $article->relation(true)->save($data);
+
+                if($articlesave !== false){
+
+                    $tagidstr = implode(',', $tagid); //把接收到的tagid转换为字符串
+
+                    $tagidone = explode(',', $tagidstr); //把tagid转换后的字符串再转换为一维数组
+
+                    $data2['articleid'] = I('id');
+
+                    $data2['Articletag'] = array(
+                        'articleid' => $data2['articleid'],
+                        'tagid'     => $data2['tagid'], 
+                    );
+
+                    $deleteresult = $Articletag->relation(true)->where(array('articleid'=>$data2['articleid']))->delete();
+                    foreach($tagidone as $value){
+                        $data2['tagid'] = $value;
+
+                        if($Articletag->create($data2)){
+                            $addresult = $Articletag->relation(true)->add($data2);                    
+                        }else{
+                            $this->error($Articletag->getError());
+                        }
+
+                    }
+
+                    // exit();
+
+                    if($addresult !== false){
+                        $this->success('文章修改成功！',U('showlist'),1);
+                    }else{
+                        $this->error('文章修改失败！');
+                    }
+                    
                 }
+                    
             }else{
                 $this->error($article->getError());
             }
+
+            // if($article->create($data)){
+            //     if($article->save($data)){
+            //         $this->success('文章修改成功！',U('showlist'),1);
+            //     }else{
+            //         $this->error('文章修改失败！');
+            //     }
+            // }else{
+            //     $this->error($article->getError());
+            // }
 
             return;
         }
@@ -298,7 +333,7 @@ class ArticleController extends BaseController {
     public function deletearticle(){
         $articleid = I('id');
         $article = D('Article');
-        if($article->delete($articleid)){
+        if($article->relation(true)->delete($articleid)){
             $this->success("删除成功！",U('showlist'),1);
         }else{
             $this->error("删除失败！");

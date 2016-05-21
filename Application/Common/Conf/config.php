@@ -2,7 +2,7 @@
 return array(
 	//'配置项'=>'配置值'
  
-	// 'SHOW_PAGE_TRACE' 		          =>		    true,                       // 页面Trace信息
+	'SHOW_PAGE_TRACE' 		          =>		    true,                       // 页面Trace信息
 	
 	'URL_CASE_INSENSITIVE'            =>            true,                       // 使项目在Linux系统下URL不区分大小写（默认为区分大小写）
 	'DEFAULT_THEME'				      =>   		    'default',                  // 设置默认主题

@@ -62,7 +62,7 @@
                 <tr>
                     <td>文章标签</td>
                     <td>
-                        <?php if(is_array($articletagid)): $i = 0; $__LIST__ = $articletagid;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><input class="articletag1" type="hidden" name="tagid[]" value="<?php echo ($vo); ?>" /><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($articletagid)): $i = 0; $__LIST__ = $articletagid;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><input class="articletag1" type="hidden" name="tagidselected[]" value="<?php echo ($vo); ?>" /><?php endforeach; endif; else: echo "" ;endif; ?>
 
                         <?php if(is_array($tagres)): $i = 0; $__LIST__ = $tagres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><input class="articletag2" type="checkbox" name="tagid[]" value="<?php echo ($v["tagid"]); ?>" /><?php echo ($v["tagname"]); endforeach; endif; else: echo "" ;endif; ?>           
                     </td>
