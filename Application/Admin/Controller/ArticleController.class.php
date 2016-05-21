@@ -87,7 +87,7 @@ class ArticleController extends BaseController {
         $article = D('Article');
         $tagid = I('tagid');
         $condition['tagid'] = $tagid;
-        $articletagid = $articletag->where($condition)->getField('articleid',true); // 查询articletag表中该分类下的文章id数组（一维数组）
+        $articletagid = $articletag->where($condition)->getField('articleid',true); // 查询articletag表中该标签下的文章id数组（一维数组）
 
         $map['id'] = array('in',$articletagid); 
 
@@ -118,7 +118,7 @@ class ArticleController extends BaseController {
         
     }
 
-
+    
     /**
      * [addarticle 添加文章]
      * @return [type] [description]
@@ -129,10 +129,7 @@ class ArticleController extends BaseController {
             $data['title'] = I('title'); // 获取文章标题
             $data['author'] = I('author'); // 获取文章作者
             $data['sortid'] = I('sortid'); // 获取文章分类id
-            $data['tagid'] = I('tagid'); // 获取文章标签id
-            $data['Articletag'] = array(
-                'tagid' => $data['tagid'], 
-            );
+            $tagid = I('tagid'); // 获取文章标签id
             $data['content'] = I('content'); //获取文章详情内容
             $data['time'] = time(); //获取文章发布时间
             $data['lastmodifytime'] = time(); // 新增文章时设置文章最后编辑时间即为文章发布时间
@@ -154,13 +151,45 @@ class ArticleController extends BaseController {
             }
 
             $article = D('Article');
-            $articletag = D('Articletag');
-            if($article->create($data) && $articletag->create($data)){
-                if($article->relation(true)->add($data)){
-                    $this->success('文章添加成功！',U('showlist'),1);
-                }else{
-                    $this->error('文章添加失败！');
+            $Articletag = D('Articletag');
+
+            if($article->create($data)){
+                $articleid = $article->relation(true)->add($data);
+
+                if($articleid){
+
+                    $articleidarray = array(); // 声明一个接收文章id的空数组
+                    array_push($articleidarray,$articleid); // 向接收文章id的空数组中添加文章id，形成新数组
+
+                    $tagidstr = implode(',', $tagid); //把接收到的tagid转换为字符串
+                    $tagidone = explode(',', $tagidstr); //把tagid转换后的字符串再转换为一维数组
+
+                    $data2['articleid'] = $articleid;
+
+                    $data2['Articletag'] = array(
+                        'articleid' => $data2['articleid'],
+                        'tagid'     => $data2['tagid'], 
+                    );
+
+                    foreach($tagidone as $value){
+                        $data2['tagid'] = $value;
+
+                        if($Articletag->create($data2)){
+                            $addresult = $Articletag->relation(true)->add($data2);                     
+                        }else{
+                            $this->error($Articletag->getError());
+                        }
+
+                    }
+                    
+                    if($addresult){
+                        $this->success('文章添加成功！',U('showlist'),1);
+                    }else{
+                        $this->error('文章添加失败！');
+                    }
+                    
                 }
+                    
             }else{
                 $this->error($article->getError());
             }
@@ -178,6 +207,15 @@ class ArticleController extends BaseController {
         $this->assign('tagres',$tagres);
 
         $this->display();
+    }
+
+
+    /**
+     * [_after_addarticle addarticle方法的后置操作，用于在articletag表里新增一条记录]
+     * @return [type] [description]
+     */
+    public function _after_addarticle(){
+
     }
 
 
