@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="pc,mobile" name="applicable-device">
+<meta content="no-transform" http-equiv="Cache-Control">
+<meta content="no-siteapp" http-equiv="Cache-Control">
+<meta content="width=device-width" name="viewport">
+<link href="{$Think.const.BLOG_CSS_URL}style.css" media="screen" type="text/css" rel="stylesheet"> 
+<script src="{$Think.const.BLOG_JS_URL}jquery.min.js"></script> 
+<title>人生哲理_人生哲理文章阅读_人生哲理语录句子大全_意空间阅读网</title><meta content="人生哲理_人生哲理文章阅读_人生哲理语录句子大全" name="keywords">
+<meta content="人生哲理栏目为广大网友奉献人生哲理名言，人生哲理故事，人生哲理文章，哲理名人名言名录大全。" name="description">
+
+<script type="text/javascript">
+    $(function(){
+        var current_url = "__CONTROLLER__/showlistsort/sortid/{$sortid}";
+        $('.nav li a[href="'+current_url+'"]').addClass('activeli');
+    })
+ </script>
+
+</head>
+<body class="archive category category-philosophy-life category-18">
+
+<include file="Public/header" />
+
+<div class="wrapper">
+	<div class="content">
+	
+	<!-- 分享代码 --><!-- 分享代码 -->
+	
+	<ul class="excerpt thumb">
+		<volist name="articleres" id="vo">
+		<li>
+			<a class="pic" href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">
+			<img alt="{$vo.title}" src="__UPLOADIMG__{$vo.coverpic}"></a>			
+			<h2 class="excerpt-tit"><a href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">{$vo.title}</a></h2>
+			<p class="excerpt-desc">				
+				{$vo.abstract}...
+			</p>
+			<div class="excerpt-time">{$vo.time|date="Y-m-d",###}</div>
+		</li>
+		</volist>
+	</ul>
+
+	<div style="height: 30px;text-align: center;">
+        <empty name="articleres">
+            <p>
+                这个分类还没有文章噢~
+            </p>
+        </empty>
+    </div>
+
+<div class="paging">{$page}</div>
+
+</div>
+
+<include file="Public/right" />
+
+</div>
+
+<include file="Public/footer" />
+
+
+
+
+
+
+
+
+</body></html>

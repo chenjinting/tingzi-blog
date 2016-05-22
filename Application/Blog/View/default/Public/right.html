@@ -1,0 +1,16 @@
+<div class="sidebar">
+	
+	<div class="widget widget_categories">
+	<h3 class="widget-tit"> </h3>		
+	<ul>
+		<volist name="tagres" id="v">
+			<li class="cat-item cat-item-18 current-cat">
+				<a title="{$v.tagname}" href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$v['tagid']))}">	
+				    {$v.tagname}
+				</a>
+			</li>
+		</volist>
+	</ul>
+
+	</div>		
+</div>

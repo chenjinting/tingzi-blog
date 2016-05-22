@@ -4,7 +4,7 @@
 		<ul class="nav">
 			<volist name="sortres" id="vo">
 				<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-180">
-					<a href="{:U('__MODULE__/List/index',array('sortid'=>$vo['sortid']))}" >{$vo.sortname}</a>
+					<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo['sortid']))}" >{$vo.sortname}</a>
 				</li>
 			</volist>
 		</ul>

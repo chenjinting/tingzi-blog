@@ -4,6 +4,19 @@
         <title>添加文章</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <link href="<?php echo (ADMIN_CSS_URL); ?>mine.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+            window.UEDITOR_HOME_URL = '<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/';
+            window.onload = function(){
+                window.UEDITOR_CONFIG.initialFrameWidth = '100%';
+                window.UEDITOR_CONFIG.initialFrameHeight = 500;
+                window.UEDITOR_CONFIG.scaleEnabled = true;
+
+                UE.getEditor('content');
+            }
+        </script>
+        <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.config.js"></script>
+        <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.all.min.js"></script>
+
     </head>
 
     <body>
@@ -49,14 +62,21 @@
                     <td>文章封面</td>
                     <td>
                         <input type="file" name="coverpic" />
-                        <img src="/Uploads/<?php echo ((isset($articleres["coverpic"]) && ($articleres["coverpic"] !== ""))?($articleres["coverpic"]):'default.jpg'); ?>" width="250px;" />
+                        <img src="/Uploads/image/<?php echo ((isset($articleres["coverpic"]) && ($articleres["coverpic"] !== ""))?($articleres["coverpic"]):'default.jpg'); ?>" width="250px;" />
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>文章摘要</td>
+                    <td>
+                        <textarea style="width: 1610px;height: 50px;" name="abstract" onKeyUp="if(this.value.length > 100) alert('摘要不能超过100字！标点符号也算一个字噢~');this.value=this.value.substr(0,100)"></textarea>
                     </td>
                     
                 </tr>
                 <tr>
                     <td>文章详情</td>
                     <td>
-                        <textarea style="width: 1500px;height: 400px;" name="content"></textarea>
+                        <textarea id="content" name="content"></textarea>
                     </td>
                 </tr>
                 

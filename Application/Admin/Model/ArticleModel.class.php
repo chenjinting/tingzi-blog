@@ -15,6 +15,7 @@ class ArticleModel extends RelationModel{
 		array('title','','该文章已存在！',0,'unique',1), // 文章标题应唯一
 		array('sortid','0','请选择一个文章分类！',0,'notequal',3), // 文章分类不为空
 		array('coverpic','require','请上传一张文章封面！'), // 文章封面不为空
+		array('abstract','require','请填写文章摘要！'), // 文章摘要不为空
 		array('content','require','您还没有填写文章内容！'), // 文章内容不为空
 	);
 

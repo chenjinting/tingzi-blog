@@ -30,7 +30,7 @@ class LoginController extends Controller {
             /* 再来检查用户名和密码是否正确 */
             $checklogin = $admin->checklogin($user,$password);
             if($checklogin){
-                $this->success('登录成功！正在登录...',U('Index/index'),1);
+                $this->success('登录成功！正在进入...',U('Index/index'),1);
             }else{
                 $this->error('用户名或密码错误，请重新输入！');
             }

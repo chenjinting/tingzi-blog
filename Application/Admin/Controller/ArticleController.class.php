@@ -99,7 +99,7 @@ class ArticleController extends BaseController {
         $articletagname = $tag->where($condition)->getField('tagname',true);  // 获取该标签名称
         $articletagnamestr = implode($articletagname); //得到的标签名称为数组，将其转化为字符串
 
-        $map['id'] = array('in',$articletagid);        
+        $map['id'] = array('in',$articletagid);
 
         // 分页开始
         $count = $articletag->where($condition)->count(); //查询该标签下的记录总数
@@ -116,8 +116,10 @@ class ArticleController extends BaseController {
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $firstRow = $page->firstRow;    // 起始行数
 
-        // 该标签下所有文章
-        $articlelisttag = $article->where($map)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
+        // 当该该标签下有文章时查询所有文章
+        if($articletagid){
+            $articlelisttag = $article->where($map)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
+        }     
 
         $this->assign('firstRow',$firstRow);
         $this->assign('articlelisttag',$articlelisttag);
@@ -140,6 +142,7 @@ class ArticleController extends BaseController {
             $data['author'] = I('author'); // 获取文章作者
             $data['sortid'] = I('sortid'); // 获取文章分类id
             $tagid = I('tagid'); // 获取文章标签id
+            $data['abstract'] = I('abstract'); //获取文章摘要内容
             $data['content'] = I('content'); //获取文章详情内容
             $data['time'] = time(); //获取文章发布时间
             $data['lastmodifytime'] = time(); // 新增文章时设置文章最后编辑时间即为文章发布时间
@@ -149,7 +152,7 @@ class ArticleController extends BaseController {
                 $upload = new Upload();
                 $upload->maxSize = 3145718; //设置附件上传大小
                 $upload->exts = array('jpg','jpeg','png','gif','bmp'); //设置附件上传类型
-                $upload->rootPath = './Uploads/';
+                $upload->rootPath = './Uploads/image/';
                 $upload->savePath = ''; //设置附件上传目录
                 // 上传单个文件
                 $info = $upload->uploadOne($_FILES['coverpic']);
@@ -245,6 +248,7 @@ class ArticleController extends BaseController {
             $data['sortid'] = I('sortid');
             // $tagidselected = I('tagidselected'); // 获取文章标签id
             $tagid = I('tagid'); // 获取文章标签id
+            $data['abstract'] = I('abstract'); //获取文章摘要内容
             $data['content'] = I('content');
             $data['lastmodifytime'] = time(); // 文章最后编辑时间
 
@@ -253,7 +257,7 @@ class ArticleController extends BaseController {
                 $upload = new Upload();
                 $upload->maxSize = 3145718; //设置附件上传大小
                 $upload->exts = array('jpg','jpeg','png','gif','bmp'); //设置附件上传类型
-                $upload->rootPath = './Uploads/';
+                $upload->rootPath = './Uploads/image/';
                 $upload->savePath = ''; //设置附件上传目录
                 // 上传单个文件
                 $info = $upload->uploadOne($_FILES['coverpic']);
@@ -322,7 +326,7 @@ class ArticleController extends BaseController {
         $articletag = D('Articletag');
         $articleid['articleid'] = I('id');
 
-        $articletagid = $articletag->where($articleid)->getField('tagid',true); // 查询articletag表中该分类下的文章id数组（一维数组）
+        $articletagid = $articletag->where($articleid)->getField('tagid',true); // 查询articletag表中该文章下的标签id数组（一维数组）
         // $map['id'] = array('in',$articletagid); 
         // $articletagidstr = implode(',', $articletagid); 
 

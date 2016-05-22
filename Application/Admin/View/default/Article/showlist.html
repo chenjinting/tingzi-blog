@@ -21,8 +21,10 @@
         </div>
         <div></div>
         <div style="font-size: 13px; margin: 10px 5px;">
+            <notempty name="articlelist">
             <table class="table_a" border="1" width="100%">
                 <tbody>
+                    
                     <tr style="font-weight: bold;">
                         <td>序号</td>
                         <td>封面</td>
@@ -30,16 +32,17 @@
                         <td>分类</td>
                         <td>标签</td>
                         <td>作者</td>
+                        <td>阅读</td>
                         <td>发布时间</td>
                         <td>最后修改时间</td>
                         <td colspan="2" align="center">操作</td>
                     </tr>
-
+                    
                     <volist name="articlelist" id="vo" key="k">                   
                     <tr id="product1">
                         <td>{$k+$firstRow}</td>
-                        <td><img src="__UPLOAD__{$vo.coverpic}" height="60" width="60"></td>
-                        <td><a href="{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">{$vo.title}</a></td>
+                        <td><img src="__UPLOADIMG__{$vo.coverpic}" height="60" width="60"></td>
+                        <td><a href="{:U('Blog/Detail/index',array('id'=>$vo['id']))}" target="_blank">{$vo.title}</a></td>
                         <td>
                             <a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>
                         </td>
@@ -51,16 +54,14 @@
                         </td>  
 
                         <td>{$vo.author}</td>
-                        <td>{$vo.time|date="Y-m-d",###}</td>
-                        <td>{$vo.lastmodifytime|date="Y-m-d",###}</td>
+                        <td>{$vo.readnum}</td>
+                        <td>{$vo.time|date="Y-m-d H:i;s",###}</td>
+                        <td>{$vo.lastmodifytime|date="Y-m-d H:i;s",###}</td>
 
                         <td><a href="{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">修改</a></td>
                         <td><a href="{:U('__CONTROLLER__/deletearticle',array('id'=>$vo['id']))}" onclick="return confirm('你真的要删除这篇文章吗？');">删除</a></td>
                     </tr>                   
-                    </volist>
-
-                    
-                    
+                    </volist>                  
 
                     <tr>
                         <td colspan="20" style="text-align: center;">
@@ -69,6 +70,7 @@
                     </tr>
                 </tbody>
             </table>
+            </notempty>
 
             <div style="height: 30px;text-align: center;">
                 <empty name="articlelist">

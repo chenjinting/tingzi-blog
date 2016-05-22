@@ -12,7 +12,9 @@ class IndexController extends Controller {
 
     	$sort = D('Sort');
     	$sortres = $sort->select();
-    	$this->assign('sortres',$sortres);
+
+        $tag = D('Tag');
+        $tagres = $tag->select();
 
     	$article = D('Article');
     	
@@ -29,9 +31,12 @@ class IndexController extends Controller {
 
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $firstRow = $page->firstRow;    // 起始行数
-        $articleres = $article->limit($firstRow.','.$page->listRows)->order('lastmodifytime DESC')->select();
+        $articleres = $article->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
+
         $this->assign('firstRow',$firstRow);
-        $this->assign('articleres',$articleres);    // 赋值数据集
+        $this->assign('articleres',$articleres);
+        $this->assign('sortres',$sortres);
+        $this->assign('tagres',$tagres);
         $this->assign('page',$pageshow);    // 赋值分页输出
 
         $this->display();

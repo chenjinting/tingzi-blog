@@ -36,7 +36,7 @@ return array(
 
     /* 模板路径替换 */
     'TMPL_PARSE_STRING'               =>            array(
-        '__UPLOAD__'                  =>            '/Uploads/',
+        '__UPLOADIMG__'                  =>            '/Uploads/image/',    // 文章图片模板路径
     ),
 
     /* 设置伪静态后缀 */

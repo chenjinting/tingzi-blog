@@ -34,6 +34,7 @@ define('BLOG_JS_URL', '/Application/Blog/Public/js/');
 define('ADMIN_CSS_URL', '/Application/Admin/Public/css/');
 define('ADMIN_IMG_URL', '/Application/Admin/Public/img/');
 define('ADMIN_JS_URL', '/Application/Admin/Public/js/');
+define('ADMIN_VENDOR_URL', '/Application/Admin/Public/vendor/'); //Admin第三方工具
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

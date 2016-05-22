@@ -17,7 +17,7 @@ class AdminController extends BaseController {
         $adminres = $admin->select();
         // 分页开始
         $count = $admin->count(); //查询满足要求的记录总数
-        $page = new Page($count,9); // 实例化分页类 传入总记录数和每页显示的记录数(9)
+        $page = new Page($count,30); // 实例化分页类 传入总记录数和每页显示的记录数(30)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');

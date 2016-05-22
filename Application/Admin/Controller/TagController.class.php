@@ -97,9 +97,9 @@ class TagController extends BaseController {
      * @return [type] [description]
      */
     public function deletetag(){
-        $tagid = I('id');
+        $tagid = I('tagid');
         $tag = D('Tag');
-        if($tag->delete($tagid)){
+        if($tag->relation(true)->delete($tagid)){
             $this->success("删除标签成功！",U('showlist'),1);
         }else{
             $this->error("删除标签失败！");

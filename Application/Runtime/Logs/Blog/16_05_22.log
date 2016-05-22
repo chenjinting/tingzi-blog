@@ -1,0 +1,2900 @@
+[ 2016-05-22T15:18:58+08:00 ] 127.0.0.1 /blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-05-22T15:19:03+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-05-22T15:22:00+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2016-05-22T15:56:09+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-05-22T15:59:30+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167Node.js%20%E7%9A%84%E6%9C%AC%E8%B4%A8%3C/a%3E%3C/td%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2016-05-22T16:00:23+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2016-05-22T16:01:06+08:00 ] 127.0.0.1 /Blog/Detail/index/id/166
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001316s ]
+
+[ 2016-05-22T16:01:13+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2016-05-22T16:01:15+08:00 ] 127.0.0.1 /Blog/Detail/index/id/164
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 164 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2016-05-22T16:01:17+08:00 ] 127.0.0.1 /Blog/Detail/index/id/52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.007523s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2016-05-22T16:01:36+08:00 ] 127.0.0.1 /Blog/Detail/index/id/157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-05-22T16:20:48+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2016-05-22T16:33:35+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2016-05-22T16:33:44+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-05-22T16:34:02+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2016-05-22T16:34:04+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2016-05-22T16:34:06+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-05-22T16:34:08+08:00 ] 127.0.0.1 /Blog/Detail/index/id/166
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-05-22T16:34:11+08:00 ] 127.0.0.1 /Blog/Detail/index/id/164
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 164 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-05-22T16:34:14+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-05-22T16:34:26+08:00 ] 127.0.0.1 /Blog/List/index/sortid/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 14 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-05-22T16:34:28+08:00 ] 127.0.0.1 /Blog/Detail/index/id/43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='14' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2016-05-22T16:34:29+08:00 ] 127.0.0.1 /Blog/List/index/sortid/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 11 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-05-22T16:34:30+08:00 ] 127.0.0.1 /Blog/List/index/sortid/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 15 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2016-05-22T16:34:31+08:00 ] 127.0.0.1 /Blog/List/index/sortid/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 17 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-05-22T16:34:32+08:00 ] 127.0.0.1 /Blog/List/index/sortid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 16 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-05-22T16:34:33+08:00 ] 127.0.0.1 /Blog/List/index/sortid/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 15 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-05-22T16:54:33+08:00 ] 127.0.0.1 /Blog/Detail/index/id/168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001351s ]
+
+[ 2016-05-22T16:59:41+08:00 ] 127.0.0.1 /Blog/Detail/index/id/168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-05-22T20:15:15+08:00 ] 127.0.0.1 /Blog/Detail/index/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0495s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001634s ]
+
+[ 2016-05-22T20:16:12+08:00 ] 127.0.0.1 /Blog/Detail/index/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2016-05-22T20:16:23+08:00 ] 127.0.0.1 /Blog/Detail/index/id/169
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 169 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2016-05-22T20:16:33+08:00 ] 127.0.0.1 /Blog/Detail/index/id/169
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 169 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000712s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2016-05-22T21:12:56+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001600s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2016-05-22T21:12:59+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002376s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0761s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2016-05-22T21:14:40+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001546s ]
+
+[ 2016-05-22T21:15:01+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000439s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001959s ]
+
+[ 2016-05-22T21:15:05+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002063s ]
+
+[ 2016-05-22T21:15:17+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2016-05-22T21:15:39+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2016-05-22T21:15:42+08:00 ] 127.0.0.1 /Blog/Detail/index/id/168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2016-05-22T21:16:54+08:00 ] 127.0.0.1 /Blog/Detail/index/id/52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000634s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000868s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001514s ]
+
+[ 2016-05-22T21:28:17+08:00 ] 127.0.0.1 /Blog/Detail/index/id/168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2016-05-22T21:29:04+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003215s ]
+
+[ 2016-05-22T21:29:18+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-05-22T21:33:37+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2016-05-22T21:33:46+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: content E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+
+[ 2016-05-22T21:33:58+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0010s ]
+
+[ 2016-05-22T21:34:18+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2016-05-22T21:34:23+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 9,9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2016-05-22T21:34:25+08:00 ] 127.0.0.1 /Blog/List/index/sortid/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2016-05-22T21:34:43+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0010s ]
+
+[ 2016-05-22T21:35:26+08:00 ] 127.0.0.1 /Blog/Detail/index/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001684s ]
+
+[ 2016-05-22T21:35:35+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0010s ]
+
+[ 2016-05-22T21:35:57+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+
+[ 2016-05-22T21:36:07+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0019s ]
+
+[ 2016-05-22T21:36:28+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-05-22T21:38:27+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0013s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2016-05-22T21:38:30+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001700s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2016-05-22T21:38:31+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0008s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2016-05-22T21:38:32+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0017s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2016-05-22T21:38:33+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0007s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2016-05-22T21:38:33+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0008s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000457s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002669s ]
+
+[ 2016-05-22T21:39:48+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0011s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+
+[ 2016-05-22T21:40:00+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0017s ]
+NOTIC: [2] html_entity_decode() expects parameter 1 to be string, array given E:\wamp\www\chenjt_website\Application\Blog\Controller\IndexController.class.php 第 33 行.
+
+[ 2016-05-22T21:40:54+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-05-22T21:42:51+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2016-05-22T22:11:08+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002357s ]
+
+[ 2016-05-22T22:12:56+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2016-05-22T22:13:53+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-05-22T22:14:26+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2016-05-22T22:15:12+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002025s ]
+
+[ 2016-05-22T22:15:28+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2016-05-22T22:24:34+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-05-22T22:27:07+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001670s ]
+
+[ 2016-05-22T22:27:17+08:00 ] 127.0.0.1 /Blog/Detail/index/id/170
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 170 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+
+[ 2016-05-22T22:27:27+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2016-05-22T22:29:06+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001880s ]
+
+[ 2016-05-22T22:29:10+08:00 ] 127.0.0.1 /Blog/Detail/index/id/170
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001739s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 170 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-05-22T22:34:52+08:00 ] 127.0.0.1 /Blog/Detail/index/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2016-05-22T22:35:08+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000589s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002002s ]
+
+[ 2016-05-22T22:35:10+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2016-05-22T22:35:34+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000576s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2016-05-22T22:35:43+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.2011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-05-22T22:37:58+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2016-05-22T22:38:15+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000543s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2016-05-22T22:38:18+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2016-05-22T22:38:19+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2016-05-22T22:38:19+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2016-05-22T22:38:41+08:00 ] 127.0.0.1 /Blog/Detail/index/id/170
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002067s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 170 LIMIT 1   [ RunTime:0.0369s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-05-22T22:39:06+08:00 ] 127.0.0.1 /Blog/Detail/index/id/170
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 170 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2016-05-22T22:39:09+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2016-05-22T22:41:03+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-05-22T22:41:19+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000672s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2016-05-22T22:41:27+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001994s ]
+
+[ 2016-05-22T22:41:29+08:00 ] 127.0.0.1 /Blog/Detail/index/id/168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001855s ]
+
+[ 2016-05-22T22:41:36+08:00 ] 127.0.0.1 /Blog/Detail/index/id/168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-05-22T22:42:55+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-05-22T22:43:03+08:00 ] 127.0.0.1 /Blog/Detail/index/id/169
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 169 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-05-22T23:05:54+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001555s ]
+
+[ 2016-05-22T23:19:14+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000531s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000704s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2016-05-22T23:19:51+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-05-22T23:20:01+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2016-05-22T23:20:19+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2016-05-22T23:20:30+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2016-05-22T23:20:41+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000756s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2016-05-22T23:46:42+08:00 ] 127.0.0.1 /Blog/Detail/index/id/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2016-05-22T23:46:49+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2016-05-22T23:47:52+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2016-05-22T23:50:43+08:00 ] 127.0.0.1 /Blog/Detail/index/id/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2016-05-22T23:50:49+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2016-05-22T23:50:58+08:00 ] 127.0.0.1 /Blog/Detail/index/id/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2016-05-22T23:53:18+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2016-05-22T23:53:28+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2016-05-22T23:53:46+08:00 ] 127.0.0.1 /Blog/Detail/index/id/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003909s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0055s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2016-05-22T23:55:29+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2016-05-22T23:55:31+08:00 ] 127.0.0.1 /Blog/Detail/index/id/171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001676s ]
+
+[ 2016-05-22T23:55:52+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2016-05-22T23:56:03+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001708s ]
+
+[ 2016-05-22T23:56:13+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,9   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+
