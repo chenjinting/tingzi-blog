@@ -13588,3 +13588,1372 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
 
+[ 2016-05-23T18:17:30+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+NOTIC: [8] Undefined index: admin E:\wamp\www\chenjt_website\Application\Admin\Controller\BaseController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-05-23T18:17:31+08:00 ] 127.0.0.1 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013155s ]
+
+[ 2016-05-23T18:17:31+08:00 ] 127.0.0.1 /Admin/Login/loginverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-05-23T18:17:35+08:00 ] 127.0.0.1 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `cjt_admin` [ RunTime:0.3538s ]
+SQL: SELECT * FROM `cjt_admin` WHERE `username` = 'cjt' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002880s ]
+
+[ 2016-05-23T18:17:36+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-05-23T18:17:36+08:00 ] 127.0.0.1 /Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001362s ]
+
+[ 2016-05-23T18:17:36+08:00 ] 127.0.0.1 /Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001570s ]
+
+[ 2016-05-23T18:17:37+08:00 ] 127.0.0.1 /Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.667059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.667274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001510s ]
+
+[ 2016-05-23T18:17:39+08:00 ] 127.0.0.1 /Admin/Article/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.4043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='167' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-05-23T18:17:42+08:00 ] 127.0.0.1 /Admin/Article/showlist/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 10,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='168' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='56' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='14' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='43' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='57' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='11' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='47' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='52' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='169' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='166' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='165' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='164' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-05-23T18:17:45+08:00 ] 127.0.0.1 /Admin/Article/showlist/p/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 20,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='158' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='157' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-05-23T18:17:47+08:00 ] 127.0.0.1 /Admin/Article/showlist/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='167' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2016-05-23T18:17:54+08:00 ] 127.0.0.1 /Admin/Article/modifyarticle/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0022s ]
+SQL: SELECT `tagid` FROM `cjt_articletag` WHERE `articleid` = 167  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='167' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2016-05-23T18:18:31+08:00 ] 127.0.0.1 /Admin/Article/modifyarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: validate E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cjt_article` SET `title`='Node.js 的本质',`author`='cjt',`sortid`='1',`abstract`='下面是一条数据的旅程，这条数据我们叫他req。req在浏览器很无聊，通过网络跑到了Node.js服务器，它的目的是想见到国王server.js（你编写的代是是编写的代是是编写的代是是编写的代是是编写写的代是写的代是写',`content`='&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;下面是一条数据的旅程，这条数据我们叫他&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;req&lt;/code&gt;。&lt;img src=&quot;http://img.baidu.com/hi/face/i_f01.gif&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;/Uploads/image/2016-05-23/1463998705118152.png&quot; title=&quot;1463998705118152.png&quot; alt=&quot;QQ截图20150902194924.png&quot; width=&quot;611&quot; height=&quot;300&quot; style=&quot;width: 611px; height: 300px;&quot; border=&quot;0&quot; vspace=&quot;0&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;req在浏览器很无聊，通过网络跑到了Node.js服务器，它的目的是想见到&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;国王server.js（你编写的代码）&lt;/code&gt;，req想和server.js要一个html文件，可它进入服务器时，迎接它的是个大臣，大臣告诉他，server.js正在接待另一个req，请他等0.1毫秒。终于req见到了国王，国王的会议室挺漂亮的，下面是会议室的大体样子：&lt;/p&gt;&lt;pre class=&quot;brush:js;toolbar:false;&quot; style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13px; padding: 9.5px; margin-top: 0px; margin-bottom: 10px; line-height: 1.42857143; color: rgb(51, 51, 51); word-break: break-all; word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 4px; background-color: rgb(245, 245, 245);&quot;&gt;server.on(“request”,function(req,res){
+
+})&lt;/pre&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;req和server.js要一个&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;hello.html&lt;/code&gt;的网页文件，这时候它看到会议室外面还有几个req在等待，server.js国王把任务交给了&amp;nbsp;&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;fs&lt;/code&gt;大臣，然后马上就去接待另一个req了，req心里想国王的效率好高啊，难道这就是传说中的&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;永不阻塞的 I/O 吗&lt;/code&gt;，这时候&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;fs&lt;/code&gt;大臣帮它把hello.html文件送上了返程的列车&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;res&lt;/code&gt;。&lt;/p&gt;&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13px; padding: 9.5px; margin-top: 0px; margin-bottom: 10px; line-height: 1.42857143; color: rgb(51, 51, 51); word-break: break-all; word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 4px; background-color: rgb(245, 245, 245);&quot;&gt;server.on(“request”,function(req,res){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fs.createReadStream(“hello.html”).pipe(res);
+})&lt;/pre&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;req回到浏览器后，感慨Node.js 国家办事效率，它在日记中写下：&lt;/p&gt;&lt;blockquote style=&quot;box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 17.5px; border-left-width: 5px; border-left-style: solid; border-left-color: rgb(238, 238, 238); color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;&quot;&gt;通过集权的编码方式，让代码更加好管理、更好维护，避免多线程带来的死锁等后遗症。通过非阻塞异步 I/O 的调用，把耗时的工作交给底下人去办，而不是等待I/O完成后再进行下一步的工作，而是通过事件模式，监听工作进度，这段时间里，Node.js还可以不 间断的处理其他请求。等到I/O处理完毕后，会接收到一个事件。&lt;/p&gt;&lt;/blockquote&gt;&lt;h4 id=&quot;node-js-&quot; style=&quot;box-sizing: border-box; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-weight: 500; line-height: 1.1; color: rgb(68, 68, 68); margin-top: 10px; margin-bottom: 10px; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Node.js是什么？&lt;/h4&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Node提供一种简单的构建可伸缩网络程序的方法。在 Java 和 PHP 这类语言中，每个连接都会生成一个新线程，每个新线程可能需要 2 MB 的配套内存。在一个拥有 8 GB RAM 的系统上，理论上最大的并发连接数量是 4,000 个用户。随着您的客户群的增长，如果希望您的 Web 应用程序支持更多用户，那么，您必须添加更多服务器。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Node更改了连接到服务器的方式。每个连接发射一个在 Node 引擎的进程中运行的事件，而不是为每个连接生成一个新的 OS 线程。它绝不会死锁，因为它根本不允许使用锁，它不会直接阻塞 I/O 调用。它的服务器能支持数万个并发连接。&lt;/p&gt;&lt;h4 id=&quot;node-js-&quot; style=&quot;box-sizing: border-box; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-weight: 500; line-height: 1.1; color: rgb(68, 68, 68); margin-top: 10px; margin-bottom: 10px; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Node.js背后真正的优势&lt;/h4&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Node.js 有很多优势，在我看来除了高性能外，它统一了前后端语言和数据 (json)，这才是它最大优势。paypal公司全面转至Node.js技术，主要原因是Node.js提高了开发效率，同时也节省了成本。&lt;/p&gt;&lt;h4 id=&quot;-&quot; style=&quot;box-sizing: border-box; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-weight: 500; line-height: 1.1; color: rgb(68, 68, 68); margin-top: 10px; margin-bottom: 10px; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;难学吗？&lt;/h4&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;只要会javascript基本知识即可，javascript的运行环境通常是浏览器，Node.js给了javascript在服务器端运行环境，这个环境下，还配备了一套API，包括I/O、网络等功能。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`lastmodifytime`='1463998711' WHERE `id` = '167' [ RunTime:0.1577s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: tagid E:\wamp\www\chenjt_website\Application\Admin\Controller\ArticleController.class.php 第 286 行.
+SQL: DELETE FROM `cjt_articletag` WHERE `articleid` = 167 [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Db\Driver.class.php 第 803 行.
+SQL: INSERT INTO `cjt_articletag` (`articleid`,`tagid`) VALUES ('167','3') [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-05-23T18:18:32+08:00 ] 127.0.0.1 /Admin/Article/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='167' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2016-05-23T18:40:32+08:00 ] 127.0.0.1 /Admin/Article/deletearticle/id/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0028s ]
+SQL: DELETE FROM `cjt_article` WHERE `id` = 167 [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0029s ]
+SQL: DELETE FROM `cjt_articletag` WHERE `articleid` = 167 [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2016-05-23T18:40:33+08:00 ] 127.0.0.1 /Admin/Article/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='168' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2016-05-23T18:40:35+08:00 ] 127.0.0.1 /Admin/Article/addarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2016-05-23T18:41:20+08:00 ] 127.0.0.1 /Admin/Article/addarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: validate E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cjt_article` WHERE `title` = 'Node.js 的本质' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cjt_article` (`title`,`author`,`sortid`,`abstract`,`content`,`time`,`lastmodifytime`) VALUES ('Node.js 的本质','test','1','req在浏览器很无聊，通过网络跑到了Node.js服务器，它的目的是想见到国王server.js（你编写的代码）a，req想和server.js要一个html文件，可它进入服务器时，迎接它的是个大臣，','&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;下面是一条数据的旅程，这条数据我们叫他&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;req&lt;/code&gt;。&lt;img src=&quot;http://img.baidu.com/hi/face/i_f01.gif&quot; style=&quot;border: 1px solid rgb(204, 204, 204); padding: 2px; display: block; margin: 0px auto; max-width: 630px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 15px; margin-bottom: 15px; padding: 0px; text-align: center; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, 微软雅黑, helvetica, arial, verdana, tahoma, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;http://www.chenjinting.com/Uploads/image/2016-05-23/1463998705118152.png&quot; title=&quot;1463998705118152.png&quot; alt=&quot;QQ截图20150902194924.png&quot; width=&quot;611&quot; height=&quot;300&quot; border=&quot;0&quot; vspace=&quot;0&quot; style=&quot;border: 1px solid rgb(204, 204, 204); padding: 2px; display: block; margin: 0px auto; max-width: 630px; width: 611px; height: 300px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;req在浏览器很无聊，通过网络跑到了Node.js服务器，它的目的是想见到&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;国王server.js（你编写的代码）&lt;/code&gt;，req想和server.js要一个html文件，可它进入服务器时，迎接它的是个大臣，大臣告诉他，server.js正在接待另一个req，请他等0.1毫秒。终于req见到了国王，国王的会议室挺漂亮的，下面是会议室的大体样子：&lt;/p&gt;&lt;pre class=&quot;brush:js;toolbar:false;&quot; style=&quot;margin: 0px auto 10px; font-stretch: normal; font-size: 13px; line-height: 1.42857143; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; border: 1px solid rgb(204, 204, 204); padding: 9.5px; color: rgb(51, 51, 51); box-sizing: border-box; overflow: auto; word-break: break-all; word-wrap: break-word; border-radius: 4px; background-image: url(http://www.chenjinting.com/Application/Blog/Public/css/img/codecolorer_bg.gif); background-color: rgb(245, 245, 245); background-position: 50% 0%;&quot;&gt;server.on(“request”,function(req,res){
+
+})&lt;/pre&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;req和server.js要一个&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;hello.html&lt;/code&gt;的网页文件，这时候它看到会议室外面还有几个req在等待，server.js国王把任务交给了&amp;nbsp;&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;fs&lt;/code&gt;大臣，然后马上就去接待另一个req了，req心里想国王的效率好高啊，难道这就是传说中的&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;永不阻塞的 I/O 吗&lt;/code&gt;，这时候&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;fs&lt;/code&gt;大臣帮它把hello.html文件送上了返程的列车&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; font-size: 13.5px; padding: 2px 4px; color: rgb(199, 37, 78); border-radius: 4px; background-color: rgb(249, 242, 244);&quot;&gt;res&lt;/code&gt;。&lt;/p&gt;&lt;pre style=&quot;margin: 0px auto 10px; font-stretch: normal; font-size: 13px; line-height: 1.42857143; font-family: Menlo, Monaco, Consolas, &amp;#39;Courier New&amp;#39;, monospace; border: 1px solid rgb(204, 204, 204); padding: 9.5px; color: rgb(51, 51, 51); box-sizing: border-box; overflow: auto; word-break: break-all; word-wrap: break-word; border-radius: 4px; background-image: url(http://www.chenjinting.com/Application/Blog/Public/css/img/codecolorer_bg.gif); background-color: rgb(245, 245, 245); background-position: 50% 0%;&quot;&gt;server.on(“request”,function(req,res){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fs.createReadStream(“hello.html”).pipe(res);
+})&lt;/pre&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;req回到浏览器后，感慨Node.js 国家办事效率，它在日记中写下：&lt;/p&gt;&lt;blockquote style=&quot;margin: 0px 0px 20px; font-stretch: normal; font-size: 17.5px; line-height: 20px; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; border-width: 1px 1px 1px 5px; border-style: solid; border-color: rgb(214, 214, 214) rgb(214, 214, 214) rgb(214, 214, 214) rgb(238, 238, 238); padding: 10px 20px; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); background: url(http://www.chenjinting.com/Application/Blog/Public/css/img/codecolorer_bg.gif) 50% 0% rgb(255, 255, 255);&quot;&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px; text-align: justify; box-sizing: border-box;&quot;&gt;通过集权的编码方式，让代码更加好管理、更好维护，避免多线程带来的死锁等后遗症。通过非阻塞异步 I/O 的调用，把耗时的工作交给底下人去办，而不是等待I/O完成后再进行下一步的工作，而是通过事件模式，监听工作进度，这段时间里，Node.js还可以不 间断的处理其他请求。等到I/O处理完毕后，会接收到一个事件。&lt;/p&gt;&lt;/blockquote&gt;&lt;h4 id=&quot;node-js-&quot; style=&quot;margin: 10px 0px; padding: 0px 0px 5px; color: rgb(68, 68, 68); border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; font-size: 18px; white-space: normal; box-sizing: border-box; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-weight: 500; line-height: 1.1; background-color: rgb(255, 255, 255);&quot;&gt;Node.js是什么？&lt;/h4&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;Node提供一种简单的构建可伸缩网络程序的方法。在 Java 和 PHP 这类语言中，每个连接都会生成一个新线程，每个新线程可能需要 2 MB 的配套内存。在一个拥有 8 GB RAM 的系统上，理论上最大的并发连接数量是 4,000 个用户。随着您的客户群的增长，如果希望您的 Web 应用程序支持更多用户，那么，您必须添加更多服务器。&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;Node更改了连接到服务器的方式。每个连接发射一个在 Node 引擎的进程中运行的事件，而不是为每个连接生成一个新的 OS 线程。它绝不会死锁，因为它根本不允许使用锁，它不会直接阻塞 I/O 调用。它的服务器能支持数万个并发连接。&lt;/p&gt;&lt;h4 id=&quot;node-js-&quot; style=&quot;margin: 10px 0px; padding: 0px 0px 5px; color: rgb(68, 68, 68); border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; font-size: 18px; white-space: normal; box-sizing: border-box; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-weight: 500; line-height: 1.1; background-color: rgb(255, 255, 255);&quot;&gt;Node.js背后真正的优势&lt;/h4&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;Node.js 有很多优势，在我看来除了高性能外，它统一了前后端语言和数据 (json)，这才是它最大优势。paypal公司全面转至Node.js技术，主要原因是Node.js提高了开发效率，同时也节省了成本。&lt;/p&gt;&lt;h4 id=&quot;-&quot; style=&quot;margin: 10px 0px; padding: 0px 0px 5px; color: rgb(68, 68, 68); border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; font-size: 18px; white-space: normal; box-sizing: border-box; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-weight: 500; line-height: 1.1; background-color: rgb(255, 255, 255);&quot;&gt;难学吗？&lt;/h4&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 10px; padding: 0px; text-align: justify; white-space: normal; box-sizing: border-box; color: rgb(68, 68, 68); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;冬青黑体简体中文 w3&amp;#39;; font-size: 15px; line-height: 25.7250003814697px; background-color: rgb(255, 255, 255);&quot;&gt;只要会javascript基本知识即可，javascript的运行环境通常是浏览器，Node.js给了javascript在服务器端运行环境，这个环境下，还配备了一套API，包括I/O、网络等功能。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1464000080','1464000080') [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: tagid E:\wamp\www\chenjt_website\Application\Admin\Controller\ArticleController.class.php 第 181 行.
+NOTIC: [8] Undefined index: validate E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Db\Driver.class.php 第 803 行.
+SQL: INSERT INTO `cjt_articletag` (`articleid`,`tagid`) VALUES ('178','8') [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2016-05-23T18:41:21+08:00 ] 127.0.0.1 /Admin/Article/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='178' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-05-23T18:42:32+08:00 ] 127.0.0.1 /Admin/Article/modifyarticle/id/178
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0023s ]
+SQL: SELECT `tagid` FROM `cjt_articletag` WHERE `articleid` = 178  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 178 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='178' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-05-23T18:42:38+08:00 ] 127.0.0.1 /Admin/Article/modifyarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: validate E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cjt_article` SET `title`='Node.js 的本质',`author`='test',`sortid`='1',`abstract`='req在浏览器很无聊，通过网络跑到了Node.js服务器，它的目的是想见到国王server.js（你编写的代码）a，req想和server.js要一个html文件，可它进入服务器时，迎接它的是个大臣，',`content`='&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;我们常常迷失在数据中，纷繁复杂的数据让我们无所适从。可视化作为解决这问题的有效手段，通过视觉的方式让数字易于理解。&lt;br/&gt;数据可视化和信息可视化都是可视化的一种方式，数据可视化将数据库中每一个数据项作为单个图元元素表示，大量的数据集构成数据图像，同时将数据的各个属性值以多维数据的形式表示，可以从不同的维度观察数据，从而对数据进行更深入的观察和分析。信息可视化，旨在把数据资料以视觉化的方式表现出。信息可视化是一种将数据与设计结合起来的图片，有利于个人或组织简短有效地向受众传播信息的数据表现形式。&lt;br/&gt;本文梳理了可视化相关内容，并且根据数据平台组同仁们在可视化项目过程中使用经验，总结一些可视化使用注意事项，与大家分享。&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;color: rgb(34, 34, 34);&quot;&gt;数据可视化的图表类型简介&lt;/strong&gt;&lt;br/&gt;数据可视化有很多既定的图表类型，下面我们分别来谈谈这些图表类型，他们的适用场景，以及使用的优势和劣势。&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;1.柱状图&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/2.png&quot; style=&quot;color: rgb(153, 168, 172); text-decoration: none;&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-1336&quot; src=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/2-690x366.png&quot; alt=&quot;2&quot; width=&quot;690&quot; height=&quot;366&quot; data-bd-imgshare-binded=&quot;1&quot; style=&quot;border: 0px none; padding: 2px; display: block; margin: 0px auto; max-width: 100%; vertical-align: top; text-align: center; height: auto;&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;适用场景：它的适用场合是二维数据集（每个数据点包括两个值x和y），但只有一个维度需要比较。&lt;br/&gt;优势：柱状图利用柱子的高度，反映数据的差异。肉眼对高度差异很敏感，辨识效果非常好。&lt;br/&gt;劣势：柱状图的局限在于只适用中小规模的数据集。&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;2.折线图&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/3.png&quot; style=&quot;color: rgb(153, 168, 172); text-decoration: none;&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1337&quot; src=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/3.png&quot; alt=&quot;3&quot; width=&quot;688&quot; height=&quot;454&quot; data-bd-imgshare-binded=&quot;1&quot; style=&quot;border: 0px none; padding: 2px; display: block; margin: 0px auto; max-width: 100%; vertical-align: top; text-align: center; height: auto;&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;适用场景: 折线图适合二维的大数据集，尤其是那些趋势比单个数据点更重要的场合。它还适合多个二维数据集的比较。&lt;br/&gt;优势：容易反应出数据变化的趋势。&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;3.饼图&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/4.png&quot; style=&quot;color: rgb(153, 168, 172); text-decoration: none;&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1338&quot; src=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/4.png&quot; alt=&quot;4&quot; width=&quot;688&quot; height=&quot;454&quot; data-bd-imgshare-binded=&quot;1&quot; style=&quot;border: 0px none; padding: 2px; display: block; margin: 0px auto; max-width: 100%; vertical-align: top; text-align: center; height: auto;&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;适用场景：适用简单的占比图，在不要求数据精细的情况下可以适用。&lt;br/&gt;劣势：饼图是一种应该避免使用的图表，因为肉眼对面积大小不敏感。&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;4.漏斗图&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/5.png&quot; style=&quot;color: rgb(153, 168, 172); text-decoration: none;&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1339&quot; src=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/5.png&quot; alt=&quot;5&quot; width=&quot;688&quot; height=&quot;454&quot; data-bd-imgshare-binded=&quot;1&quot; style=&quot;border: 0px none; padding: 2px; display: block; margin: 0px auto; max-width: 100%; vertical-align: top; text-align: center; height: auto;&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;适用场景：漏斗图适用于业务流程比较规范、周期长、环节多的流程分析，通过漏斗各环节业务数据的比较，能够直观地发现和说明问题所在。&lt;br/&gt;优势:能够直观地发现和说明问题所在。在网站分析中，通常用于转化率比较，它不仅能展示用户从进入网站到实现购买的最终转化率，还可以展示每个步骤的转化率。&lt;br/&gt;劣势:单一漏斗图无法评价网站某个关键流程中各步骤转化率的好坏。&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;5.地图&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/7.png&quot; style=&quot;color: rgb(153, 168, 172); text-decoration: none;&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-1340&quot; src=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/7-690x555.png&quot; alt=&quot;7&quot; width=&quot;690&quot; height=&quot;555&quot; data-bd-imgshare-binded=&quot;1&quot; style=&quot;border: 0px none; padding: 2px; display: block; margin: 0px auto; max-width: 100%; vertical-align: top; text-align: center; height: auto;&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;适用场景：适用于有空间位置的数据集。&lt;br/&gt;优劣势：特殊状况下使用。&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;6.雷达图&lt;/p&gt;&lt;p style=&quot;margin-top: 20px; margin-bottom: 20px; padding: 0px; text-align: justify; font-size: 14px; white-space: normal; vertical-align: baseline; color: rgb(62, 62, 62); font-family: Helvetica, &amp;#39;Microsoft YaHei&amp;#39;, &amp;#39;STHeiti STXihei&amp;#39;, &amp;#39;Microsoft JhengHei&amp;#39;, Arial; line-height: 21px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/8.png&quot; style=&quot;color: rgb(153, 168, 172); text-decoration: none;&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1341&quot; src=&quot;http://jdc.jd.com/wp-content/uploads/2015/07/8.png&quot; alt=&quot;8&quot; width=&quot;688&quot; height=&quot;454&quot; data-bd-imgshare-binded=&quot;1&quot; style=&quot;border: 0px none; padding: 2px; display: block; margin: 0px auto; max-width: 100%; vertical-align: top; text-align: center; height: auto;&quot;/&gt;&lt;/a&gt;适用场景：雷达图适用于多维数据（四维以上），且每个维度必须可以排序。但是，它有一个局限，就是数据点最多6个，否则无法辨别，因此适用场合有限。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`lastmodifytime`='1464000158' WHERE `id` = '178' [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: mapping_name E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: tagid E:\wamp\www\chenjt_website\Application\Admin\Controller\ArticleController.class.php 第 286 行.
+SQL: DELETE FROM `cjt_articletag` WHERE `articleid` = 178 [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Db\Driver.class.php 第 803 行.
+SQL: INSERT INTO `cjt_articletag` (`articleid`,`tagid`) VALUES ('178','8') [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2016-05-23T18:42:39+08:00 ] 127.0.0.1 /Admin/Article/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='178' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-05-23T18:56:24+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2016-05-23T18:56:24+08:00 ] 127.0.0.1 /Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2016-05-23T18:56:24+08:00 ] 127.0.0.1 /Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2016-05-23T18:56:24+08:00 ] 127.0.0.1 /Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2016-05-23T18:56:25+08:00 ] 127.0.0.1 /Admin/Article/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='178' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001362s ]
+
+[ 2016-05-23T18:56:26+08:00 ] 127.0.0.1 /Admin/Article/Uploads/image/2016-05-23/5741fa31b65c4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2016-05-23T18:56:26+08:00 ] 127.0.0.1 /Admin/Article/Uploads/image/default.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-05-23T18:56:26+08:00 ] 127.0.0.1 /Admin/Article/Uploads/image/2016-05-22/57417a8d6b66e.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-05-23T19:00:47+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-05-23T19:00:47+08:00 ] 127.0.0.1 /Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-05-23T19:00:47+08:00 ] 127.0.0.1 /Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000530s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002503s ]
+
+[ 2016-05-23T19:00:47+08:00 ] 127.0.0.1 /Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001257s ]
+
+[ 2016-05-23T19:00:48+08:00 ] 127.0.0.1 /Admin/Article/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='178' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='173' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-05-23T19:00:51+08:00 ] 127.0.0.1 /Admin/Article/modifyarticle/id/178
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0022s ]
+SQL: SELECT `tagid` FROM `cjt_articletag` WHERE `articleid` = 178  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 178 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='178' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-05-23T19:00:54+08:00 ] 127.0.0.1 /Admin/Article/addarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-05-23T19:00:58+08:00 ] 127.0.0.1 /Admin/Article/showlisttag/tagid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0051s ]
+SQL: SELECT `articleid` FROM `cjt_articletag` WHERE `tagid` = 3  [ RunTime:0.0005s ]
+SQL: SELECT `tagname` FROM `cjt_tag` WHERE `tagid` = 3  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_articletag` WHERE `tagid` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` IN ('50','157','164','166','47','43','168','170','172','174','163','175','176','177') ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0765s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='176' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='163' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='174' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='170' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='168' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='14' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='43' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='11' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='47' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-05-23T19:00:59+08:00 ] 127.0.0.1 /Admin/Article/showlistsort/sortid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` WHERE `sortid` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 10 ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='177' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='175' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='171' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='172' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='57' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='169' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='166' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='165' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='158' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='157' [ RunTime:0.0002s ]
+SQL: SELECT `sortname` FROM `cjt_sort` WHERE `sortid` = 10  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+

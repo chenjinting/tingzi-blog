@@ -22,6 +22,12 @@ class DetailController extends Controller {
 
         $readres = $readnum->where(array('id'=>$articleid))->setInc('readnum',1); // 用户浏览一次文章，即更新数据库readnum字段，使其加1
 
+        // 上一篇
+        $frontres = $article->where("id<".$articleid)->order('id DESC')->limit('1')->find();
+        
+        // 下一篇
+        $afterres = $article->where("id>".$articleid)->order('id ASC')->limit('0,1')->find();
+
         $articletag = D('Articletag');
         $articleid['articleid'] = I('id');
 
@@ -29,6 +35,8 @@ class DetailController extends Controller {
         $this->assign('articleres',$articleres);
         $this->assign('sortres',$sortres);
         $this->assign('tagres',$tagres);
+        $this->assign('frontres',$frontres);
+        $this->assign('afterres',$afterres);
 
         $this->display('detail');
     }

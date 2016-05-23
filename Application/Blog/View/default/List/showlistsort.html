@@ -31,7 +31,7 @@
 		<volist name="articleres" id="vo">
 		<li>
 			<a class="pic" href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">
-			<img alt="{$vo.title}" src="__UPLOADIMG__{$vo.coverpic}"></a>			
+			<img alt="{$vo.title}" src="/__UPLOADIMG__{$vo.coverpic}"></a>			
 			<h2 class="excerpt-tit"><a href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">{$vo.title}</a></h2>
 			<p class="excerpt-desc">				
 				{$vo.abstract}...

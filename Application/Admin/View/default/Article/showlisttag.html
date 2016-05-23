@@ -43,7 +43,7 @@
                     <volist name="articlelisttag" id="vo" key="k">                   
                     <tr id="product1">
                         <td>{$k+$firstRow}</td>
-                        <td><img src="__UPLOADIMG__{$vo.coverpic}" height="60" width="60"></td>
+                        <td><img src="/__UPLOADIMG__{$vo.coverpic}" height="60" width="60"></td>
                         <td><a href="{:U('Blog/Detail/index',array('id'=>$vo['id']))}" target="_blank">{$vo.title}</a></td>
                         <td>
                             <a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>

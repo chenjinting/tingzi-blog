@@ -203,3 +203,101 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
 
+[ 2016-05-23T16:16:35+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-05-23T17:32:03+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+
+[ 2016-05-23T18:03:54+08:00 ] 192.168.23.2 /chenjt_website/Detail/index%27,array(%27id%27=%3E$articleres[%27id%27])
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+ERR: 无法加载控制器:Detail
+
+[ 2016-05-23T18:04:03+08:00 ] 192.168.23.2 /chenjt_website/Detail/index%27,array(%27id%27=%3E$articleres[%27id%27])
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+ERR: 无法加载控制器:Detail
+
+[ 2016-05-23T18:12:37+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160522/1463903652588244.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-05-23T18:12:37+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-05-23T18:13:26+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160522/1463903652588244.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-05-23T18:17:11+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160522/1463903652588244.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-05-23T18:17:50+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160522/1463903652588244.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+
+[ 2016-05-23T18:17:50+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-05-23T18:17:55+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160522/1463903652588244.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+
+[ 2016-05-23T18:18:06+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160522/1463903652588244.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-05-23T18:18:36+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-05-23T18:21:38+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-05-23T18:40:37+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-05-23T18:41:24+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-05-23T18:41:37+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-05-23T18:42:33+08:00 ] 127.0.0.1 /Application/Blog/Public/css/img/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+
