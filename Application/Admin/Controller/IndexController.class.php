@@ -19,6 +19,13 @@ class IndexController extends BaseController {
 
     // 加载left.html
     public function left(){
+
+        /* 显示待审核留言数量 */
+        $comment = D('Comment');
+
+        $newcommentnum = $comment->where(array('status'=>0))->count();
+        $this->assign('newcommentnum',$newcommentnum);
+
     	$this->display();
     }
 

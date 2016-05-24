@@ -65,9 +65,9 @@
 	<div class="widget widget_categories">
 	<h3 class="widget-tit"> </h3>		
 	<ul>
-		<?php if(is_array($tagres)): $i = 0; $__LIST__ = $tagres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="cat-item cat-item-18 current-cat">
-				<a title="<?php echo ($v["tagname"]); ?>" href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$v['tagid']));?>">	
-				    <?php echo ($v["tagname"]); ?>
+		<?php if(is_array($tagres)): $i = 0; $__LIST__ = $tagres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tagvo): $mod = ($i % 2 );++$i;?><li class="cat-item cat-item-18 current-cat">
+				<a title="<?php echo ($tagvo["tagname"]); ?>" href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$tagvo['tagid']));?>">	
+				    <?php echo ($tagvo["tagname"]); ?>
 				</a>
 			</li><?php endforeach; endif; else: echo "" ;endif; ?>
 	</ul>

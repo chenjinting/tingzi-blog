@@ -290,7 +290,7 @@ input.btn,button.btn{cursor:pointer;border-top:0;border-right:0;border-left:0}
 #postcomments{margin-bottom:12px;overflow:hidden;}
 #postcomments .base-tit{margin-bottom:0}
 
-.comment{padding:15px 0 15px 48px}
+/*.comment{padding:15px 0 15px 48px}*/
 
 .c-avatar{width:36px;height:36px;border-radius:2px;background-color:#FFF;float:left;margin-left:-48px;overflow:hidden;_display:inline}
 .c-avatar .avatar{display:block}

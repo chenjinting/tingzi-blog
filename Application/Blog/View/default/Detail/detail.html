@@ -6,6 +6,8 @@
 <meta content="no-siteapp" http-equiv="Cache-Control">
 <meta content="width=device-width" name="viewport">
 <link href="{$Think.const.BLOG_CSS_URL}style.css" media="screen" type="text/css" rel="stylesheet">
+<link href="{$Think.const.BLOG_CSS_URL}base.css" media="screen" type="text/css" rel="stylesheet">
+
 <script src="{$Think.const.BLOG_JS_URL}jquery.min.js"></script> 
 <title>人生哲理_人生哲理文章阅读_人生哲理语录句子大全_意空间阅读网</title><meta content="人生哲理_人生哲理文章阅读_人生哲理语录句子大全" name="keywords">
 <meta content="人生哲理栏目为广大网友奉献人生哲理名言，人生哲理故事，人生哲理文章，哲理名人名言名录大全。" name="description">
@@ -16,7 +18,13 @@
     $(function(){
         var current_url = "__MODULE__/List/showlistsort/sortid/{$articleres.sortid}";
         $('a[href="'+current_url+'"]').addClass('activeli');
-    })
+    });
+
+    // 设置页面评论跳转锚点速度
+    // $(function(){
+    // 	var anchor = "{$commentlist.commentid}";
+    // 	$('html,body').animate({scrollTop:$('#'.anchor).offset().top},500);
+    // });
 
  </script>
 
@@ -39,7 +47,6 @@
 		阅读：{$articleres.readnum}次&nbsp;&nbsp; 
 	</p>
 </div>
-
 
 <div class="entry">
 	<img width="630" alt="{$articleres.title}" src="/__UPLOADIMG__{$articleres.coverpic}" class="aligncenter size-full wp-image-38074">
@@ -73,7 +80,60 @@
 	<a class="bds_tqq" data-cmd="tqq"></a>
 	<a class="bds_more" data-cmd="more">更多</a>
 	<a class="bds_count" data-cmd="count"></a>
-</div>
+</div>    
+
+<!-- 评论 -->
+<div class="comment">
+	<h2>评论</h2>
+	<volist name="commentlist" id="c">
+	<div class="comment-list" id="{$c.commentid}">
+		<div class="every-comment">
+			<div class="comment-img">
+				<img src="{$Think.const.BLOG_IMG_URL}commentauthor-img.png" />
+			</div>		
+			<div class="comment-author comment-paddingleft">
+				<empty name="c.personsite">
+					<strong>{$c.commentauthor}</strong>
+				<else />
+					<a href="{$c.personsite}" target="_blank"><strong>{$c.commentauthor}</strong></a>
+				</empty>				
+			</div>
+			<div class="comment-content comment-paddingleft">
+				{$c.commentcontent}
+			</div>
+			<div class="comment-time comment-paddingleft">
+				{$c.commenttime|date="Y-m-d",###}
+			</div>
+		</div>
+	</div>
+	</volist>
+
+	<div style="height: 30px;text-align: center;">
+        <empty name="commentlist">
+            <p>
+                还没有留言噢噢，写条留言吧~
+            </p>
+        </empty>
+    </div>
+
+	<form action="{:U('__CONTROLLER__/addcomment')}" method="post"  enctype="multipart/form-data">
+		<div class="publish-comment">
+			<h3>留言</h3>
+			<p>
+				<input type="hidden" name="articleid" value="{$articleres.id}" />		
+				<input type="text" name="commentauthor" placeholder="你的昵称（必填）" />
+			</p>
+			<p>		
+				<input type="text" name="personsite" placeholder="你的个人站点（请务必在网址前加：http://）" />
+			</p>
+			<p>		
+				<textarea name="commentcontent" placeholder="在这写下你的留言吧~"></textarea>
+			</p>
+			<p>
+				<button type="submit">发表留言</button>
+			</p>
+		</div>
+	</form>
 
 
 </div>

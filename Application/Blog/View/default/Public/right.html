@@ -3,10 +3,10 @@
 	<div class="widget widget_categories">
 	<h3 class="widget-tit"> </h3>		
 	<ul>
-		<volist name="tagres" id="v">
+		<volist name="tagres" id="tagvo">
 			<li class="cat-item cat-item-18 current-cat">
-				<a title="{$v.tagname}" href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$v['tagid']))}">	
-				    {$v.tagname}
+				<a title="{$tagvo.tagname}" href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$tagvo['tagid']))}">	
+				    {$tagvo.tagname}
 				</a>
 			</li>
 		</volist>

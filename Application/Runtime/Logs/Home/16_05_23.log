@@ -301,3 +301,20 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
 
+[ 2016-05-23T22:25:44+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+
+[ 2016-05-23T23:58:16+08:00 ] 127.0.0.1 /Application/Blog/Public/images/bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+
+]
+
+[ 2016-05-23T23:58:16+08:00 ] 127.0.0.1 /Application/Blog/Public/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+

@@ -6,6 +6,8 @@
 <meta content="no-siteapp" http-equiv="Cache-Control">
 <meta content="width=device-width" name="viewport">
 <link href="<?php echo (BLOG_CSS_URL); ?>style.css" media="screen" type="text/css" rel="stylesheet">
+<link href="<?php echo (BLOG_CSS_URL); ?>base.css" media="screen" type="text/css" rel="stylesheet">
+
 <script src="<?php echo (BLOG_JS_URL); ?>jquery.min.js"></script> 
 <title>人生哲理_人生哲理文章阅读_人生哲理语录句子大全_意空间阅读网</title><meta content="人生哲理_人生哲理文章阅读_人生哲理语录句子大全" name="keywords">
 <meta content="人生哲理栏目为广大网友奉献人生哲理名言，人生哲理故事，人生哲理文章，哲理名人名言名录大全。" name="description">
@@ -16,7 +18,13 @@
     $(function(){
         var current_url = "/Blog/List/showlistsort/sortid/<?php echo ($articleres["sortid"]); ?>";
         $('a[href="'+current_url+'"]').addClass('activeli');
-    })
+    });
+
+    // 设置页面评论跳转锚点速度
+    // $(function(){
+    // 	var anchor = "<?php echo ($commentlist["commentid"]); ?>";
+    // 	$('html,body').animate({scrollTop:$('#'.anchor).offset().top},500);
+    // });
 
  </script>
 
@@ -48,7 +56,6 @@
 	</p>
 </div>
 
-
 <div class="entry">
 	<img width="630" alt="<?php echo ($articleres["title"]); ?>" src="/Uploads/image/<?php echo ($articleres["coverpic"]); ?>" class="aligncenter size-full wp-image-38074">
 	<?php echo (stripslashes(htmlspecialchars_decode($articleres["content"]))); ?>
@@ -77,7 +84,54 @@
 	<a class="bds_tqq" data-cmd="tqq"></a>
 	<a class="bds_more" data-cmd="more">更多</a>
 	<a class="bds_count" data-cmd="count"></a>
-</div>
+</div>    
+
+<!-- 评论 -->
+<div class="comment">
+	<h2>评论</h2>
+	<?php if(is_array($commentlist)): $i = 0; $__LIST__ = $commentlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c): $mod = ($i % 2 );++$i;?><div class="comment-list" id="<?php echo ($c["commentid"]); ?>">
+		<div class="every-comment">
+			<div class="comment-img">
+				<img src="<?php echo (BLOG_IMG_URL); ?>commentauthor-img.png" />
+			</div>		
+			<div class="comment-author comment-paddingleft">
+				<?php if(empty($c["personsite"])): ?><strong><?php echo ($c["commentauthor"]); ?></strong>
+				<?php else: ?>
+					<a href="<?php echo ($c["personsite"]); ?>" target="_blank"><strong><?php echo ($c["commentauthor"]); ?></strong></a><?php endif; ?>				
+			</div>
+			<div class="comment-content comment-paddingleft">
+				<?php echo ($c["commentcontent"]); ?>
+			</div>
+			<div class="comment-time comment-paddingleft">
+				<?php echo (date("Y-m-d",$c["commenttime"])); ?>
+			</div>
+		</div>
+	</div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+	<div style="height: 30px;text-align: center;">
+        <?php if(empty($commentlist)): ?><p>
+                还没有留言噢噢，写条留言吧~
+            </p><?php endif; ?>
+    </div>
+
+	<form action="<?php echo U('/Blog/Detail/addcomment');?>" method="post"  enctype="multipart/form-data">
+		<div class="publish-comment">
+			<h3>留言</h3>
+			<p>
+				<input type="hidden" name="articleid" value="<?php echo ($articleres["id"]); ?>" />		
+				<input type="text" name="commentauthor" placeholder="你的昵称（必填）" />
+			</p>
+			<p>		
+				<input type="text" name="personsite" placeholder="你的个人站点（请务必在网址前加：http://）" />
+			</p>
+			<p>		
+				<textarea name="commentcontent" placeholder="在这写下你的留言吧~"></textarea>
+			</p>
+			<p>
+				<button type="submit">发表留言</button>
+			</p>
+		</div>
+	</form>
 
 
 </div>
@@ -87,9 +141,9 @@
 	<div class="widget widget_categories">
 	<h3 class="widget-tit"> </h3>		
 	<ul>
-		<?php if(is_array($tagres)): $i = 0; $__LIST__ = $tagres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="cat-item cat-item-18 current-cat">
-				<a title="<?php echo ($v["tagname"]); ?>" href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$v['tagid']));?>">	
-				    <?php echo ($v["tagname"]); ?>
+		<?php if(is_array($tagres)): $i = 0; $__LIST__ = $tagres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tagvo): $mod = ($i % 2 );++$i;?><li class="cat-item cat-item-18 current-cat">
+				<a title="<?php echo ($tagvo["tagname"]); ?>" href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$tagvo['tagid']));?>">	
+				    <?php echo ($tagvo["tagname"]); ?>
 				</a>
 			</li><?php endforeach; endif; else: echo "" ;endif; ?>
 	</ul>

@@ -39,6 +39,7 @@ class ArticleModel extends RelationModel{
 			'foreign_key'           =>  'articleid',
 			'relation_foreign_key'  =>  'tagid',
 		),
+
 	);
 	
 }
