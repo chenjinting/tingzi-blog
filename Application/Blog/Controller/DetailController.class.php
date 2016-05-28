@@ -28,7 +28,7 @@ class DetailController extends Controller {
 
         // 加载评论
         $comment = D('Comment');
-        $commentlist = $comment->where(array('articleid'=>$articleid))->order('commenttime DESC')->select();
+        $commentlist = $comment->where(array('articleid'=>$articleid,'status'=>1))->order('commenttime DESC')->select();
 
         // 上一篇
         $frontres = $article->where("id<".$articleid)->order('id DESC')->limit('1')->find();
