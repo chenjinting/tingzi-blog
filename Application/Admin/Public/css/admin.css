@@ -99,7 +99,7 @@ body {
   margin-right: 15px;
 }
 .header .header-menu li .blog-a:hover {
-  color: red;
+  color: #c9e4f2;
 }
 .header .header-menu li span.welcome {
   display: block;
@@ -108,6 +108,9 @@ body {
 }
 .header .header-menu li span.currentuser {
   color: #fff;
+}
+.header .header-menu li .logout:hover {
+  color: #90b4c6;
 }
 
 /*# sourceMappingURL=admin.css.map */

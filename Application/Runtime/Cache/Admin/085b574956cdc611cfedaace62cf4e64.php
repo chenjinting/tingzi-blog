@@ -32,7 +32,7 @@
                     <span class="welcome float-left">你好呀，</span><span class="currentuser float-left"><?php echo ($admin); ?></span>
                 </li>
                 <li class="float-left">
-                    <a href="<?php echo U('/Admin/Login/logout');?>">退出</a> 
+                    <a class="logout" href="<?php echo U('/Admin/Login/logout');?>">退出</a> 
                 </li>
             </ul>
         </div>

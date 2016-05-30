@@ -39,7 +39,7 @@
 				margin-right: 15px;
 
 				&:hover{
-					color: red;
+					color: #c9e4f2;
 				}
 			}
 
@@ -50,6 +50,13 @@
 			}
 			span.currentuser{
 				color: #fff;
+			}
+
+			.logout{
+
+				&:hover{
+					color: #90b4c6;
+				}
 			}
 		}		
 	}
