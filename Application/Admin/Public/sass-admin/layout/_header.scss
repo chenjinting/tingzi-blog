@@ -1,0 +1,56 @@
+@charset "UTF-8";
+// 头部header
+
+.header{
+	min-width: 1080px;
+	height: $header-height;
+	background-color: #1c9cde;
+
+	.header-logo{
+		width: 300px;
+		height: $header-height;
+
+		img.logo01{
+			width: 118px;
+			height: $header-height;
+		}
+		img.logo02{
+			width: 170px;
+			height: $header-height;
+		}
+	}
+
+	.header-menu{
+		height: $header-height;
+
+		li{
+			padding: 20px 0;
+			height: 20px;
+			line-height: 20px;
+			margin-right: 15px;
+
+			a{
+				font-size: 15px;
+				text-decoration: none;
+				color: #fff;
+			}
+
+			.blog-a{
+				margin-right: 15px;
+
+				&:hover{
+					color: red;
+				}
+			}
+
+			span.welcome{
+				display: block;
+				color: #e4e4e4;
+				font-size: 13px;
+			}
+			span.currentuser{
+				color: #fff;
+			}
+		}		
+	}
+}
