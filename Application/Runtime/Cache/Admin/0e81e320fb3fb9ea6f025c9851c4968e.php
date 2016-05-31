@@ -13,7 +13,11 @@
         </style>
         <div class="div_head">
             <span style="float: left;">当前位置是：留言管理-》留言列表</span>
-            <p>当前文章为：<?php echo ($articlenamestr); ?></p>
+            <p>
+                当前文章为：
+                <?php if(is_array($articleidname)): $i = 0; $__LIST__ = $articleidname;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$idname): $mod = ($i % 2 );++$i; echo ($idname["title"]); ?>
+                    <input type="hidden" name="currentarticleid" value="<?php echo ($idname["id"]); ?>" /><?php endforeach; endif; else: echo "" ;endif; ?>
+            </p>
         </div>
         <div></div>
         <div style="font-size: 13px; margin: 10px 5px;">
@@ -44,10 +48,10 @@
                                 审核通过<?php endif; ?>
                         </td>
                         <td>
-                            <?php if($vo["status"] == 0): ?><a href="<?php echo U('/Admin/Comment/reviewcomment',array('commentid'=>$vo['commentid']));?>">审核通过</a>
-                                <a href="<?php echo U('/Admin/Comment/deletecomment',array('commentid'=>$vo['commentid']));?>">审核不通过</a>
+                            <?php if($vo["status"] == 0): ?><a href="<?php echo U('/Admin/Comment/reviewcomment',array('articleid'=>$vo['articleid'],'commentid'=>$vo['commentid']));?>">审核通过</a>
+                                <a href="<?php echo U('/Admin/Comment/deletecomment',array('articleid'=>$vo['articleid'],'commentid'=>$vo['commentid']));?>">审核不通过</a>
                             <?php else: ?>
-                                <a href="<?php echo U('/Admin/Comment/deletecomment',array('commentid'=>$vo['commentid']));?>" onclick="return confirm('你真的要删除这条留言吗？');">删除</a><?php endif; ?>
+                                <a href="<?php echo U('/Admin/Comment/deletecomment',array('articleid'=>$vo['articleid'],'commentid'=>$vo['commentid']));?>" onclick="return confirm('你真的要删除这条留言吗？');">删除</a><?php endif; ?>
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>                  
 

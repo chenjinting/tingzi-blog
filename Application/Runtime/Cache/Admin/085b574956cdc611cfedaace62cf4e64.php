@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta http-equiv="Cache-Control" content="no-siteapp" /><!-- 禁止百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>挺|后台管理</title>
@@ -49,7 +49,7 @@
 
 
 
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
         <meta http-equiv=content-type content="text/html; charset=utf-8" />
@@ -77,9 +77,23 @@
             </tr>
         </table>
     </body>
-</html> -->
+</html>
 
-        <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html><head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
@@ -145,7 +159,9 @@
                                     <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
                                 </td>
                                 <td>
-                                    <a class="menuchild" href="<?php echo U('/Admin/Comment/index');?>" target="main">留言管理(待审核：<?php echo ($newcommentnum); ?>)</a>
+                                    <a class="menuchild" href="<?php echo U('/Admin/Comment/index');?>" target="main">
+                                        留言管理<?php if(($newcommentnum) != "0"): ?>(待审核：<?php echo ($newcommentnum); ?>)<?php endif; ?>
+                                    </a>
                                 </td>
                             </tr>
                             <tr height="20">
@@ -162,108 +178,6 @@
                         </tbody>
                     </table>
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    </td>
-                <td width="1" bgcolor="#d1e6f7"></td>
-            </tr>
-        </tbody></table>
-    
-</body></html> -->
-
-        <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html><head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
-        <script language="javascript">
-            function expand(el)
-            {
-                childobj = document.getElementById("child" + el);
-
-                if (childobj.style.display == 'none')
-                {
-                    childobj.style.display = 'block';
-                }
-                else
-                {
-                    childobj.style.display = 'none';
-                }
-                return;
-            }
-        </script>
-    </head>
-    <body>
-        <table width="170" height="800" cellspacing="0" cellpadding="0" border="0" background="<?php echo (ADMIN_IMG_URL); ?>menu_bg.jpg">
-               <tbody><tr>
-                <td valign="top" align="center">
-                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-
-                        <tbody><tr>
-                            <td height="10"></td></tr></tbody></table>
-                    <table width="150" cellspacing="0" cellpadding="0" border="0">
-
-                        <tbody><tr height="22">
-                            <td background="<?php echo (ADMIN_IMG_URL); ?>menu_bt.jpg" style="padding-left: 30px"><a class="menuparent" onclick="expand(1)" href="javascript:void(0);">网站管理</a></td></tr>
-                        <tr height="4">
-                            <td></td></tr></tbody></table>
-                    <table width="150" cellspacing="0" cellpadding="0" border="0" id="child1" style="display: block;">
-                        <tbody>
-                            <tr height="20">
-                                <td width="30" align="center">
-                                    <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
-                                </td>
-                                <td>
-                                    <a class="menuchild" href="<?php echo U('/Admin/Article/showlist');?>" target="main">文章管理</a>
-                                </td>
-                            </tr>
-                            <tr height="20">
-                                <td width="30" align="center">
-                                    <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
-                                </td>
-                                <td>
-                                    <a class="menuchild" href="<?php echo U('/Admin/Sort/showlist');?>" target="main">分类管理</a>
-                                </td>
-                            </tr>
-                            <tr height="20">
-                                <td width="30" align="center">
-                                    <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
-                                </td>
-                                <td>
-                                    <a class="menuchild" href="<?php echo U('/Admin/Tag/showlist');?>" target="main">标签管理</a>
-                                </td>
-                            </tr>
-                            <tr height="20">
-                                <td width="30" align="center">
-                                    <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
-                                </td>
-                                <td>
-                                    <a class="menuchild" href="<?php echo U('/Admin/Comment/index');?>" target="main">留言管理(待审核：<?php echo ($newcommentnum); ?>)</a>
-                                </td>
-                            </tr>
-                            <tr height="20">
-                                <td width="30" align="center">
-                                    <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
-                                </td>
-                                <td>
-                                    <a class="menuchild" href="<?php echo U('/Admin/Admin/showlist');?>" target="main">管理员</a>
-                                </td>
-                            </tr>
-                            <tr height="4">
-                                <td colspan="2"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                     -->
                     
                     
                     
@@ -282,6 +196,8 @@
         </tbody></table>
     
 </body></html>
+
+        
     </div>
    
 </body>
@@ -300,7 +216,7 @@
 
 
 
-<!-- <!doctype html public "-//w3c//dtd xhtml 1.0 frameset//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-frameset.dtd">
+<!doctype html public "-//w3c//dtd xhtml 1.0 frameset//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-frameset.dtd">
 <html>
     <head>
         <meta http-equiv=content-type content="text/html; charset=utf-8" />
@@ -319,4 +235,4 @@
     </frameset>
     <noframes>
     </noframes>
-</html> -->
+</html>

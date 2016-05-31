@@ -18,17 +18,17 @@ class DetailController extends Controller {
 
         $tag = D('Tag');
         $tagres = $tag->select();
-
-        $readnum = D('Article');
         
         $article = D('Article');
+        $comment = D('Comment');
         $articleid = I('id');
 
-        $readres = $readnum->where(array('id'=>$articleid))->setInc('readnum',1); // 用户浏览一次文章，即更新数据库readnum字段，使其加1
+        $readres = $article->where(array('id'=>$articleid))->setInc('readnum',1); // 用户浏览一次文章，即更新数据库readnum字段，使其加1
 
         // 加载评论
         $comment = D('Comment');
         $commentlist = $comment->where(array('articleid'=>$articleid,'status'=>1))->order('commenttime DESC')->select();
+        $commentnum = $comment->where(array('articleid'=>$articleid,'status'=>1))->count();
 
         // 上一篇
         $frontres = $article->where("id<".$articleid)->order('id DESC')->limit('1')->find();
@@ -40,12 +40,15 @@ class DetailController extends Controller {
         $articleid['articleid'] = I('id');
 
         $articleres = $article->relation(true)->find($articleid);
+
+
         $this->assign('articleres',$articleres);
         $this->assign('sortres',$sortres);
         $this->assign('tagres',$tagres);
         $this->assign('frontres',$frontres);
         $this->assign('afterres',$afterres);
         $this->assign('commentlist',$commentlist);
+        $this->assign('commentnum',$commentnum);
 
         $this->display('detail');
     }

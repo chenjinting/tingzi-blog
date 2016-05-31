@@ -64,30 +64,36 @@ class CommentController extends BaseController {
         // 所有留言
         $commentlist = $comment->where(array('articleid'=>$articleid))->limit($firstRow.','.$page->listRows)->relation(true)->order('commenttime DESC')->select();
 
-        // 得到该条留言的文章名称
-        $articlename = $article->where(array('id'=>$articleid))->getField('title',true);
-        $articlenamestr = implode($articlename);
+        // 得到该条留言的文章id和名称
+        $articleidname = $article->where(array('id'=>$articleid))->field('id, title')->select();
+        // var_dump($articleidname);exit();
         
         $this->assign('firstRow',$firstRow);
         $this->assign('commentlist',$commentlist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
-        $this->assign('articlenamestr',$articlenamestr);
+        $this->assign('articleidname',$articleidname);
 
         $this->display('showlistarticle');
 
     }
+
 
     /**
      * [reviewcomment 审核留言(审核通过)]
      * @return [type] [description]
      */
     public function reviewcomment(){
+        $articleid = I('articleid');
         $data['commentid'] = I('commentid');
         $data['status'] = 1;
         $comment = D('Comment');
         if($comment->create($data)){
             if($comment->save($data)){
-                $this->success("该留言审核通过！",U('index'),1);
+                if($articleid){
+                    $this->success("该留言审核通过！",U("showlistarticle/",array('articleid'=>$articleid)),1);
+                }else{
+                    $this->success("该留言审核通过！",U("index"),1);
+                }              
             }else{
                 $this->error("留言审核失败，请重新操作！");
             }
@@ -96,15 +102,24 @@ class CommentController extends BaseController {
         }
 
     }
+
+
     /**
-     * [deletearticle 删除留言(审核不通过)]
+     * [deletearticle 删除留言（审核不通过）]
      * @return [type] [description]
      */
     public function deletecomment(){
+        $articleid = I('articleid');
+        // var_dump($articleid);exit();
         $commentid = I('commentid');      
         $comment = D('Comment');
         if($comment->relation(true)->delete($commentid)){
-            $this->success("成功删除该留言！",U('index'),1);
+            if($articleid){
+                $this->success("成功删除该留言！",U("showlistarticle/",array('articleid'=>$articleid)),1);
+            }else{
+                $this->success("审核不通过，已删除该留言！",U("index"),1);
+            }
+            
         }else{
             $this->error("留言删除失败！");
         }

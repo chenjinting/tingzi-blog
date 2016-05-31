@@ -53,6 +53,7 @@
 		标签：	<?php if(is_array($articleres['tag'])): $i = 0; $__LIST__ = $articleres['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$vo2['tagid']));?>"><?php echo ($vo2["tagname"]); ?>&nbsp;&nbsp; </a><?php endforeach; endif; else: echo "" ;endif; ?> <br />
 		发表日期：<?php echo (date("Y-m-d",$articleres["time"])); ?> &nbsp;&nbsp; 
 		阅读：<?php echo ($articleres["readnum"]); ?>次&nbsp;&nbsp; 
+		留言：<?php echo ($commentnum); ?>
 	</p>
 </div>
 
@@ -110,7 +111,7 @@
 
 	<div style="height: 30px;text-align: center;">
         <?php if(empty($commentlist)): ?><p>
-                还没有留言噢噢，写条留言吧~
+                还没有留言噢，写条留言吧~
             </p><?php endif; ?>
     </div>
 
@@ -122,7 +123,7 @@
 				<input type="text" name="commentauthor" placeholder="你的昵称（必填）" />
 			</p>
 			<p>		
-				<input type="text" name="personsite" placeholder="你的个人站点（请务必在网址前加：http://）" />
+				<input type="text" name="personsite" placeholder="你的个人站点网址" />
 			</p>
 			<p>		
 				<textarea name="commentcontent" placeholder="在这写下你的留言吧~"></textarea>

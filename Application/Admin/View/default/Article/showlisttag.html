@@ -34,6 +34,7 @@
                         <td>标签</td>
                         <td>作者</td>
                         <td>阅读</td>
+                        <td>留言</td>
                         <td>发布时间</td>
                         <td>最后修改时间</td>
                         <td colspan="2" align="center">操作</td>
@@ -57,6 +58,21 @@
 
                         <td>{$vo.author}</td>
                         <td>{$vo.readnum}</td>
+
+                        <td>
+                        <volist name="vo['commentcount']" id="va">
+                            <if condition="$va neq 0">
+                                共有留言：<a href="{:U('__MODULE__/Comment/showlistarticle',array('articleid'=>$vo['id']))}">{$va}</a>
+                                <else />
+                                没有留言
+                            </if>
+                        </volist>                       
+
+                        <volist name="vo['commentcount0']" id="va0">
+                            <neq name="va0" value="0">（待审核：{$va0}）</neq>
+                        </volist>
+                        </td>
+
                         <td>{$vo.time|date="Y-m-d H:i;s",###}</td>
                         <td>{$vo.lastmodifytime|date="Y-m-d H:i;s",###}</td>
 

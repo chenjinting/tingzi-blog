@@ -1,4 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php if (!defined('THINK_PATH')) exit();?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html><head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
@@ -64,7 +78,9 @@
                                     <img width="9" height="9" src="<?php echo (ADMIN_IMG_URL); ?>menu_icon.gif">
                                 </td>
                                 <td>
-                                    <a class="menuchild" href="<?php echo U('/Admin/Comment/index');?>" target="main">留言管理(待审核：<?php echo ($newcommentnum); ?>)</a>
+                                    <a class="menuchild" href="<?php echo U('/Admin/Comment/index');?>" target="main">
+                                        留言管理<?php if(($newcommentnum) != "0"): ?>(待审核：<?php echo ($newcommentnum); ?>)<?php endif; ?>
+                                    </a>
                                 </td>
                             </tr>
                             <tr height="20">

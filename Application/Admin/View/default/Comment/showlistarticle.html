@@ -13,7 +13,13 @@
         </style>
         <div class="div_head">
             <span style="float: left;">当前位置是：留言管理-》留言列表</span>
-            <p>当前文章为：{$articlenamestr}</p>
+            <p>
+                当前文章为：
+                <volist name="articleidname" id="idname">
+                    {$idname.title}
+                    <input type="hidden" name="currentarticleid" value="{$idname.id}" />
+                </volist>
+            </p>
         </div>
         <div></div>
         <div style="font-size: 13px; margin: 10px 5px;">
@@ -49,10 +55,10 @@
                         </td>
                         <td>
                             <if condition="$vo.status eq 0">
-                                <a href="{:U('__CONTROLLER__/reviewcomment',array('commentid'=>$vo['commentid']))}">审核通过</a>
-                                <a href="{:U('__CONTROLLER__/deletecomment',array('commentid'=>$vo['commentid']))}">审核不通过</a>
+                                <a href="{:U('__CONTROLLER__/reviewcomment',array('articleid'=>$vo['articleid'],'commentid'=>$vo['commentid']))}">审核通过</a>
+                                <a href="{:U('__CONTROLLER__/deletecomment',array('articleid'=>$vo['articleid'],'commentid'=>$vo['commentid']))}">审核不通过</a>
                             <else />
-                                <a href="{:U('__CONTROLLER__/deletecomment',array('commentid'=>$vo['commentid']))}" onclick="return confirm('你真的要删除这条留言吗？');">删除</a>
+                                <a href="{:U('__CONTROLLER__/deletecomment',array('articleid'=>$vo['articleid'],'commentid'=>$vo['commentid']))}" onclick="return confirm('你真的要删除这条留言吗？');">删除</a>
                             </if>
                         </td>
                     </tr>                   

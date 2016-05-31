@@ -32,19 +32,22 @@
 	
 	<!-- 分享代码 --><!-- 分享代码 -->
 	<ul class="excerpt thumb">
-		<?php if(is_array($articleres)): $i = 0; $__LIST__ = $articleres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><li>
-			<a class="pic" href="<?php echo U('/Blog/Detail/index',array('id'=>$vo2['id']));?>">
-			<img alt="<?php echo ($vo2["title"]); ?>" src="/Uploads/image/<?php echo ($vo2["coverpic"]); ?>"></a>			
-			<h2 class="excerpt-tit"><a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo2['id']));?>"><?php echo ($vo2["title"]); ?></a></h2>
-			<p>	分类：	<a href="<?php echo U('/Blog/List/showlistsort',array('sortid'=>$vo2['sortid']));?>"><?php echo ($vo2["sortname"]); ?></a></p>
+		<?php if(is_array($articleres)): $i = 0; $__LIST__ = $articleres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo22): $mod = ($i % 2 );++$i;?><li>
+			<a class="pic" href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>">
+			<img alt="<?php echo ($vo22["title"]); ?>" src="/Uploads/image/<?php echo ($vo22["coverpic"]); ?>"></a>			
+			<h2 class="excerpt-tit"><a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>"><?php echo ($vo22["title"]); ?></a></h2>
+			<p>	分类：	<a href="<?php echo U('/Blog/List/showlistsort',array('sortid'=>$vo22['sortid']));?>"><?php echo ($vo22["sortname"]); ?></a></p>
 			<p>
-				标签：	<?php if(is_array($vo2['tag'])): $i = 0; $__LIST__ = $vo2['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$vo3['tagid']));?>"><?php echo ($vo3['tagname']); ?>&nbsp;</a><?php endforeach; endif; else: echo "" ;endif; ?>
+				标签：	<?php if(is_array($vo22['tag'])): $i = 0; $__LIST__ = $vo22['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$vo3['tagid']));?>"><?php echo ($vo3['tagname']); ?>&nbsp;</a><?php endforeach; endif; else: echo "" ;endif; ?>
 			</p>
-			<p>	阅读：	<?php echo ($vo2["readnum"]); ?></p>
+			<p>	阅读：	<?php echo ($vo22["readnum"]); ?></p>
+			<p>	
+				留言：	<?php if(is_array($vo22['commentcount1'])): $i = 0; $__LIST__ = $vo22['commentcount1'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vc): $mod = ($i % 2 );++$i; echo ($vc["commentcount1"]); endforeach; endif; else: echo "" ;endif; ?>
+			</p>
 			<p class="excerpt-desc">				
-				<?php echo ($vo2["abstract"]); ?>...	
+				<?php echo ($vo22["abstract"]); ?>...	
 			</p>
-			<div class="excerpt-time"><?php echo (date("Y-m-d",$vo2["time"])); ?></div>
+			<div class="excerpt-time"><?php echo (date("Y-m-d",$vo22["time"])); ?></div>
 		</li><?php endforeach; endif; else: echo "" ;endif; ?>
 	</ul>
 

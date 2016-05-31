@@ -1,4 +1,18 @@
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html><head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
@@ -64,7 +78,9 @@
                                     <img width="9" height="9" src="{$Think.const.ADMIN_IMG_URL}menu_icon.gif">
                                 </td>
                                 <td>
-                                    <a class="menuchild" href="{:U('__MODULE__/Comment/index')}" target="main">留言管理(待审核：{$newcommentnum})</a>
+                                    <a class="menuchild" href="{:U('__MODULE__/Comment/index')}" target="main">
+                                        留言管理<neq name="newcommentnum" value="0">(待审核：{$newcommentnum})</neq>
+                                    </a>
                                 </td>
                             </tr>
                             <tr height="20">
@@ -98,4 +114,4 @@
             </tr>
         </tbody></table>
     
-</body></html> -->
+</body></html>

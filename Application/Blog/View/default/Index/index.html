@@ -22,22 +22,27 @@
 	
 	<!-- 分享代码 --><!-- 分享代码 -->
 	<ul class="excerpt thumb">
-		<volist name="articleres" id="vo2">
+		<volist name="articleres" id="vo22">
 		<li>
-			<a class="pic" href="{:U('__MODULE__/Detail/index',array('id'=>$vo2['id']))}">
-			<img alt="{$vo2.title}" src="/__UPLOADIMG__{$vo2.coverpic}"></a>			
-			<h2 class="excerpt-tit"><a href="{:U('__MODULE__/Detail/index',array('id'=>$vo2['id']))}">{$vo2.title}</a></h2>
-			<p>	分类：	<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo2['sortid']))}">{$vo2.sortname}</a></p>
+			<a class="pic" href="{:U('__MODULE__/Detail/index',array('id'=>$vo22['id']))}">
+			<img alt="{$vo22.title}" src="/__UPLOADIMG__{$vo22.coverpic}"></a>			
+			<h2 class="excerpt-tit"><a href="{:U('__MODULE__/Detail/index',array('id'=>$vo22['id']))}">{$vo22.title}</a></h2>
+			<p>	分类：	<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo22['sortid']))}">{$vo22.sortname}</a></p>
 			<p>
-				标签：	<volist name="vo2['tag']" id="vo3">
+				标签：	<volist name="vo22['tag']" id="vo3">
 							<a href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$vo3['tagid']))}">{$vo3['tagname']}&nbsp;</a>
 						</volist>
 			</p>
-			<p>	阅读：	{$vo2.readnum}</p>
-			<p class="excerpt-desc">				
-				{$vo2.abstract}...	
+			<p>	阅读：	{$vo22.readnum}</p>
+			<p>	
+				留言：	<volist name="vo22['commentcount1']" id="vc">
+                            {$vc.commentcount1}
+                        </volist>
 			</p>
-			<div class="excerpt-time">{$vo2.time|date="Y-m-d",###}</div>
+			<p class="excerpt-desc">				
+				{$vo22.abstract}...	
+			</p>
+			<div class="excerpt-time">{$vo22.time|date="Y-m-d",###}</div>
 		</li>
 		</volist>
 	</ul>

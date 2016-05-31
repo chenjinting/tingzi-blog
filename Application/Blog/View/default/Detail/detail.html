@@ -45,6 +45,7 @@
 				</volist> <br />
 		发表日期：{$articleres.time|date="Y-m-d",###} &nbsp;&nbsp; 
 		阅读：{$articleres.readnum}次&nbsp;&nbsp; 
+		留言：{$commentnum}
 	</p>
 </div>
 
@@ -111,7 +112,7 @@
 	<div style="height: 30px;text-align: center;">
         <empty name="commentlist">
             <p>
-                还没有留言噢噢，写条留言吧~
+                还没有留言噢，写条留言吧~
             </p>
         </empty>
     </div>
@@ -124,7 +125,7 @@
 				<input type="text" name="commentauthor" placeholder="你的昵称（必填）" />
 			</p>
 			<p>		
-				<input type="text" name="personsite" placeholder="你的个人站点（请务必在网址前加：http://）" />
+				<input type="text" name="personsite" placeholder="你的个人站点网址" />
 			</p>
 			<p>		
 				<textarea name="commentcontent" placeholder="在这写下你的留言吧~"></textarea>

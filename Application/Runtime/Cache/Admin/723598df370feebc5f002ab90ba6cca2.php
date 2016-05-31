@@ -32,6 +32,7 @@
                         <td>标签</td>
                         <td>作者</td>
                         <td>阅读</td>
+                        <td>留言</td>
                         <td>发布时间</td>
                         <td>最后修改时间</td>
                         <td colspan="2" align="center">操作</td>
@@ -51,6 +52,15 @@
 
                         <td><?php echo ($vo["author"]); ?></td>
                         <td><?php echo ($vo["readnum"]); ?></td>
+
+                        <td>
+                        <?php if(is_array($vo['commentcount'])): $i = 0; $__LIST__ = $vo['commentcount'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$va): $mod = ($i % 2 );++$i; if($va != 0): ?>共有留言：<a href="<?php echo U('/Admin/Comment/showlistarticle',array('articleid'=>$vo['id']));?>"><?php echo ($va); ?></a>
+                                <?php else: ?>
+                                没有留言<?php endif; endforeach; endif; else: echo "" ;endif; ?>                       
+
+                        <?php if(is_array($vo['commentcount0'])): $i = 0; $__LIST__ = $vo['commentcount0'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$va0): $mod = ($i % 2 );++$i; if(($va0) != "0"): ?>（待审核：<?php echo ($va0); ?>）<?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                        </td>
+
                         <td><?php echo (date("Y-m-d H:i;s",$vo["time"])); ?></td>
                         <td><?php echo (date("Y-m-d H:i;s",$vo["lastmodifytime"])); ?></td>
 

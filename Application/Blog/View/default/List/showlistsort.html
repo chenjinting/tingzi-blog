@@ -33,6 +33,18 @@
 			<a class="pic" href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">
 			<img alt="{$vo.title}" src="/__UPLOADIMG__{$vo.coverpic}"></a>			
 			<h2 class="excerpt-tit"><a href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">{$vo.title}</a></h2>
+			<p>	分类：	<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a></p>
+			<p>
+				标签：	<volist name="vo['tag']" id="vo3">
+							<a href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$vo3['tagid']))}">{$vo3['tagname']}&nbsp;</a>
+						</volist>
+			</p>
+			<p>	阅读：	{$vo.readnum}</p>
+			<p>	
+				留言：	<volist name="vo['commentcount1']" id="vc">
+                            {$vc.commentcount1}
+                        </volist>
+			</p>
 			<p class="excerpt-desc">				
 				{$vo.abstract}...
 			</p>

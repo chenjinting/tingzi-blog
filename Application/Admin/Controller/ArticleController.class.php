@@ -15,6 +15,7 @@ class ArticleController extends BaseController {
     public function showlist(){
 
         $article = D('Article');
+        $comment = D('Comment');
         // $articleres = $article->relation(true)->select();
         
         // 分页开始
@@ -33,7 +34,21 @@ class ArticleController extends BaseController {
 
         // 所有文章
         $articlelist = $article->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
-        
+        // 每篇文章的所有留言数量和待审核留言数量
+        foreach($articlelist as $value){
+            $articleid = $value['id'];                  
+            $articlecommentnum[] = $comment->where(array('articleid'=>$articleid))->count(); //所有留言数量
+            $articlecommentnum0[] = $comment->where(array('articleid'=>$articleid,'status'=>0))->count(); //所有待审核留言数量      
+        }
+        // 将所有留言数量数组插入文章数组里
+        foreach($articlecommentnum as $k=>$v){
+            $articlelist[$k]['commentcount'][] = $v;
+        }
+        // 将所有待审核留言数量数组插入文章数组里
+        foreach($articlecommentnum0 as $k2=>$v2){
+            $articlelist[$k2]['commentcount0'][] = $v2;
+        }
+
         $this->assign('firstRow',$firstRow);
         $this->assign('articlelist',$articlelist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
@@ -48,6 +63,7 @@ class ArticleController extends BaseController {
      */
     public function showlistsort(){
         $article = D('Article');
+        $comment = D('Comment');
         $sort = D('Sort');
         $sortid = I('sortid');
         $condition['sortid'] = $sortid;
@@ -68,7 +84,21 @@ class ArticleController extends BaseController {
 
         // 该分类下所有文章
         $articlelistsort = $article->where($condition)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
-       
+        // 每篇文章的所有留言数量和待审核留言数量
+        foreach($articlelistsort as $value){
+            $articleid = $value['id'];                  
+            $articlecommentnum[] = $comment->where(array('articleid'=>$articleid))->count(); //所有留言数量
+            $articlecommentnum0[] = $comment->where(array('articleid'=>$articleid,'status'=>0))->count(); //所有待审核留言数量      
+        }
+        // 将所有留言数量数组插入文章数组里
+        foreach($articlecommentnum as $k=>$v){
+            $articlelistsort[$k]['commentcount'][] = $v;
+        }
+        // 将所有待审核留言数量数组插入文章数组里
+        foreach($articlecommentnum0 as $k2=>$v2){
+            $articlelistsort[$k2]['commentcount0'][] = $v2;
+        }
+
         // 得到该分类名称
         $articlesortname = $sort->where($condition)->getField('sortname',true);
         $articlesortnamestr = implode($articlesortname);
@@ -91,6 +121,7 @@ class ArticleController extends BaseController {
 
         $articletag = D('Articletag');
         $article = D('Article');
+        $comment = D('Comment');
         $tag = D('Tag');
         $tagid = I('tagid');
         $condition['tagid'] = $tagid;
@@ -119,6 +150,21 @@ class ArticleController extends BaseController {
         // 当该该标签下有文章时查询所有文章
         if($articletagid){
             $articlelisttag = $article->where($map)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
+            // 每篇文章的所有留言数量和待审核留言数量
+            foreach($articlelisttag as $value){
+                $articleid = $value['id'];                  
+                $articlecommentnum[] = $comment->where(array('articleid'=>$articleid))->count(); //所有留言数量
+                $articlecommentnum0[] = $comment->where(array('articleid'=>$articleid,'status'=>0))->count(); //所有待审核留言数量      
+            }
+            // 将所有留言数量数组插入文章数组里
+            foreach($articlecommentnum as $k=>$v){
+                $articlelisttag[$k]['commentcount'][] = $v;
+            }
+            // 将所有待审核留言数量数组插入文章数组里
+            foreach($articlecommentnum0 as $k2=>$v2){
+                $articlelisttag[$k2]['commentcount0'][] = $v2;
+            }
+
         }     
 
         $this->assign('firstRow',$firstRow);

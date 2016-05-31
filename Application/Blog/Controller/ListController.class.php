@@ -12,16 +12,17 @@ class ListController extends Controller {
         
         $sort = D('Sort');
         $sortid = I('sortid');
-    	$sortres = $sort->select();
+        $sortres = $sort->select();
 
         $tag = D('Tag');
         $tagres = $tag->select();
 
-    	$article = D('Article');
+        $article = D('Article');
+        $comment = D('Comment');
 
-    	$condition['sortid'] = $sortid;
-    	
-    	// 分页开始
+        $condition['sortid'] = $sortid;
+        
+        // 分页开始
         $count = $article->count(); //查询满足要求的记录总数
         $page = new Page($count,9); // 实例化分页类 传入总记录数和每页显示的记录数(9)
 
@@ -34,7 +35,18 @@ class ListController extends Controller {
 
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $firstRow = $page->firstRow;    // 起始行数
-        $articleres = $article->where($condition)->limit($firstRow.','.$page->listRows)->order('lastmodifytime DESC')->select();
+        $articleres = $article->where($condition)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
+        // 每篇文章的所有已审核留言数量
+        foreach($articleres as $value){
+            $articleid = $value['id'];                  
+            $articlecommentnum1[] = $comment->where(array('articleid'=>$articleid,'status'=>1))->count();      
+        }
+        // 将所有已审核留言数量数组插入文章数组里
+        foreach($articlecommentnum1 as $k2=>$v2){
+            $articleres[$k2]['commentcount1'][] = $v2;
+        }
+        // var_dump($articleres);exit();
+
         $this->assign('firstRow',$firstRow);
         $this->assign('articleres',$articleres);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
@@ -54,6 +66,7 @@ class ListController extends Controller {
 
         $articletag = D('Articletag');
         $article = D('Article');
+        $comment = D('Comment');
         $tag = D('Tag');
         $tagid = I('tagid');
         $condition['tagid'] = $tagid;
@@ -87,6 +100,15 @@ class ListController extends Controller {
         // 当该该标签下有文章时查询所有文章
         if($articletagid){
             $articlelisttag = $article->where($map)->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
+            // 每篇文章的所有已审核留言数量
+            foreach($articlelisttag as $value){
+                $articleid = $value['id'];                  
+                $articlecommentnum1[] = $comment->where(array('articleid'=>$articleid,'status'=>1))->count();      
+            }
+            // 将所有已审核留言数量数组插入文章数组里
+            foreach($articlecommentnum1 as $k2=>$v2){
+                $articlelisttag[$k2]['commentcount1'][] = $v2;
+            }
         }
 
         $this->assign('firstRow',$firstRow);

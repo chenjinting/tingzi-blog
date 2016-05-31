@@ -42,6 +42,14 @@
 			<a class="pic" href="<?php echo U('/Blog/Detail/index',array('id'=>$vo['id']));?>">
 			<img alt="<?php echo ($vo["title"]); ?>" src="/Uploads/image/<?php echo ($vo["coverpic"]); ?>"></a>			
 			<h2 class="excerpt-tit"><a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo['id']));?>"><?php echo ($vo["title"]); ?></a></h2>
+			<p>	分类：	<a href="<?php echo U('/Blog/List/showlistsort',array('sortid'=>$vo['sortid']));?>"><?php echo ($vo["sortname"]); ?></a></p>
+			<p>
+				标签：	<?php if(is_array($vo['tag'])): $i = 0; $__LIST__ = $vo['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$vo3['tagid']));?>"><?php echo ($vo3['tagname']); ?>&nbsp;</a><?php endforeach; endif; else: echo "" ;endif; ?>
+			</p>
+			<p>	阅读：	<?php echo ($vo["readnum"]); ?></p>
+			<p>	
+				留言：	<?php if(is_array($vo['commentcount1'])): $i = 0; $__LIST__ = $vo['commentcount1'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vc): $mod = ($i % 2 );++$i; echo ($vc["commentcount1"]); endforeach; endif; else: echo "" ;endif; ?>
+			</p>
 			<p class="excerpt-desc">				
 				<?php echo ($vo["abstract"]); ?>...
 			</p>
