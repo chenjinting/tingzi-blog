@@ -12,7 +12,6 @@ class BaseController extends Controller {
         parent::__construct();  //必须调用父类的构造方法
         $this->checklogin_status();
 
-
     }
 
     /**

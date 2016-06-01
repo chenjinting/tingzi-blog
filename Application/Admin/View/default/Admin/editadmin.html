@@ -9,13 +9,11 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>挺 | 后台管理 - 编辑管理员</title>
+    <title>挺 | 后台管理 - 修改管理员</title>
 
     <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}jquery-1.12.4.min.js"></script>
-    <script type="text/javascript">
-        
-    </script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}admin.js"></script>
     
 </head>
 <body>
@@ -24,6 +22,8 @@
 
         <include file="Public/sidebar" />
 
+        <!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮左侧导航栏的效果 -->
+        <input type="hidden" id="currenturl" value="__CONTROLLER__/showlist" />
 
         <div class="editadmin main">
             

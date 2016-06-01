@@ -25,6 +25,7 @@
         </script>
     <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.config.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>admin.js"></script>
     
 </head>
 <body>
@@ -64,7 +65,7 @@
 
             <a href="<?php echo U('/Admin/Tag/showlist');?>"><li class="sidebar-tag">标签管理</li></a>
 
-            <a href="<?php echo U('/Admin/Comment/index');?>">
+            <a href="<?php echo U('/Admin/Comment/showlist');?>">
                 <li class="sidebar-comment">留言管理<?php if(($newcommentnum) != "0"): ?><span class="newcomment"><?php echo ($newcommentnum); ?></span><?php endif; ?></li>
             </a>
 
@@ -73,6 +74,8 @@
     </div>
 </div>
 
+        <!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮左侧导航栏的效果 -->
+        <input type="hidden" id="currenturl" value="/Admin/Article/showlist" />
 
         <div class="addarticle main">
             

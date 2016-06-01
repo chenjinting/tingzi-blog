@@ -11,7 +11,7 @@ class CommentController extends BaseController {
      * [index 文章留言列表]
      * @return [type] [description]
      */
-    public function index(){
+    public function showlist(){
 
         $comment = D('Comment');
         
@@ -22,7 +22,7 @@ class CommentController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_ROW%条 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -36,7 +36,7 @@ class CommentController extends BaseController {
         $this->assign('commentlist',$commentlist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
 
-        $this->display('showlist');
+        $this->display();
     }
 
 
@@ -54,7 +54,7 @@ class CommentController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_ROW%条 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 

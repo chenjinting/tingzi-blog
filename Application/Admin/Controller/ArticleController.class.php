@@ -25,7 +25,7 @@ class ArticleController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_ROW%篇文章 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -75,7 +75,7 @@ class ArticleController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_ROW%篇文章 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -140,7 +140,7 @@ class ArticleController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_ROW%篇文章 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
