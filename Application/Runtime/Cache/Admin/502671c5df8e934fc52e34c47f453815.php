@@ -1,11 +1,19 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
-    <head>
-        <title>添加文章</title>
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <link href="<?php echo (ADMIN_CSS_URL); ?>mine.css" type="text/css" rel="stylesheet">
-        <script src="<?php echo (ADMIN_JS_URL); ?>jquery.min.js"></script> 
-        <script type="text/javascript">
+<head>
+    <meta charset="utf-8">    
+    <meta name="author" content="陈锦挺，253018164@qq.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>挺 | 后台管理 - 修改文章</title>
+
+    <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
             window.UEDITOR_HOME_URL = '<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/';
             window.onload = function(){
                 window.UEDITOR_CONFIG.initialFrameWidth = '100%';
@@ -15,30 +23,76 @@
                 UE.getEditor('content');
             }
         </script>
-        <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.config.js"></script>
-        <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.all.min.js"></script>
 
-        <script type="text/javascript">
-            jQuery(function(){              
-                $('.articletag2').each(function(i){
-                    var articletag2 = $(this).val();
+    <script type="text/javascript">
+        jQuery(function(){              
+            $('.articletag2').each(function(i){
+                var articletag2 = $(this).val();
 
-                    $('.articletag1').each(function(){
-                        var articletag1 = $(this).val();
+                $('.articletag1').each(function(){
+                    var articletag1 = $(this).val();
 
-                        if(articletag2 == articletag1){
-                            $('.articletag2').eq(i).attr('checked','checked');
-                        }
-                    });
+                    if(articletag2 == articletag1){
+                        $('.articletag2').eq(i).attr('checked','checked');
+                    }
                 });
-            })
-        </script>
+            });
+        })
+    </script>
+    
+</head>
+<body>
+    <div class="page">
+        <div class="page-header">
+    <div class="header">
+        <div class="header-logo float-left">
+            <a href="<?php echo U('http://www.chenjinting.com/Admin');?>">
+                <img class="logo01" src="<?php echo (ADMIN_IMG_URL); ?>logo.png" />
+                <img class="logo02" src="<?php echo (ADMIN_IMG_URL); ?>logoadmin.png" />
+            </a>
+        </div>
+        <div class="header-menu float-right">
+            <ul>
+                <li class="float-left">
+                    <a class="blog-a" href="<?php echo U('http://www.chenjinting.com/Blog');?>" target="_blank">博客主页</a>
+                </li>
+                <li class="float-left">
+                    <span class="welcome float-left">你好呀，</span><span class="currentuser float-left"><?php echo ($admin); ?></span>
+                </li>
+                <li class="float-left">
+                    <a class="logout" href="<?php echo U('/Admin/Login/logout');?>">退出</a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-    </head>
+        <!-- 左侧侧边栏 -->
 
-    <body>
+<div class="sidebar">
+    <div class="sidebar-menu">
+        <ul>
+            <a href="<?php echo U('/Admin/Article/showlist');?>"><li class="sidebar-article">文章管理</li></a>
 
-        <div class="div_head">
+            <a href="<?php echo U('/Admin/Sort/showlist');?>"><li class="sidebar-sort">分类管理</li></a>
+
+            <a href="<?php echo U('/Admin/Tag/showlist');?>"><li class="sidebar-tag">标签管理</li></a>
+
+            <a href="<?php echo U('/Admin/Comment/index');?>">
+                <li class="sidebar-comment">留言管理<?php if(($newcommentnum) != "0"): ?><span class="newcomment"><?php echo ($newcommentnum); ?></span><?php endif; ?></li>
+            </a>
+
+            <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="modifyarticle main">
+
+            <div class="div_head">
             <span>
                 <span style="float:left">当前位置是：文章管理-》修改文章信息</span>
                 <span style="float:right;margin-right: 8px;font-weight: bold">
@@ -108,5 +162,13 @@
             </table>
             </form>
         </div>
-    </body>
+
+            <div class="clear"></div>
+
+        </div>
+
+        
+    </div>
+
+</body>
 </html>

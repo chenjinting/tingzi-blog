@@ -11,6 +11,8 @@ class BaseController extends Controller {
     public function __construct(){
         parent::__construct();  //必须调用父类的构造方法
         $this->checklogin_status();
+
+
     }
 
     /**
@@ -23,6 +25,12 @@ class BaseController extends Controller {
         }else{
             $sessionname = session('admin');    // 获取登录session的用户名
             $this->assign('admin',$sessionname);    // 传入用户名变量，在进入后台后显示登录帐户名
+
+            /* 加载左侧导航栏待审核留言数量 */
+            $comment = D('Comment');
+            $commentnum = $comment->count();    // 总留言数量
+            $newcommentnum = $comment->where(array('status'=>0))->count();  // 待审核留言数量
+            $this->assign('newcommentnum',$newcommentnum);
         }
     }
     

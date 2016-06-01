@@ -1,0 +1,62 @@
+@charset "UTF-8";
+// 侧边栏导航
+
+.sidebar{
+	margin-top: $header-height;
+	width: 180px;
+	height: 100%;
+	background-color: $theme-backgoundcolor;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	.sidebar-menu{
+		margin-top: 10px;
+
+		li{
+			height: 35px;
+			line-height: 35px;
+			margin: 5px 0;
+			padding-left: 50px;
+			font-size: 14px;
+
+			&:hover{
+				background-color: #585858;
+			}
+			.newcomment{
+				background-color: #eC2e2e;
+				border-radius: 50%;
+				font-size: 12px;
+				padding: 1px 5px;
+				position: relative;
+				top: 0;
+				left: 5px;
+			}
+		}
+		.sidebar-article{
+			background: url(../img/sidebar-article.png) no-repeat;
+			@include sidebar-li-background-position;
+		}
+		.sidebar-sort{
+			background: url(../img/sidebar-sort.png) no-repeat;
+			@include sidebar-li-background-position;
+		}
+		.sidebar-tag{
+			background: url(../img/sidebar-tag.png) no-repeat;
+			@include sidebar-li-background-position;
+		}
+		.sidebar-comment{
+			background: url(../img/sidebar-comment.png) no-repeat;
+			@include sidebar-li-background-position;
+		}
+		.sidebar-admin{
+			background: url(../img/sidebar-admin.png) no-repeat;
+			@include sidebar-li-background-position;
+		}
+
+		.active-sidebar{
+			background-color: #282828;
+		}
+		
+	}
+}

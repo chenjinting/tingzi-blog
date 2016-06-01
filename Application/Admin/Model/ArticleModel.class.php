@@ -40,6 +40,13 @@ class ArticleModel extends RelationModel{
 			'relation_foreign_key'  =>  'tagid',
 		),
 
+		/* 文章和留言的关联模型 */
+		'comment'                       =>  array(
+			'mapping_type'          =>  self::HAS_MANY,
+			'class_name'			=>  'Comment',
+			'foreign_key'           =>  'articleid',
+		),
+
 	);
 	
 }

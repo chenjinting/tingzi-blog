@@ -10,3 +10,18 @@
 @mixin float-right{
 	float: right;
 }
+@mixin clear{
+	clear: both;
+}
+@mixin a-link{
+	color: #fff;
+	text-decoration: none;
+}
+@mixin main{
+	padding: 20px;
+	margin-left: 180px;
+	margin-top: 60px;
+}
+@mixin sidebar-li-background-position{
+	background-position: 17px 10px;
+}

@@ -3,4 +3,11 @@
 
 body{
 	@include font-familys;
+	background-color: #eee;
+}
+.main{
+	@include main;
+}
+a{
+	@include a-link;
 }

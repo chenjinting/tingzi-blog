@@ -9,52 +9,59 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>挺|后台管理</title>
+    <title>挺 | 后台管理</title>
 
     <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+    
 </head>
 <body>
     <div class="page">
-         <include file="Public/header" />
+        <include file="Public/header" />
 
         <include file="Public/sidebar" />
 
+
+        <div class="index main">
+            <h1>当前网站文章总数据</h1>
+            <div class="statistics">
+                <div class="statistics1 every-statistics float-left">
+                    <h2>总文章</h2>
+                    <div class="data">{$articlenum}</div>
+                </div>
+                <div class="statistics2 every-statistics float-left">
+                    <h2>总阅读</h2>
+                    <div class="data">{$readnumsum}</div>
+                </div>
+                <div class="statistics3 every-statistics float-left">
+                    <h2>总留言</h2>
+                    <div class="data">
+                        {$commentnum}
+                        <neq name="newcommentnum" value="0">
+                            <span class="newcommenttitle">（待审核：<span class="newcommentnum">{$newcommentnum}</span>）</span>
+                        </neq>
+                    </div>
+                </div>
+                <div class="statistics4 every-statistics float-left">
+                    <h2>总分类</h2>
+                    <div class="data">{$sortnum}</div>
+                </div>
+                <div class="statistics5 every-statistics float-left">
+                    <h2>总标签</h2>
+                    <div class="data">{$tagnum}</div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+
         <include file="Public/footer" />
     </div>
-   
+
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!doctype html public "-//w3c//dtd xhtml 1.0 frameset//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-frameset.dtd">
-<html>
-    <head>
-        <meta http-equiv=content-type content="text/html; charset=utf-8" />
-        <meta http-equiv=pragma content=no-cache />
-        <meta http-equiv=cache-control content=no-cache />
-        <meta http-equiv=expires content=-1000 />
-        
-        <title>管理中心 v1.0</title>
-    </head>
-    <frameset border=0 framespacing=0 rows="60, *" frameborder=0>
-        <frame name=head src="{:U('__MODULE__/Index/head')}" frameborder=0 noresize scrolling=no>
-            <frameset cols="170, *">
-                <frame name=left src="{:U('__MODULE__/Index/left')}" frameborder=0 noresize />
-                <frame name=main src="{:U('__MODULE__/Index/right')}" frameborder=0 noresize scrolling=yes />
-            </frameset>
-    </frameset>
-    <noframes>
-    </noframes>
 </html>

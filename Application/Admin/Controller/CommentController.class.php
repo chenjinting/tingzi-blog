@@ -117,7 +117,7 @@ class CommentController extends BaseController {
             if($articleid){
                 $this->success("成功删除该留言！",U("showlistarticle/",array('articleid'=>$articleid)),1);
             }else{
-                $this->success("审核不通过，已删除该留言！",U("index"),1);
+                $this->success("成功删除该留言！",U("index"),1);
             }
             
         }else{

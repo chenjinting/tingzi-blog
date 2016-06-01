@@ -1,63 +1,69 @@
 @charset "UTF-8";
 // 头部header
+.page-header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 
-.header{
-	min-width: 1080px;
-	height: $header-height;
-	background-color: #1c9cde;
-
-	.header-logo{
-		width: 300px;
+	.header{
 		height: $header-height;
+		background-color: $theme-backgoundcolor;
 
-		img.logo01{
-			width: 118px;
+		.header-logo{
+			width: 300px;
 			height: $header-height;
-		}
-		img.logo02{
-			width: 170px;
-			height: $header-height;
-		}
-	}
 
-	.header-menu{
-		height: $header-height;
-
-		li{
-			padding: 20px 0;
-			height: 20px;
-			line-height: 20px;
-			margin-right: 15px;
-
-			a{
-				font-size: 15px;
-				text-decoration: none;
-				color: #fff;
+			img.logo01{
+				width: 118px;
+				height: $header-height;
 			}
+			img.logo02{
+				width: 170px;
+				height: $header-height;
+			}
+		}
 
-			.blog-a{
+		.header-menu{
+			height: $header-height;
+
+			li{
+				padding: 20px 0;
+				height: 20px;
+				line-height: 20px;
 				margin-right: 15px;
 
-				&:hover{
-					color: #c9e4f2;
+				a{
+					font-size: 15px;
+					text-decoration: none;
 				}
-			}
 
-			span.welcome{
-				display: block;
-				color: #e4e4e4;
-				font-size: 13px;
-			}
-			span.currentuser{
-				color: #fff;
-			}
+				.blog-a{
+					margin-right: 15px;
+					color: #eee;
+					font-size: 16px;
 
-			.logout{
-
-				&:hover{
-					color: #90b4c6;
+					&:hover{
+						color: #c9e4f2;
+					}
 				}
-			}
-		}		
+
+				span.welcome{
+					display: block;
+					color: #e4e4e4;
+					font-size: 13px;
+				}
+				span.currentuser{
+					color: #fff;
+				}
+
+				.logout{
+
+					&:hover{
+						color: #90b4c6;
+					}
+				}
+			}		
+		}
 	}
 }

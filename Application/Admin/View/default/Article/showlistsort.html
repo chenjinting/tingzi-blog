@@ -1,14 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<head>
+    <meta charset="utf-8">    
+    <meta name="author" content="陈锦挺，253018164@qq.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>挺 | 后台管理 - {$articlesortnamestr} - 文章列表</title>
 
-        <title>文章列表</title>
+    <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+    
+</head>
+<body>
+    <div class="page">
+        <include file="Public/header" />
 
-        <link href="{$Think.const.ADMIN_CSS_URL}mine.css" type="text/css" rel="stylesheet" />
-    </head>
-    <body>
-        <style>
+        <include file="Public/sidebar" />
+
+
+        <div class="showlistsort main">
+            
+            <style>
             .tr_color{background-color: #9F88FF}
         </style>
         <div class="div_head">
@@ -97,5 +116,14 @@
             </div>
 
         </div>
-    </body>
+
+            <div class="clear"></div>
+
+        </div>
+
+
+        <include file="Public/footer" />
+    </div>
+
+</body>
 </html>
