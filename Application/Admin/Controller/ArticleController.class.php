@@ -32,6 +32,8 @@ class ArticleController extends BaseController {
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $firstRow = $page->firstRow;    // 起始行数
 
+        $articlenum = $article->count();    // 文章总数量
+
         // 所有文章
         $articlelist = $article->limit($firstRow.','.$page->listRows)->relation(true)->order('lastmodifytime DESC')->select();
         // 每篇文章的所有留言数量和待审核留言数量
@@ -48,10 +50,11 @@ class ArticleController extends BaseController {
         foreach($articlecommentnum0 as $k2=>$v2){
             $articlelist[$k2]['commentcount0'][] = $v2;
         }
-
+        
         $this->assign('firstRow',$firstRow);
         $this->assign('articlelist',$articlelist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
+        $this->assign('articlenum',$articlenum); 
 
         $this->display();
     }

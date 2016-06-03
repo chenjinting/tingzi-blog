@@ -18,9 +18,14 @@
 	text-decoration: none;
 }
 @mixin main{
+	min-width: 500px;
 	padding: 20px;
 	margin-left: 180px;
 	margin-top: 60px;
+}
+@mixin listarticle{
+	padding: 5px;
+	background-color: #fff;
 }
 @mixin sidebar-li-background-position{
 	background-position: 17px 10px;

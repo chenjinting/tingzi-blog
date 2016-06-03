@@ -26,103 +26,85 @@
         <input type="hidden" id="currenturl" value="__CONTROLLER__/showlist" />
 
         <div class="showlisttag main">
-            
-            <style>
-            .tr_color{background-color: #9F88FF}
-        </style>
-        <div class="div_head">
-            <span>
-                <span style="float: left;">当前位置是：文章管理-》文章列表</span>
-                <p>当前标签为：{$articletagnamestr}</p>
-                <span style="float: right; margin-right: 8px; font-weight: bold;">
-                    <a style="text-decoration: none;" href="{:U('__CONTROLLER__/addarticle')}">【添加文章】</a>
-                </span>
-            </span>
-        </div>
-        <div></div>
-        <div style="font-size: 13px; margin: 10px 5px;">
+
+            <h1>当前列表标签为：{$articletagnamestr}</h1>
+
+            <a class="addnew" href="{:U('__CONTROLLER__/addarticle')}">写文章</a>
+
             <notempty name="articlelisttag">
-            <table class="table_a" border="1" width="100%">
-                <tbody>
-                    <notempty name="articlelisttag">
-                    <tr style="font-weight: bold;">
-                        <td>序号</td>
-                        <td>封面</td>
-                        <td>标题</td>
-                        <td>分类</td>
-                        <td>标签</td>
-                        <td>作者</td>
-                        <td>阅读</td>
-                        <td>留言</td>
-                        <td>发布时间</td>
-                        <td>最后修改时间</td>
-                        <td colspan="2" align="center">操作</td>
-                    </tr>
-                    </notempty>
-                    
-                    <volist name="articlelisttag" id="vo" key="k">                   
-                    <tr id="product1">
-                        <td>{$k+$firstRow}</td>
-                        <td><img src="/__UPLOADIMG__{$vo.coverpic}" height="60" width="60"></td>
-                        <td><a href="{:U('Blog/Detail/index',array('id'=>$vo['id']))}" target="_blank">{$vo.title}</a></td>
-                        <td>
-                            <a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>
-                        </td>
 
-                        <td>
-                        <volist name="vo['tag']" id="v">
-                            <a href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$v['tagid']))}">{$v['tagname']}</a><br /> 
-                        </volist>
-                        </td>   
+            <div class="listarticle">
+                <volist name="articlelisttag" id="vo" key="k">
+                <div class="every-article">
+                    <!-- 文章封面 -->
+                    <div class="coverpic float-left">
+                        <a href="{:U('Blog/Detail/index',array('id'=>$vo['id']))}" target="_blank">
+                            <img src="/__UPLOADIMG__{$vo.coverpic}" alt="文章封面：{$vo.title}" />
+                        </a>
+                    </div>
+                    <!-- 文章简要信息 -->
+                    <div class="article-info">
+                        <!-- 文章标题 -->
+                        <h2 class="listarticleh2"><a href="{:U('Blog/Detail/index',array('id'=>$vo['id']))}" target="_blank">{$vo.title}</a></h2>
+                        <!-- 作者、阅读次数、留言数量、发布时间、最后修改时间 -->
+                        <div class="listarticle-baseinfo">
+                            <span class="every-listarticle-baseinfo">作者&nbsp;{$vo.author}</span>
+                            <span class="every-listarticle-baseinfo">阅读&nbsp;{$vo.readnum}</span>
+                            <span class="every-listarticle-baseinfo">
+                                留言&nbsp;<volist name="vo['commentcount']" id="va">
+                                            <if condition="$va neq 0">
+                                                <a href="{:U('__MODULE__/Comment/showlistarticle',array('articleid'=>$vo['id']))}">{$va}</a>
+                                            <else />
+                                                0
+                                            </if>                     
+                                            </volist>
+                                            <volist name="vo['commentcount0']" id="va0">
+                                                <neq name="va0" value="0">(<span class="newcommentnum">{$va0}</span>)</neq>
+                                            </volist>
+                            </span>
+                            <span class="every-listarticle-baseinfo">发布时间</span>
+                            <span class="every-listarticle-baseinfo">{$vo.time|date="Y-m-d H:i:s",###}</span>
+                            <span class="every-listarticle-baseinfo">最后修改时间</span>
+                            <span class="every-listarticle-baseinfo">{$vo.lastmodifytime|date="Y-m-d H:i:s",###}</span>
+                        </div>
+                        <!-- 文章摘要 -->
+                        <p class="article-abstract">{$vo.abstract}</p>
+                        <!-- 分类、标签 -->
+                        <p class="sort-tag">
+                            <span class="sort">
+                                &nbsp;分类&nbsp;<a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>&nbsp;
+                            </span>
+                            <span class="tag">
+                                &nbsp;标签&nbsp;<volist name="vo['tag']" id="v">
+                                          <a href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$v['tagid']))}">{$v['tagname']}</a>&nbsp;
+                                      </volist>
+                            </span>
+                        </p>
+                    </div>
 
-                        <td>{$vo.author}</td>
-                        <td>{$vo.readnum}</td>
-
-                        <td>
-                        <volist name="vo['commentcount']" id="va">
-                            <if condition="$va neq 0">
-                                共有留言：<a href="{:U('__MODULE__/Comment/showlistarticle',array('articleid'=>$vo['id']))}">{$va}</a>
-                                <else />
-                                没有留言
-                            </if>
-                        </volist>                       
-
-                        <volist name="vo['commentcount0']" id="va0">
-                            <neq name="va0" value="0">（待审核：{$va0}）</neq>
-                        </volist>
-                        </td>
-
-                        <td>{$vo.time|date="Y-m-d H:i;s",###}</td>
-                        <td>{$vo.lastmodifytime|date="Y-m-d H:i;s",###}</td>
-
-                        <td><a href="{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">修改</a></td>
-                        <td><a href="{:U('__CONTROLLER__/deletearticle',array('id'=>$vo['id']))}" onclick="return confirm('你真的要删除这篇文章吗？');">删除</a></td>
-                    </tr>                   
-                    </volist>
-
-                    <tr>
-                        <td colspan="20" style="text-align: center;">
-                            {$page}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            </notempty>
-
-            <div style="height: 30px;text-align: center;">
-                <empty name="articlelisttag">
-                    <p>
-                        这个标签还没有文章噢，快写篇文章吧~
-                    </p>
-                </empty>
+                    <!-- 修改、删除按钮 -->
+                    <div class="operate">
+                        <a href="{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">
+                            <span class="modifybutton">修改</span>
+                        </a>
+                        <a href="{:U('__CONTROLLER__/deletearticle',array('id'=>$vo['id']))}" onclick="return confirm('你真的要删除这篇文章吗？');">
+                            <span class="deletebutton">删除</span>
+                        </a>
+                    </div>
+                </div>
+                </volist>
             </div>
 
+            <div class="pagination">{$page}</div>
+
+            </notempty>
+
+            <empty name="articlelisttag">
+                <div class="emptydata"><p>还没有文章噢，快写篇文章吧~</p></div>
+            </empty>
         </div>
 
             <div class="clear"></div>
-
-        </div>
-
 
         <include file="Public/footer" />
     </div>

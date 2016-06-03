@@ -1,0 +1,82 @@
+@charset "UTF-8";
+// 文章编辑组件
+
+.editarticle{
+	margin-top: 15px;
+
+	.every-input{
+		margin-bottom: 10px;
+
+		.input-head{
+			width: 50px;
+			height: 30px;
+			line-height: 30px;
+			color: #999;
+			padding: 5px 0;
+			text-align: center;
+			display: block;
+		}
+		.input-body{
+			padding-top: 10px;
+			padding-left: 50px;
+
+			.all-input{
+				color: #888;
+				font-size: 14px;
+			}
+			.input-title{			
+				width: 50%;
+				height: 30px;
+				padding-left: 10px;
+				display: block;
+			}
+			.input-author{
+				width: 25%;
+				height: 30px;
+				padding-left: 10px;
+				display: block;
+			}
+			.select-sort{
+				width: 12.5%;
+				height: 36px;
+				padding-left: 10px;
+
+				option{
+					color: #454545;
+				}
+				option:first-child{
+					color: #999;
+					font-size: 17px;
+					font-weight: bold;
+					margin-top: 3px;
+					margin-bottom: 3px;
+				}
+			}
+			
+		}
+		.everytag{
+			margin-bottom: 10px;
+			margin-right: 10px;		
+		}
+		#coverpicpreview{
+			width: 170px;
+			height: 135px;
+		}
+		#coverpic-input{
+			display: none;
+		}
+		.abstract-input{
+			width: 50%;
+			height: 80px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+	}
+	.submit-area{
+		text-align: center;
+		margin-top: 15px;
+	}
+	.cancel-area{
+		margin-top: 15px;
+	}
+}

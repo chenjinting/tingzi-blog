@@ -1,0 +1,36 @@
+@charset "UTF-8";
+// 分页组件
+
+.pagination{
+	text-align: center;
+	margin-top: 20px;
+	color: #2992D2;
+    font-size: 16px;
+
+	.num{
+		margin: 0 5px;
+    	padding: 0 6px;
+    	border: 1px solid $pagination-num-color;
+		color: $pagination-num-color;
+
+		&:hover{
+			background-color: $pagination-num-color;
+			color: #fff;
+		}
+
+	}
+	.current{
+		margin: 0 5px;
+    	padding: 0 6px;
+		background-color: $pagination-num-color;
+		color: #fff;
+	}
+	.next{
+		font-size: 14px;
+		color: #17aed2;
+	}
+	.prev{
+		font-size: 14px;
+		color: #17aed2;
+	}
+}

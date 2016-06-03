@@ -92,7 +92,7 @@ class CommentController extends BaseController {
                 if($articleid){
                     $this->success("该留言审核通过！",U("showlistarticle/",array('articleid'=>$articleid)),1);
                 }else{
-                    $this->success("该留言审核通过！",U("index"),1);
+                    $this->success("该留言审核通过！",U("showlist"),1);
                 }              
             }else{
                 $this->error("留言审核失败，请重新操作！");
@@ -117,7 +117,7 @@ class CommentController extends BaseController {
             if($articleid){
                 $this->success("成功删除该留言！",U("showlistarticle/",array('articleid'=>$articleid)),1);
             }else{
-                $this->success("成功删除该留言！",U("index"),1);
+                $this->success("成功删除该留言！",U("showlist"),1);
             }
             
         }else{

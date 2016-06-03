@@ -15,7 +15,6 @@ class IndexController extends BaseController {
         $sort = D('Sort');
         $tag = D('Tag');
 
-
         $articlenum = $article->count();	// 文章总数量
 
         $readnumsum = $article->getField('SUM(readnum)');	// 所有文章总阅读数量

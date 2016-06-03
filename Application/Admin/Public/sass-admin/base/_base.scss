@@ -4,10 +4,24 @@
 body{
 	@include font-familys;
 	background-color: #eee;
+	overflow-x: hidden;
 }
-.main{
-	@include main;
+.page{
+	min-width: 1190px;
 }
 a{
 	@include a-link;
+}
+.main{
+	@include main;
+
+	h1{
+		font-size: 20px;
+		color: #666;
+		padding-left: 25px;
+	}
+}
+.listarticle{
+	@include listarticle;
+	margin-top: 20px;
 }

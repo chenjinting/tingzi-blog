@@ -1,0 +1,24 @@
+@charset "UTF-8";
+// 添加、编辑文章
+
+// 添加文章
+.addarticle{
+	h1{
+		background: url(../img/writing.png) no-repeat;
+		background-position: 0 3px;
+	}
+	.upload-coverpic{
+		position: relative;
+    	left: 20px;
+    	top: 100px;
+	}
+
+}
+
+// 编辑文章
+.modifyarticle{
+	h1{
+		background: url(../img/modify.png) no-repeat;
+		background-position: 0 3px;
+	}
+}

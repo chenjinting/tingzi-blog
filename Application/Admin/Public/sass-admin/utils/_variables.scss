@@ -3,3 +3,20 @@
 
 $header-height: 60px;	// 页面头部header高度
 $theme-backgoundcolor: #3e3e40;	// 主题颜色，包含页面头部header和左边侧边导航栏sidebar的背景颜色等
+
+// 文章列表的封面相关
+$coverpic-margin-right: 10px;
+$coverpic-padding-top: 5px;
+$coverpic-img-width: 170px;
+$coverpic-img-height: 135px;
+
+// 文章列表简要信息中的分类和标签基本样式
+$sort-span-display: inline-block;
+$sort-span-height: 17px;
+$sort-span-padding: 3px; 
+$sort-font-size: 15px;
+$sort-color: #339966;
+$tag-color: #25a3a4;
+
+// 分页
+$pagination-num-color: #0897e0;

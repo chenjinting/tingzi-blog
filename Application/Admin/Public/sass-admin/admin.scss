@@ -10,10 +10,15 @@
 @import 'base/base';
 @import 'base/typography';
 
+@import 'components/listone';
+@import 'components/button';
+@import 'components/emptydata';
+@import 'components/pagination';
+@import 'components/editarticle';
+
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
-@import 'layout/currentposition';
 
 @import 'pages/default/Admin/addmodifyadmin';
 @import 'pages/default/Admin/listadmin';

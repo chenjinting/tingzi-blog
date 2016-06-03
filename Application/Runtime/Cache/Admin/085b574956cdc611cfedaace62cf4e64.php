@@ -2,13 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">    
-    <meta name="author" content="陈锦挺，253018164@qq.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
     <title>挺 | 后台管理</title>
 
     <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
@@ -66,26 +63,26 @@
             <h1>当前网站文章总数据</h1>
             <div class="statistics">
                 <div class="statistics1 every-statistics float-left">
-                    <h2>总文章</h2>
+                    <h2 class="indexh2">总文章</h2>
                     <div class="data"><?php echo ($articlenum); ?></div>
                 </div>
                 <div class="statistics2 every-statistics float-left">
-                    <h2>总阅读</h2>
+                    <h2 class="indexh2">总阅读</h2>
                     <div class="data"><?php echo ($readnumsum); ?></div>
                 </div>
                 <div class="statistics3 every-statistics float-left">
-                    <h2>总留言</h2>
+                    <h2 class="indexh2">总留言</h2>
                     <div class="data">
                         <?php echo ($commentnum); ?>
                         <?php if(($newcommentnum) != "0"): ?><span class="newcommenttitle">（待审核：<span class="newcommentnum"><?php echo ($newcommentnum); ?></span>）</span><?php endif; ?>
                     </div>
                 </div>
                 <div class="statistics4 every-statistics float-left">
-                    <h2>总分类</h2>
+                    <h2 class="indexh2">总分类</h2>
                     <div class="data"><?php echo ($sortnum); ?></div>
                 </div>
                 <div class="statistics5 every-statistics float-left">
-                    <h2>总标签</h2>
+                    <h2 class="indexh2">总标签</h2>
                     <div class="data"><?php echo ($tagnum); ?></div>
                 </div>
             </div>
