@@ -10,19 +10,11 @@
 
     <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>jquery-1.12.4.min.js"></script>
-    <script type="text/javascript">
-            window.UEDITOR_HOME_URL = '<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/';
-            window.onload = function(){
-                window.UEDITOR_CONFIG.initialFrameWidth = '100%';
-                window.UEDITOR_CONFIG.initialFrameHeight = 500;
-                window.UEDITOR_CONFIG.scaleEnabled = true;
-
-                UE.getEditor('content');
-            }
-        </script>
+    
+    <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>admin.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.config.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.all.min.js"></script>
-    <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>admin.js"></script>
+    
     
 </head>
 <body>

@@ -4,10 +4,20 @@ $(function(){
     var current_url = $('#currenturl').val();
     $('.sidebar-menu a[href="'+current_url+'"] li').addClass('active-sidebar');
 
+
+    /*鼠标滑进滑出 显示/隐藏 文章修改与删除按钮*/
     $('.every-article').hover(function(){
     	$('.operate').eq($(this).index()).css('display','block');
     },function(){
     	$('.operate').eq($(this).index()).css('display','none');
+    });
+
+
+    /*鼠标滑进滑出 显示/隐藏 分类、标签修改与删除按钮*/
+    $('.every-sort-tag').hover(function(){
+    	$('.sort-tag-operate').eq($(this).index()).css('display','block');
+    },function(){
+    	$('.sort-tag-operate').eq($(this).index()).css('display','none');
     });
 
 
@@ -46,5 +56,17 @@ $(function(){
 		}
 		this.value=this.value.substr(0,100)
 	});
+
+
+    /*在修改文章的界面，设置该文章的所含标签为选中状态*/
+    $('.articletag2').each(function(i){
+        var articletag2 = $(this).val();
+        $('.articletag1').each(function(){
+            var articletag1 = $(this).val();
+            if(articletag2 == articletag1){
+                $('.articletag2').eq(i).attr('checked','checked');
+            }
+        });
+    });
 
 })

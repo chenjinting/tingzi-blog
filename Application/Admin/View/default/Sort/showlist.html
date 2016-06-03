@@ -26,51 +26,41 @@
         <input type="hidden" id="currenturl" value="__CONTROLLER__/showlist" />
         
         <div class="showlistsort main">
-            
-            <style>
-            .tr_color{background-color: #9F88FF}
-        </style>
-        <div class="div_head">
-            <span>
-                <span style="float: left;">当前位置是：分类管理-》分类列表</span>
-                <span style="float: right; margin-right: 8px; font-weight: bold;">
-                    <a style="text-decoration: none;" href="{:U('__CONTROLLER__/addsort')}">【添加分类】</a>
-                </span>
-            </span>
-        </div>
-        <div></div>
-        <div style="font-size: 13px; margin: 10px 5px;">
-            <table class="table_a" border="1" width="100%">
-                <tbody>
-                    <tr style="font-weight: bold;">
-                        <td>序号</td>
-                        <td>分类名称</td>
-                        <td colspan="2">操作</td>
-                    </tr>
+            <h1>当前共有分类：{$count}</h1>
 
-                    <volist name='sortlist' id='sort' empty='还没有分类噢，快添加分类吧~'>
-                    <tr id="product1">
-                        <td>{$i+$firstRow}</td>
-                        <td><a href="{:U('__MODULE__/Article/showlistsort',array('sortid'=>$sort['sortid']))}">{$sort.sortname}</a></td>
-                        <td><a href="{:U('__CONTROLLER__/modifysort',array('id'=>$sort['sortid'],'sortname'=>$sort['sortname']))}">修改</a></td>
-                        <td><a href="{:U('__CONTROLLER__/deletesort',array('id'=>$sort['sortid']))}" onclick="return confirm('你真的要删除这个分类吗？');">删除</a></td>
-                    </tr>
-                    </volist>
+            <a class="addnew" href="{:U('__CONTROLLER__/addsort')}">新增分类</a>
 
-                    <tr>
-                        <td colspan="20" style="text-align: center;">
-                            {$page}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-        </div>
+            <notempty name="sortlist">
+
+            <div class="sort-tag">
+                <volist name='sortlist' id='sort'>
+                <div class="every-sort-tag float-left">
+                    <h2 class="sort-tag-h2">
+                        <a href="{:U('__MODULE__/Article/showlistsort',array('sortid'=>$sort['sortid']))}">{$sort.sortname}</a>
+                        <span class="article-num">
+                            <volist name="sort['sortarticlecount']" id="sortcount">
+                            ({$sortcount})
+                            </volist>
+                        </span>
+                    </h2>
+                    <div class="sort-tag-operate">
+                        <a class="modify-sort-tag" href="{:U('__CONTROLLER__/modifysort',array('id'=>$sort['sortid'],'sortname'=>$sort['sortname']))}">修改</a>
+                        <a class="delete-sort-tag" href="{:U('__CONTROLLER__/deletesort',array('id'=>$sort['sortid']))}" onclick="return confirm('你真的要删除这个分类吗？');">删除</a>
+                    </div>
+                    
+                </div>
+                </volist>
+            </div>
+
+            </notempty>
+
+            <empty name="sortlist">
+            <div class="emptydata"><p>还没有分类噢，快增加一个分类吧~</p></div>
+            </empty>
 
             <div class="clear"></div>
 
         </div>
-
 
         <include file="Public/footer" />
     </div>

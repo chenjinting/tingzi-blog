@@ -30,3 +30,10 @@
 @mixin sidebar-li-background-position{
 	background-position: 17px 10px;
 }
+
+// 文章添加、修改界面的上传图片按钮位置
+@mixin upload-coverpic-position{
+	position: relative;
+    left: 20px;
+    top: 100px;
+}

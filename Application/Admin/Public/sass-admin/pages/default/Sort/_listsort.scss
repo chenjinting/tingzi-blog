@@ -1,0 +1,49 @@
+@charset "UTF-8";
+// 分类管理列表
+
+.showlistsort{
+	h1{
+		background: url(../img/listsort.png) no-repeat;
+		background-position: 0 3px;
+	}
+	.sort-tag{
+		padding-top: 10px;
+	}
+	.every-sort-tag{
+		width: 150px;
+		height: 60px;
+		margin: 20px;
+		border: 0;
+		border-radius: 10px;
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+		background-color: $theme-backgoundcolor;
+		position: relative;
+
+		.sort-tag-h2{
+			margin: 15px 0;
+
+			.article-num{
+				font-size: 12px;
+			}
+		}
+		
+		.sort-tag-operate{
+			width: 100px;
+			margin: 0 auto;
+			margin-top: 10px;
+			font-size: 12px;
+			display: none;
+
+			.modify-sort-tag{
+				@extend .modifybutton;			
+			}
+			.delete-sort-tag{
+				@extend .deletebutton;
+				
+			}
+
+		}
+	}
+}

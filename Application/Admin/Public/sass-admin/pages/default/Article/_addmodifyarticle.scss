@@ -8,9 +8,7 @@
 		background-position: 0 3px;
 	}
 	.upload-coverpic{
-		position: relative;
-    	left: 20px;
-    	top: 100px;
+		@include upload-coverpic-position;
 	}
 
 }
@@ -20,5 +18,8 @@
 	h1{
 		background: url(../img/modify.png) no-repeat;
 		background-position: 0 3px;
+	}
+	.upload-coverpic{
+		@include upload-coverpic-position;
 	}
 }

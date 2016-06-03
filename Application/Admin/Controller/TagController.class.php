@@ -14,6 +14,7 @@ class TagController extends BaseController {
      */
     public function showlist(){
         $tag = D('Tag');
+        $articletag = D('Articletag');
         $tagres = $tag->select();
 
         // 分页开始
@@ -30,6 +31,18 @@ class TagController extends BaseController {
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $firstRow = $page->firstRow;    // 起始行数
         $taglist = $tag->limit($firstRow.','.$page->listRows)->select();
+
+        // 查询每个标签下的文章数量
+        $tagid = $tag->field('tagid')->select();
+        foreach($tagid as $value){
+            $tagidres=$value['tagid'];
+            $tagarticlecount[] = $articletag->where(array('tagid'=>$tagidres))->count();
+        }
+        // 将该标签下的文章数量插到标签列表数组里
+        foreach($tagarticlecount as $k=>$v){
+            $taglist[$k]['tagarticlecount'][] = $v;
+        }
+
         $this->assign('firstRow',$firstRow);
         $this->assign('taglist',$taglist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出

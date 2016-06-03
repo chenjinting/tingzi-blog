@@ -14,6 +14,7 @@ class SortController extends BaseController {
      */
     public function showlist(){
         $sort = D('Sort');
+        $article = D('Article');
         $sortres = $sort->select();
 
         // 分页开始
@@ -30,9 +31,23 @@ class SortController extends BaseController {
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $firstRow = $page->firstRow;    // 起始行数
         $sortlist = $sort->limit($firstRow.','.$page->listRows)->select();
+
+        // 查询每个分类下的文章数量
+        $sortid = $sort->field('sortid')->select();
+        foreach($sortid as $value){
+            $sortidres = $value['sortid'];
+            $sortarticlecount[] = $article->where(array('sortid'=>$sortidres))->count();
+        }
+        // 将该分类下的文章数量插到分类列表数组里
+        foreach($sortarticlecount as $k=>$v){
+            $sortlist[$k]['sortarticlecount'][] = $v;
+        }
+
         $this->assign('firstRow',$firstRow);
         $this->assign('sortlist',$sortlist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
+        $this->assign('count',$count);    // 分类数量
+
         $this->display();
     }
 
