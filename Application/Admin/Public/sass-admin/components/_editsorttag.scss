@@ -1,0 +1,43 @@
+@charset "UTF-8";
+// 新增、修改分类/标签
+
+// 新增分类、标签
+.addmodify-sorttag{
+	margin-top: 15px;
+
+	.addmodify-srottag-input{
+		width: 300px;
+		margin: 0 auto;
+
+		.sorttag-name{
+			font-size: 14px;
+			color: #999;
+		}
+		.sorttag-input{
+			width: 210px;
+			height: 20px;
+			padding: 5px;
+			margin-left: 10px;
+		}
+	}
+	.sorttag-submit{
+		text-align: center;
+		margin-top: 15px;
+
+		.publish-submit{
+			background-color: #099a54;
+			width: 100px;
+			height: 30px;
+			border-radius: 3px;
+			font-size: 14px;
+
+			&:hover{
+				background-color: #fff;
+				border: 1px solid #099a54;
+				color: #099a54;
+			}
+		}
+	}
+}
+
+

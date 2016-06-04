@@ -1,0 +1,86 @@
+@charset "UTF-8";
+// 每条留言组件
+
+.every-comment{
+		background-color: #f8f8f8;
+		margin-bottom: 5px;
+		padding: 5px;
+		padding-right: 100px;
+		position: relative;
+
+		&:hover{
+			background-color: #eee;
+		}
+		.comment-content{
+			padding: 5px 0;
+			
+			a{	
+				font-size: 15px;
+				color: #8f8f8f;
+
+				&:hover{
+					color: #464646;
+				}
+			}
+		}
+		.comment-info{
+			padding: 5px 0;
+
+			span{
+				font-size: 13px;
+				color: #bcbcbc;
+
+				a{
+					color: #ccc;
+				}
+			}
+
+			.comment-author{
+				a{
+					&:hover{
+						color: #a5a5a5;
+					}
+				}
+				
+			}
+
+		}
+		.comment-article{
+			padding: 5px 0;
+			padding-right: 100px;
+
+			.comment-article-title{
+				font-size: 13px;
+				color: #bcbcbc;
+			}
+			a{
+				font-size: 15px;
+				color: #ababab;
+
+				&:hover{
+					color: #148cca;
+				}
+			}
+		}
+		.comment-review-status{
+			font-size: 15px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		.comment-review-status-pass{
+			color: #33ab55;
+		}
+		.comment-review-status-pending{
+			color: #f5c405;
+		}
+		.comment-operate{
+			font-size: 15px;
+			position: absolute;
+			right: 10px;
+			bottom: 15px;
+		}
+		.comment-delete{
+			display: none;
+		}
+	}

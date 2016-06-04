@@ -1,23 +1,23 @@
 @charset "UTF-8";
-// 所有文章列表
+// 文章列表
 
 .showlistarticle{
 	h1{
 		background: url(../img/article-all.png) no-repeat;
-		background-position: 0 3px;
+		background-position: $h1-background-position;
 	}
 }
 
 .showlistsort{
 	h1{
 		background: url(../img/article-sort.png) no-repeat;
-		background-position: 0 3px;
+		background-position: $h1-background-position;
 	}
 }
 
 .showlisttag{
 	h1{
 		background: url(../img/article-tag.png) no-repeat;
-		background-position: 0 3px;
+		background-position: $h1-background-position;
 	}
 }

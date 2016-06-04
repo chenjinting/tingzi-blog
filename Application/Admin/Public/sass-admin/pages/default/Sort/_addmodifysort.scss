@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// 新增、修改分类
+
+.addsort{
+	h1{
+		background: url(../img/add-sort.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+}
+.modifysort{
+	h1{
+		background: url(../img/modify-sort.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+}

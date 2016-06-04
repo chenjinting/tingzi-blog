@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// 新增、修改标签
+
+.addtag{
+	h1{
+		background: url(../img/add-tag.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+}
+.modifytag{
+	h1{
+		background: url(../img/modify-tag.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+}

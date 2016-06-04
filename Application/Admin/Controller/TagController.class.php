@@ -46,6 +46,7 @@ class TagController extends BaseController {
         $this->assign('firstRow',$firstRow);
         $this->assign('taglist',$taglist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
+        $this->assign('count',$count);
         $this->display();
     }
 

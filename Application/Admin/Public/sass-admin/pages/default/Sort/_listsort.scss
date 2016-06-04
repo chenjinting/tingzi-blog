@@ -4,14 +4,14 @@
 .showlistsort{
 	h1{
 		background: url(../img/listsort.png) no-repeat;
-		background-position: 0 3px;
+		background-position: $h1-background-position;
 	}
-	.sort-tag{
+	.sort-tag-area{
 		padding-top: 10px;
 	}
 	.every-sort-tag{
 		width: 150px;
-		height: 60px;
+		height: $every-sort-height;
 		margin: 20px;
 		border: 0;
 		border-radius: 10px;
@@ -22,7 +22,7 @@
 		position: relative;
 
 		.sort-tag-h2{
-			margin: 15px 0;
+			line-height: $every-sort-height;
 
 			.article-num{
 				font-size: 12px;
@@ -31,17 +31,23 @@
 		
 		.sort-tag-operate{
 			width: 100px;
+			height: $every-sort-height;
+			line-height: $every-sort-height;
 			margin: 0 auto;
 			margin-top: 10px;
 			font-size: 12px;
+			position: absolute;
+			left: 35px;
+			top: 40px;
 			display: none;
 
 			.modify-sort-tag{
-				@extend .modifybutton;			
+				@extend .modifybutton;
+				border: 0;			
 			}
 			.delete-sort-tag{
 				@extend .deletebutton;
-				
+				border: 0;
 			}
 
 		}

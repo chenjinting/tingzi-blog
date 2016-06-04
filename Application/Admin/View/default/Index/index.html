@@ -20,7 +20,7 @@
 
 
         <div class="index main">
-            <h1>当前网站文章总数据</h1>
+            <h1>当前网站总数据</h1>
             <div class="statistics">
                 <div class="statistics1 every-statistics float-left">
                     <h2 class="indexh2">总文章</h2>
@@ -35,7 +35,7 @@
                     <div class="data">
                         {$commentnum}
                         <neq name="newcommentnum" value="0">
-                            <span class="newcommenttitle">（待审核：<span class="newcommentnum">{$newcommentnum}</span>）</span>
+                            <span class="newcommenttitle">（待审核：<a href="{:U('__MODULE__/Comment/showlist')}"><span class="newcommentnum">{$newcommentnum}</span></a>）</span>
                         </neq>
                     </div>
                 </div>

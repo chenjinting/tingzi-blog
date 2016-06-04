@@ -57,7 +57,7 @@
                 <li class="sidebar-comment">留言管理<?php if(($newcommentnum) != "0"): ?><span class="newcomment"><?php echo ($newcommentnum); ?></span><?php endif; ?></li>
             </a>
 
-            <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a>
+            <!-- <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a> -->
         </ul>
     </div>
 </div>
@@ -70,7 +70,7 @@
 
             <a class="addnew" href="<?php echo U('/Admin/Sort/addsort');?>">新增分类</a>
 
-            <?php if(!empty($sortlist)): ?><div class="sort-tag">
+            <?php if(!empty($sortlist)): ?><div class="sort-tag-area">
                 <?php if(is_array($sortlist)): $i = 0; $__LIST__ = $sortlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sort): $mod = ($i % 2 );++$i;?><div class="every-sort-tag float-left">
                     <h2 class="sort-tag-h2">
                         <a href="<?php echo U('/Admin/Article/showlistsort',array('sortid'=>$sort['sortid']));?>"><?php echo ($sort["sortname"]); ?></a>

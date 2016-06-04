@@ -1,0 +1,26 @@
+@charset "UTF-8";
+// 留言列表
+
+.showlistcomment{
+	h1{
+		background: url(../img/listcomment.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+	.comment-list{
+		background-color: #fff;
+		padding: 5px;
+		margin-top: 15px;
+	}
+}
+
+.showlistarticlecomment{
+	h1{
+		background: url(../img/listcomment-article.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+	.comment-list{
+		background-color: #fff;
+		padding: 5px;
+		margin-top: 15px;
+	}
+}

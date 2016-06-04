@@ -57,7 +57,7 @@
                 <li class="sidebar-comment">留言管理<?php if(($newcommentnum) != "0"): ?><span class="newcomment"><?php echo ($newcommentnum); ?></span><?php endif; ?></li>
             </a>
 
-            <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a>
+            <!-- <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a> -->
         </ul>
     </div>
 </div>
@@ -65,69 +65,56 @@
         <!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮左侧导航栏的效果 -->
         <input type="hidden" id="currenturl" value="/Admin/Comment/showlist" />
         
+        
         <div class="showlistcomment main">
-            
-            <style>
-            .tr_color{background-color: #9F88FF}
-        </style>
-        <div class="div_head">
-            <span style="float: left;">当前位置是：留言管理-》留言列表</span>
-        </div>
-        <div></div>
-        <div style="font-size: 13px; margin: 10px 5px;">
-            <?php if(!empty($commentlist)): ?><table class="table_a" border="1" width="100%">
-                <tbody>
-                    
-                    <tr style="font-weight: bold;">
-                        <td>序号</td>
-                        <td>留言内容</td>
-                        <td>文章</td>
-                        <td>留言时间</td>
-                        <td>留言人</td>
-                        <td>留言人站点</td>
-                        <td>审核状态</td>
-                        <td colspan="2" align="center">操作</td>
-                    </tr>
-                    
-                    <?php if(is_array($commentlist)): $k = 0; $__LIST__ = $commentlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr id="product1">
-                        <td><?php echo ($k+$firstRow); ?></td>
-                        <td><a href="/Blog/Detail/index/id/<?php echo ($vo["articleid"]); ?>/#<?php echo ($vo["commentid"]); ?>" target="_blank"><?php echo ($vo["commentcontent"]); ?></a></td>
-                        <td><a href="<?php echo U('/Admin/Comment/showlistarticle',array('articleid'=>$vo['articleid']));?>"><?php echo ($vo["title"]); ?></a></td>
-                        <td><?php echo (date("Y-m-d H:i;s",$vo["commenttime"])); ?></td>  
-                        <td><?php echo ($vo["commentauthor"]); ?></td>
-                        <td><a href="<?php echo ($vo["personsite"]); ?>" target="_blank"><?php echo ($vo["personsite"]); ?></a></td>
-                        <td>
-                            <?php if($vo["status"] == 0): ?>待审核
-                            <?php else: ?>
-                                审核通过<?php endif; ?>
-                        </td>
-                        <td>
-                            <?php if($vo["status"] == 0): ?><a href="<?php echo U('/Admin/Comment/reviewcomment',array('commentid'=>$vo['commentid']));?>">审核通过</a>
-                                <a href="<?php echo U('/Admin/Comment/deletecomment',array('commentid'=>$vo['commentid']));?>">审核不通过</a>
-                            <?php else: ?>
-                                <a href="<?php echo U('/Admin/Comment/deletecomment',array('commentid'=>$vo['commentid']));?>" onclick="return confirm('你真的要删除这条留言吗？');">删除</a><?php endif; ?>
-                        </td>
-                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>                  
+            <h1>
+                当前共有留言：<?php echo ($count); ?>
+                <?php if($newcommentnum != 0): ?>（待审核：<?php echo ($newcommentnum); ?>）<?php endif; ?>
+            </h1>
 
-                    <tr>
-                        <td colspan="20" style="text-align: center;">
-                            <?php echo ($page); ?>
-                        </td>
-                    </tr>
-                </tbody>
-            </table><?php endif; ?>
+            <?php if(!empty($commentlist)): ?><div class="comment-list">
+                <?php if(is_array($commentlist)): $k = 0; $__LIST__ = $commentlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><div class="every-comment">
+                    <p class="comment-content">
+                        <a href="/Blog/Detail/index/id/<?php echo ($vo["articleid"]); ?>/#<?php echo ($vo["commentid"]); ?>" target="_blank"><?php echo ($vo["commentcontent"]); ?></a>
+                    </p>
+                    <p class="comment-info">
+                        <span>时间</span>
+                        <span><?php echo (date("Y-m-d H:i:s",$vo["commenttime"])); ?></span>
+                        <span>留言人</span>
+                        <span class="comment-author">
+                            <a href="<?php echo ($vo["personsite"]); ?>" target="_blank"><?php echo ($vo["commentauthor"]); ?></a>
+                        </span>
+                    </p>
+                    <p class="comment-article">
+                        <span class="comment-article-title">文章：</span><a href="<?php echo U('/Admin/Comment/showlistarticle',array('articleid'=>$vo['articleid']));?>"><?php echo ($vo["title"]); ?></a>
+                    </p>
 
-            <div style="height: 30px;text-align: center;">
-                <?php if(empty($commentlist)): ?><p>
-                        还没有留言噢，快写篇留言吧~
-                    </p><?php endif; ?>
+                    <!-- 留言审核状态 -->
+                    <?php if($vo["status"] == 0): ?><span class="comment-review-status comment-review-status-pending">待审核</span>                     
+                    <?php else: ?>
+                        <span class="comment-review-status comment-review-status-pass">已审核通过</span><?php endif; ?>
+
+                    <!-- 留言审核操作 -->
+                    <?php if($vo["status"] == 0): ?><div class="comment-operate">
+                            <a class="modifybutton" href="<?php echo U('/Admin/Comment/reviewcomment',array('commentid'=>$vo['commentid']));?>">审核通过</a>
+                            <a class="deletebutton" href="<?php echo U('/Admin/Comment/deletecomment',array('commentid'=>$vo['commentid']));?>">审核不通过</a>
+                        </div>
+                        
+                    <?php else: ?>
+                        <div class="comment-operate comment-delete">
+                            <a class="deletebutton" href="<?php echo U('/Admin/Comment/deletecomment',array('commentid'=>$vo['commentid']));?>" onclick="return confirm('你真的要删除这条留言吗？');">删除</a>
+                        </div><?php endif; ?>
+
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>                
             </div>
 
+            <div class="pagination"><?php echo ($page); ?></div><?php endif; ?>
+
+            <?php if(empty($commentlist)): ?><div class="emptydata"><p>还没有留言噢</p></div><?php endif; ?>
+
         </div>
 
-            <div class="clear"></div>
-
-        </div>
+        <div class="clear"></div>
 
 
         

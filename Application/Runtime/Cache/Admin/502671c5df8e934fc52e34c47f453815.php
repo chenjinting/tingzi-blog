@@ -15,6 +15,8 @@
     <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>jquery-1.12.4.min.js"></script>
     
     <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>admin.js"></script>
+
+    <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>ueditor.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.config.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_VENDOR_URL); ?>Ueditor/ueditor.all.min.js"></script>
     
@@ -60,7 +62,7 @@
                 <li class="sidebar-comment">留言管理<?php if(($newcommentnum) != "0"): ?><span class="newcomment"><?php echo ($newcommentnum); ?></span><?php endif; ?></li>
             </a>
 
-            <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a>
+            <!-- <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a> -->
         </ul>
     </div>
 </div>
@@ -69,7 +71,7 @@
         <input type="hidden" id="currenturl" value="/Admin/Article/showlist" />
 
         <div class="modifyarticle main">
-            <h1>正在修改文章...</h1>
+            <h1>正在修改文章：<?php echo ($articleres["title"]); ?></h1>
 
             <div class="cancel-area">
                 <a class="publish-cancel" href="<?php echo U('/Admin/Article/showlist');?>">返回</a>

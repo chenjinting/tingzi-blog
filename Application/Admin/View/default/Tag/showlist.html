@@ -25,52 +25,38 @@
         <!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮左侧导航栏的效果 -->
         <input type="hidden" id="currenturl" value="__CONTROLLER__/showlist" />
         
-        <div class="showlistsort main">
-            
-            <style>
-            .tr_color{background-color: #9F88FF}
-        </style>
-        <div class="div_head">
-            <span>
-                <span style="float: left;">当前位置是：标签管理-》标签列表</span>
-                <span style="float: right; margin-right: 8px; font-weight: bold;">
-                    <a style="text-decoration: none;" href="{:U('__CONTROLLER__/addtag')}">【添加标签】</a>
-                </span>
-            </span>
-        </div>
-        <div></div>
-        <div style="font-size: 13px; margin: 10px 5px;">
-            <table class="table_a" border="1" width="100%">
-                <tbody>
-                    <tr style="font-weight: bold;">
-                        <td>序号</td>
-                        <td>标签名称</td>
-                        <td colspan="2">操作</td>
-                    </tr>
+        <div class="showlisttag main">
+            <h1>当前共有标签：{$count}</h1>
 
-                    <volist name='taglist' id='tag' empty='还没有标签噢，快添加标签吧~'>
-                    <tr id="product1">
-                        <td>{$i+$firstRow}</td>
-                        <td>
-                            <a href="{:U('__MODULE__/Article/showlisttag',array('tagid'=>$tag['tagid']))}">{$tag.tagname}</a>
+            <a class="addnew" href="{:U('__CONTROLLER__/addtag')}">新增标签</a>
+
+            <notempty name="taglist">
+
+            <div class="sort-tag-area">
+                <volist name='taglist' id='tag'>
+                <div class="every-sort-tag float-left">
+                    <h2 class="sort-tag-h2">
+                        <a href="{:U('__MODULE__/Article/showlisttag',array('tagid'=>$tag['tagid']))}">{$tag.tagname}</a>
+                        <span class="article-num">
                             <volist name="tag['tagarticlecount']" id="tagcount">
-                            {$tagcount}
+                            ({$tagcount})
                             </volist>
-                        </td>
-                        <td><a href="{:U('__CONTROLLER__/modifytag',array('tagid'=>$tag['tagid'],'tagname'=>$tag['tagname']))}">修改</a></td>
-                        <td><a href="{:U('__CONTROLLER__/deletetag',array('tagid'=>$tag['tagid']))}" onclick="return confirm('你真的要删除这个标签吗？');">删除</a></td>
-                    </tr>
-                    </volist>
+                        </span>
+                    </h2>
+                    <div class="sort-tag-operate">
+                        <a class="modify-sort-tag" href="{:U('__CONTROLLER__/modifytag',array('tagid'=>$tag['tagid'],'tagname'=>$tag['tagname']))}">修改</a>
+                        <a class="delete-sort-tag" href="{:U('__CONTROLLER__/deletetag',array('tagid'=>$tag['tagid']))}" onclick="return confirm('你真的要删除这个标签吗？');">删除</a>
+                    </div>
+                    
+                </div>
+                </volist>
+            </div>
 
-                    <tr>
-                        <td colspan="20" style="text-align: center;">
-                            {$page}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-        </div>
+            </notempty>
+
+            <empty name="taglist">
+            <div class="emptydata"><p>还没有分类噢，快增加一个分类吧~</p></div>
+            </empty>
 
             <div class="clear"></div>
 

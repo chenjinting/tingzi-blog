@@ -14,7 +14,6 @@ class CommentModel extends RelationModel{
 	protected $_validate = array(
 		array('commentauthor','require','请留下你的大名吧！'), // 用户昵称不为空
 		array('commentcontent','require','您还没有填写留言内容呢！'), // 文章内容不为空
-
 	);
 	
 }

@@ -31,10 +31,11 @@ class CommentController extends BaseController {
 
         // 所有留言
         $commentlist = $comment->limit($firstRow.','.$page->listRows)->relation(true)->order('commenttime DESC')->select();
-        
+
         $this->assign('firstRow',$firstRow);
         $this->assign('commentlist',$commentlist);    // 赋值数据集
         $this->assign('page',$pageshow);    // 赋值分页输出
+        $this->assign('count',$count);
 
         $this->display();
     }

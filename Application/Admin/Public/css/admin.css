@@ -33,7 +33,7 @@ a { color: #fff; text-decoration: none; }
 .clear { clear: both; }
 
 .every-article { padding: 5px; margin: 5px 0; height: 140px; background-color: #f8f8f8; position: relative; clear: both; }
-.every-article:hover { background-color: #f0f5f7; }
+.every-article:hover { background-color: #eee; }
 .every-article .coverpic { width: 170px; height: 110px; padding-top: 5px; margin-right: 10px; }
 .every-article .coverpic img { width: 170px; height: 135px; }
 .every-article .article-info { margin-left: 180px; padding-top: 5px; height: 135px; min-width: 770px; }
@@ -58,11 +58,11 @@ a { color: #fff; text-decoration: none; }
 .addnew { height: 35px; line-height: 35px; text-align: center; background: url(../img/writenew1.png) no-repeat; background-position: 7px 10px; background-color: #148cca; position: fixed; top: 80px; right: 20px; padding: 0 10px 0 30px; z-index: 1000; }
 .addnew:hover { border: 1px solid #148cca; background: url(../img/writenew2.png) no-repeat; background-position: 7px 10px; background-color: #fff; color: #148cca; }
 
-.modifybutton, .showlistsort .every-sort-tag .sort-tag-operate .modify-sort-tag { padding: 4px 6px; height: 30px; border: 1px solid #148cca; color: #148cca; text-align: center; font-size: 14px; background-color: #fff; }
-.modifybutton:hover, .showlistsort .every-sort-tag .sort-tag-operate .modify-sort-tag:hover { background-color: #148cca; color: #fff; }
+.modifybutton, .showlistsort .every-sort-tag .sort-tag-operate .modify-sort-tag, .showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .modify-sort-tag { padding: 4px 6px; height: 30px; border: 1px solid #148cca; color: #148cca; text-align: center; font-size: 14px; background-color: #fff; }
+.modifybutton:hover, .showlistsort .every-sort-tag .sort-tag-operate .modify-sort-tag:hover, .showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .modify-sort-tag:hover { background-color: #148cca; color: #fff; }
 
-.deletebutton, .showlistsort .every-sort-tag .sort-tag-operate .delete-sort-tag { padding: 4px 6px; height: 30px; border: 1px solid #d6411d; color: #d6411d; text-align: center; font-size: 14px; background-color: #fff; }
-.deletebutton:hover, .showlistsort .every-sort-tag .sort-tag-operate .delete-sort-tag:hover { background-color: #d6411d; color: #fff; }
+.deletebutton, .showlistsort .every-sort-tag .sort-tag-operate .delete-sort-tag, .showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .delete-sort-tag { padding: 4px 6px; height: 30px; border: 1px solid #d6411d; color: #d6411d; text-align: center; font-size: 14px; background-color: #fff; }
+.deletebutton:hover, .showlistsort .every-sort-tag .sort-tag-operate .delete-sort-tag:hover, .showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .delete-sort-tag:hover { background-color: #d6411d; color: #fff; }
 
 .upload-botton { width: 100px; height: 35px; border: 0; border-radius: 3px; background-color: #148cca; color: #fff; line-height: 35px; text-align: center; cursor: pointer; }
 
@@ -97,6 +97,33 @@ a { color: #fff; text-decoration: none; }
 .editarticle .every-input .abstract-input { width: 50%; height: 80px; padding-left: 10px; padding-top: 10px; }
 .editarticle .submit-area { text-align: center; margin-top: 15px; }
 .editarticle .cancel-area { margin-top: 15px; }
+
+.addmodify-sorttag { margin-top: 15px; }
+.addmodify-sorttag .addmodify-srottag-input { width: 300px; margin: 0 auto; }
+.addmodify-sorttag .addmodify-srottag-input .sorttag-name { font-size: 14px; color: #999; }
+.addmodify-sorttag .addmodify-srottag-input .sorttag-input { width: 210px; height: 20px; padding: 5px; margin-left: 10px; }
+.addmodify-sorttag .sorttag-submit { text-align: center; margin-top: 15px; }
+.addmodify-sorttag .sorttag-submit .publish-submit { background-color: #099a54; width: 100px; height: 30px; border-radius: 3px; font-size: 14px; }
+.addmodify-sorttag .sorttag-submit .publish-submit:hover { background-color: #fff; border: 1px solid #099a54; color: #099a54; }
+
+.every-comment { background-color: #f8f8f8; margin-bottom: 5px; padding: 5px; padding-right: 100px; position: relative; }
+.every-comment:hover { background-color: #eee; }
+.every-comment .comment-content { padding: 5px 0; }
+.every-comment .comment-content a { font-size: 15px; color: #8f8f8f; }
+.every-comment .comment-content a:hover { color: #464646; }
+.every-comment .comment-info { padding: 5px 0; }
+.every-comment .comment-info span { font-size: 13px; color: #bcbcbc; }
+.every-comment .comment-info span a { color: #ccc; }
+.every-comment .comment-info .comment-author a:hover { color: #a5a5a5; }
+.every-comment .comment-article { padding: 5px 0; padding-right: 100px; }
+.every-comment .comment-article .comment-article-title { font-size: 13px; color: #bcbcbc; }
+.every-comment .comment-article a { font-size: 15px; color: #ababab; }
+.every-comment .comment-article a:hover { color: #148cca; }
+.every-comment .comment-review-status { font-size: 15px; position: absolute; right: 10px; top: 10px; }
+.every-comment .comment-review-status-pass { color: #33ab55; }
+.every-comment .comment-review-status-pending { color: #f5c405; }
+.every-comment .comment-operate { font-size: 15px; position: absolute; right: 10px; bottom: 15px; }
+.every-comment .comment-delete { display: none; }
 
 .page-header { width: 100%; min-width: 1190px; position: fixed; top: 0; left: 0; z-index: 999; }
 .page-header .header { height: 60px; background-color: #3e3e40; }
@@ -136,6 +163,12 @@ a { color: #fff; text-decoration: none; }
 
 .showlisttag h1 { background: url(../img/article-tag.png) no-repeat; background-position: 0 3px; }
 
+.showlistcomment h1 { background: url(../img/listcomment.png) no-repeat; background-position: 0 3px; }
+.showlistcomment .comment-list { background-color: #fff; padding: 5px; margin-top: 15px; }
+
+.showlistarticlecomment h1 { background: url(../img/listcomment-article.png) no-repeat; background-position: 0 3px; }
+.showlistarticlecomment .comment-list { background-color: #fff; padding: 5px; margin-top: 15px; }
+
 .index h1 { background: url(../img/index-h1.png) no-repeat; background-position: 0 3px; }
 .index .statistics { padding-top: 10px; }
 .index .every-statistics, .index .statistics1, .index .statistics2, .index .statistics3, .index .statistics4, .index .statistics5 { width: 200px; height: 109px; margin: 20px; border-radius: 15px; color: #fff; text-align: center; padding: 10px; }
@@ -146,14 +179,47 @@ a { color: #fff; text-decoration: none; }
 .index .statistics1 { background-color: #f34f4f; }
 .index .statistics2 { background-color: #139c81; }
 .index .statistics3 { background-color: #cec61a; }
-.index .statistics4 { background-color: #7d4ad2; }
+.index .statistics4 { background-color: #148cca; }
 .index .statistics5 { background-color: #40af04; }
 
+.login-body { width: 100%; height: 100%; }
+.login-body .login-layout { width: 100%; height: 100%; background-color: #3e3e40; }
+.login-body .login-layout .login-area { margin: 0 auto; position: absolute; left: 50%; top: 50%; margin-left: -133px; margin-top: -250px; }
+.login-body .login-layout h1 { margin: 20px 0; margin-left: -20px; }
+.login-body .login-layout .login-input { width: 267px; text-align: center; position: relative; }
+.login-body .login-layout .login-input input { border: 1px solid #eee; width: 230px; height: 20px; margin-bottom: 5px; padding: 5px; padding-left: 30px; background-color: #fff; }
+.login-body .login-layout .login-input .input-head { display: block; width: 16px; height: 16px; position: absolute; }
+.login-body .login-layout .login-input .user-input-head { background: url(../img/login-user1.png) no-repeat; left: 7px; top: 7px; }
+.login-body .login-layout .login-input .pwd-input-head { background: url(../img/login-pwd1.png) no-repeat; left: 7px; top: 45px; }
+.login-body .login-layout .login-input #captcha { padding-left: 10px; width: 90px; }
+.login-body .login-layout .login-input .verifycation { width: 155px; height: 32px; margin-left: 5px; }
+.login-body .login-layout .login-input .login-submit { text-align: center; color: #fff; margin-top: 5px; width: 100%; height: 35px; border: 0; background-color: #148cca; padding: 0; cursor: pointer; }
+
+.addsort h1 { background: url(../img/add-sort.png) no-repeat; background-position: 0 3px; }
+
+.modifysort h1 { background: url(../img/modify-sort.png) no-repeat; background-position: 0 3px; }
+
 .showlistsort h1 { background: url(../img/listsort.png) no-repeat; background-position: 0 3px; }
-.showlistsort .sort-tag { padding-top: 10px; }
+.showlistsort .sort-tag-area { padding-top: 10px; }
 .showlistsort .every-sort-tag { width: 150px; height: 60px; margin: 20px; border: 0; border-radius: 10px; color: #fff; text-align: center; padding: 10px; background-color: #3e3e40; position: relative; }
-.showlistsort .every-sort-tag .sort-tag-h2 { margin: 15px 0; }
+.showlistsort .every-sort-tag .sort-tag-h2 { line-height: 60px; }
 .showlistsort .every-sort-tag .sort-tag-h2 .article-num { font-size: 12px; }
-.showlistsort .every-sort-tag .sort-tag-operate { width: 100px; margin: 0 auto; margin-top: 10px; font-size: 12px; display: none; }
+.showlistsort .every-sort-tag .sort-tag-operate { width: 100px; height: 60px; line-height: 60px; margin: 0 auto; margin-top: 10px; font-size: 12px; position: absolute; left: 35px; top: 40px; display: none; }
+.showlistsort .every-sort-tag .sort-tag-operate .modify-sort-tag { border: 0; }
+.showlistsort .every-sort-tag .sort-tag-operate .delete-sort-tag { border: 0; }
+
+.addtag h1 { background: url(../img/add-tag.png) no-repeat; background-position: 0 3px; }
+
+.modifytag h1 { background: url(../img/modify-tag.png) no-repeat; background-position: 0 3px; }
+
+.showlisttag h1 { background: url(../img/listsort.png) no-repeat; background-position: 0 3px; }
+.showlisttag .sort-tag-area { padding-top: 10px; }
+.showlisttag .sort-tag-area .every-sort-tag { height: 25px; margin: 10px; border: 1px solid #3e3e40; border-radius: 5px; color: #3e3e40; text-align: center; padding: 8px; background-color: #fff; position: relative; }
+.showlisttag .sort-tag-area .every-sort-tag .sort-tag-h2 { line-height: 25px; }
+.showlisttag .sort-tag-area .every-sort-tag .sort-tag-h2 a { color: #3e3e40; }
+.showlisttag .sort-tag-area .every-sort-tag .sort-tag-h2 .article-num { font-size: 12px; color: #3e3e40; }
+.showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate { width: 100px; height: 25px; line-height: 25px; margin: 0 auto; font-size: 12px; position: relative; top: 8.33333px; display: none; }
+.showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .modify-sort-tag { border: 1px solid #148cca; }
+.showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .delete-sort-tag { border: 1px solid #d6411d; }
 
 /*# sourceMappingURL=admin.css.map */

@@ -57,7 +57,7 @@
                 <li class="sidebar-comment">留言管理<?php if(($newcommentnum) != "0"): ?><span class="newcomment"><?php echo ($newcommentnum); ?></span><?php endif; ?></li>
             </a>
 
-            <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a>
+            <!-- <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a> -->
         </ul>
     </div>
 </div>
@@ -65,48 +65,28 @@
         <!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮左侧导航栏的效果 -->
         <input type="hidden" id="currenturl" value="/Admin/Tag/showlist" />
         
-        <div class="showlistsort main">
-            
-            <style>
-            .tr_color{background-color: #9F88FF}
-        </style>
-        <div class="div_head">
-            <span>
-                <span style="float: left;">当前位置是：标签管理-》标签列表</span>
-                <span style="float: right; margin-right: 8px; font-weight: bold;">
-                    <a style="text-decoration: none;" href="<?php echo U('/Admin/Tag/addtag');?>">【添加标签】</a>
-                </span>
-            </span>
-        </div>
-        <div></div>
-        <div style="font-size: 13px; margin: 10px 5px;">
-            <table class="table_a" border="1" width="100%">
-                <tbody>
-                    <tr style="font-weight: bold;">
-                        <td>序号</td>
-                        <td>标签名称</td>
-                        <td colspan="2">操作</td>
-                    </tr>
+        <div class="showlisttag main">
+            <h1>当前共有标签：<?php echo ($count); ?></h1>
 
-                    <?php if(is_array($taglist)): $i = 0; $__LIST__ = $taglist;if( count($__LIST__)==0 ) : echo "还没有标签噢，快添加标签吧~" ;else: foreach($__LIST__ as $key=>$tag): $mod = ($i % 2 );++$i;?><tr id="product1">
-                        <td><?php echo ($i+$firstRow); ?></td>
-                        <td>
-                            <a href="<?php echo U('/Admin/Article/showlisttag',array('tagid'=>$tag['tagid']));?>"><?php echo ($tag["tagname"]); ?></a>
-                            <?php if(is_array($tag['tagarticlecount'])): $i = 0; $__LIST__ = $tag['tagarticlecount'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tagcount): $mod = ($i % 2 );++$i; echo ($tagcount); endforeach; endif; else: echo "还没有标签噢，快添加标签吧~" ;endif; ?>
-                        </td>
-                        <td><a href="<?php echo U('/Admin/Tag/modifytag',array('tagid'=>$tag['tagid'],'tagname'=>$tag['tagname']));?>">修改</a></td>
-                        <td><a href="<?php echo U('/Admin/Tag/deletetag',array('tagid'=>$tag['tagid']));?>" onclick="return confirm('你真的要删除这个标签吗？');">删除</a></td>
-                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+            <a class="addnew" href="<?php echo U('/Admin/Tag/addtag');?>">新增标签</a>
 
-                    <tr>
-                        <td colspan="20" style="text-align: center;">
-                            <?php echo ($page); ?>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-        </div>
+            <?php if(!empty($taglist)): ?><div class="sort-tag-area">
+                <?php if(is_array($taglist)): $i = 0; $__LIST__ = $taglist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tag): $mod = ($i % 2 );++$i;?><div class="every-sort-tag float-left">
+                    <h2 class="sort-tag-h2">
+                        <a href="<?php echo U('/Admin/Article/showlisttag',array('tagid'=>$tag['tagid']));?>"><?php echo ($tag["tagname"]); ?></a>
+                        <span class="article-num">
+                            <?php if(is_array($tag['tagarticlecount'])): $i = 0; $__LIST__ = $tag['tagarticlecount'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tagcount): $mod = ($i % 2 );++$i;?>(<?php echo ($tagcount); ?>)<?php endforeach; endif; else: echo "" ;endif; ?>
+                        </span>
+                    </h2>
+                    <div class="sort-tag-operate">
+                        <a class="modify-sort-tag" href="<?php echo U('/Admin/Tag/modifytag',array('tagid'=>$tag['tagid'],'tagname'=>$tag['tagname']));?>">修改</a>
+                        <a class="delete-sort-tag" href="<?php echo U('/Admin/Tag/deletetag',array('tagid'=>$tag['tagid']));?>" onclick="return confirm('你真的要删除这个标签吗？');">删除</a>
+                    </div>
+                    
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
+            </div><?php endif; ?>
+
+            <?php if(empty($taglist)): ?><div class="emptydata"><p>还没有分类噢，快增加一个分类吧~</p></div><?php endif; ?>
 
             <div class="clear"></div>
 

@@ -66,33 +66,24 @@
         <input type="hidden" id="currenturl" value="/Admin/Sort/showlist" />
 
         <div class="modifysort main">
-            
-            <div class="div_head">
-            <span>
-                <span style="float:left">当前位置是：分类管理-》修改分类信息</span>
-                <span style="float:right;margin-right: 8px;font-weight: bold">
-                    <a style="text-decoration: none" href="<?php echo U('/Admin/Sort/showlist');?>">【返回】</a>
-                </span>
-            </span>
-        </div>
-        <div></div>
+            <h1>正在修改分类：<?php echo ($sortname); ?></h1>
 
-        <div style="font-size: 13px;margin: 10px 5px">
-            <form action="<?php echo U('/Admin/Sort/modifysort');?>" method="post" enctype="multipart/form-data">
-                <table border="1" width="100%" class="table_a">
-                    <tr>
-                        <td>分类名称</td>
-                        <td><input type="text" name="sortname" value="<?php echo ($sortname); ?>" /></td>
-                        <td><input type="hidden" name="sortid" value="<?php echo ($sortid); ?>" /></td>
-                    </tr>               
-                    <tr>
-                        <td colspan="2" align="center">
-                            <input type="submit" value="修改">
-                        </td>
-                    </tr>  
-                </table>
-            </form>
-        </div>
+            <div class="cancel-area">
+                <a class="publish-cancel" href="<?php echo U('/Admin/Sort/showlist');?>">取消</a>
+            </div>
+
+            <div class="addmodify-sorttag">
+                <form action="<?php echo U('/Admin/Sort/modifysort');?>" method="post" enctype="multipart/form-data">
+                    <p class="addmodify-srottag-input">
+                        <span class="sorttag-name">分类名称</span>
+                        <input class="sorttag-input" type="text" name="sortname" value="<?php echo ($sortname); ?>" />
+                        <input type="hidden" name="sortid" value="<?php echo ($sortid); ?>" />
+                    </p>
+                    <p class="sorttag-submit">
+                        <button type="submit" class="publish-submit">确定修改</button>
+                    </p>
+                </form>
+            </div>
 
             <div class="clear"></div>
 

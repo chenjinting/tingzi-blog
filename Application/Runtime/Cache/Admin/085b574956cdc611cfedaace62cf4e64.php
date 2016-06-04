@@ -53,14 +53,14 @@
                 <li class="sidebar-comment">留言管理<?php if(($newcommentnum) != "0"): ?><span class="newcomment"><?php echo ($newcommentnum); ?></span><?php endif; ?></li>
             </a>
 
-            <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a>
+            <!-- <a href="<?php echo U('/Admin/Admin/showlist');?>"><li class="sidebar-admin">管理员</li></a> -->
         </ul>
     </div>
 </div>
 
 
         <div class="index main">
-            <h1>当前网站文章总数据</h1>
+            <h1>当前网站总数据</h1>
             <div class="statistics">
                 <div class="statistics1 every-statistics float-left">
                     <h2 class="indexh2">总文章</h2>
@@ -74,7 +74,7 @@
                     <h2 class="indexh2">总留言</h2>
                     <div class="data">
                         <?php echo ($commentnum); ?>
-                        <?php if(($newcommentnum) != "0"): ?><span class="newcommenttitle">（待审核：<span class="newcommentnum"><?php echo ($newcommentnum); ?></span>）</span><?php endif; ?>
+                        <?php if(($newcommentnum) != "0"): ?><span class="newcommenttitle">（待审核：<a href="<?php echo U('/Admin/Comment/showlist');?>"><span class="newcommentnum"><?php echo ($newcommentnum); ?></span></a>）</span><?php endif; ?>
                     </div>
                 </div>
                 <div class="statistics4 every-statistics float-left">

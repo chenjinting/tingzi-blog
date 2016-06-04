@@ -21,6 +21,14 @@ $(function(){
     });
 
 
+    /*鼠标滑进滑出 显示/隐藏 留言删除按钮*/
+    $('.every-comment').hover(function(){
+        $(this).find('.comment-delete').css('display','block');     
+    },function(){
+        $(this).find('.comment-delete').css('display','none');
+    });
+
+
     /*绑定上传按钮到.upload-botton上*/
     $('.upload-botton').bind('click',function(e){
     	$('#coverpic-input').click();

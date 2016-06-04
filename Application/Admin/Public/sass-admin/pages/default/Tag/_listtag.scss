@@ -1,0 +1,57 @@
+@charset "UTF-8";
+// 标签管理列表
+
+.showlisttag{
+	h1{
+		background: url(../img/listsort.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+	.sort-tag-area{
+		padding-top: 10px;
+	
+		.every-sort-tag{
+			height: $every-tag-height;
+			margin: 10px;
+			border: 1px solid $theme-backgoundcolor;
+			border-radius: 5px;
+			color: $theme-backgoundcolor;
+			text-align: center;
+			padding: 8px;
+			background-color: #fff;
+			position: relative;
+
+			.sort-tag-h2{
+				line-height: $every-tag-height;
+				
+				a{
+					color: $theme-backgoundcolor;
+				}
+				.article-num{
+					font-size: 12px;
+					color: $theme-backgoundcolor;
+				}
+			}
+			
+			.sort-tag-operate{
+				width: 100px;
+				height: $every-tag-height;
+				line-height: $every-tag-height;
+				margin: 0 auto;
+				font-size: 12px;
+				position: relative;
+				top: $every-tag-height / 3;
+				display: none;
+
+				.modify-sort-tag{
+					@extend .modifybutton;
+					border: 1px solid #148cca;			
+				}
+				.delete-sort-tag{
+					@extend .deletebutton;
+					border: 1px solid #d6411d;
+				}
+
+			}
+		}
+	}
+}

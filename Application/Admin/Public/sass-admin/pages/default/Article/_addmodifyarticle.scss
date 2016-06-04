@@ -5,7 +5,7 @@
 .addarticle{
 	h1{
 		background: url(../img/writing.png) no-repeat;
-		background-position: 0 3px;
+		background-position: $h1-background-position;
 	}
 	.upload-coverpic{
 		@include upload-coverpic-position;
@@ -17,7 +17,7 @@
 .modifyarticle{
 	h1{
 		background: url(../img/modify.png) no-repeat;
-		background-position: 0 3px;
+		background-position: $h1-background-position;
 	}
 	.upload-coverpic{
 		@include upload-coverpic-position;

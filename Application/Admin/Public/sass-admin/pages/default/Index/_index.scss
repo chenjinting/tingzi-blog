@@ -4,7 +4,7 @@
 .index{
 	h1{
 		background: url(../img/index-h1.png) no-repeat;
-		background-position: 0 3px;
+		background-position: $h1-background-position;
 	}
 	.statistics{
 		padding-top: 10px;
@@ -53,7 +53,7 @@
 		@extend .every-statistics;
 	}
 	.statistics4{
-		background-color: #7d4ad2;
+		background-color: #148cca;
 		@extend .every-statistics;
 	}
 	.statistics5{
