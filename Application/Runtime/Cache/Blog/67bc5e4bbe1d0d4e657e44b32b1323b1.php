@@ -105,7 +105,7 @@
 
 						<?php if(is_array($commentlist)): $i = 0; $__LIST__ = $commentlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c): $mod = ($i % 2 );++$i;?><div class="every-article-comment" id="<?php echo ($c["commentid"]); ?>">
 								<div class="article-comment-author float-left">
-									<img src="<?php echo (BLOG_IMG_URL); ?>commentauthor-img.png" />
+									<img src="<?php echo (BLOG_IMG_URL); ?>comment-author-img.png" />
 								</div>
 								<div class="article-comment-info float-left">
 									<p class="article-comment-info-author">
