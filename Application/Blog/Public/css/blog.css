@@ -41,15 +41,15 @@ a { color: #fff; text-decoration: none; }
 
 .current-position { margin-top: 15px; margin-bottom: 15px; padding-left: 5px; color: #4c4b4b; font-size: 17px; }
 
-.every-article { width: 758px; height: 125px; border: 1px solid #fff; margin-bottom: 5px; padding: 5px; background-color: #fff; position: relative; }
+.every-article { width: 758px; height: 125px; border: 1px solid #fff; margin-bottom: 7px; padding: 5px; background-color: #fff; position: relative; }
 .every-article:hover { background-color: #f4fbff; border: 1px solid #f4fbff; }
 .every-article .article-coverpic img { width: 175px; height: 125px; }
 .every-article .article-info { padding-left: 10px; width: 558px; }
-.every-article .article-info .article-title { margin-bottom: 6px; font-size: 17px; }
-.every-article .article-info .article-title a { color: #525252; }
+.every-article .article-info .article-title { margin-bottom: 10px; margin-top: 5px; font-size: 18px; }
+.every-article .article-info .article-title a { color: #252525; }
 .every-article .article-info .article-title a:hover { color: #0994dc; }
 .every-article .article-info .article-baseinfo { color: #a9a7a7; font-size: 13px; margin-bottom: 6px; }
-.every-article .article-info .article-abstract { width: 555px; height: 54px; font-size: 14px; color: #757575; line-height: 18px; margin-bottom: 6px; }
+.every-article .article-info .article-abstract { width: 555px; height: 45px; font-size: 14px; color: #757575; line-height: 18px; margin-bottom: 6px; padding-top: 5px; }
 .every-article .article-info .article-sort { border: 1px solid #339966; color: #339966; font-size: 14px; height: 15px; padding: 3px; margin-right: 5px; }
 .every-article .article-info .article-sort:hover { border: 1px solid #339966; color: #fff; background-color: #339966; }
 .every-article .article-info .article-sort:hover a { color: #fff; }
@@ -64,7 +64,7 @@ a { color: #fff; text-decoration: none; }
 .header { height: 50px; background-color: #0994dc; width: 100%; position: fixed; top: 0; z-index: 999; }
 .header .header-area { height: 50px; width: 1080px; margin: 0 auto; }
 .header .header-area .blog-logo img { width: 100px; height: 50px; }
-.header .header-area .head-sort .every-head-sort { height: 50px; line-height: 50px; padding: 0 10px; }
+.header .header-area .head-sort .every-head-sort { height: 50px; line-height: 50px; padding: 0 20px; }
 .header .header-area .head-sort .every-head-sort:hover { background-color: #047DBB; }
 .header .header-area .head-sort .active-header { background-color: #2085cc; }
 

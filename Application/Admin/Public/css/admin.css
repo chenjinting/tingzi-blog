@@ -204,7 +204,7 @@ a { color: #fff; text-decoration: none; }
 .showlistsort .every-sort-tag { width: 150px; height: 60px; margin: 20px; border: 0; border-radius: 10px; color: #fff; text-align: center; padding: 10px; background-color: #3e3e40; position: relative; }
 .showlistsort .every-sort-tag .sort-tag-h2 { line-height: 60px; }
 .showlistsort .every-sort-tag .sort-tag-h2 .article-num { font-size: 12px; }
-.showlistsort .every-sort-tag .sort-tag-operate { width: 100px; height: 60px; line-height: 60px; margin: 0 auto; margin-top: 10px; font-size: 12px; position: absolute; left: 35px; top: 40px; display: none; }
+.showlistsort .every-sort-tag .sort-tag-operate { width: 100px; height: 60px; line-height: 60px; margin: 0 auto; margin-top: 10px; font-size: 12px; position: absolute; left: 35px; top: 40px; display: none; z-index: 999; }
 .showlistsort .every-sort-tag .sort-tag-operate .modify-sort-tag { border: 0; }
 .showlistsort .every-sort-tag .sort-tag-operate .delete-sort-tag { border: 0; }
 
@@ -218,7 +218,7 @@ a { color: #fff; text-decoration: none; }
 .showlisttag .sort-tag-area .every-sort-tag .sort-tag-h2 { line-height: 25px; }
 .showlisttag .sort-tag-area .every-sort-tag .sort-tag-h2 a { color: #3e3e40; }
 .showlisttag .sort-tag-area .every-sort-tag .sort-tag-h2 .article-num { font-size: 12px; color: #3e3e40; }
-.showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate { width: 100px; height: 25px; line-height: 25px; margin: 0 auto; font-size: 12px; position: relative; top: 8.92857px; display: none; }
+.showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate { width: 100px; height: 25px; line-height: 25px; margin: 0 auto; font-size: 12px; position: relative; top: 8.92857px; display: none; z-index: 999; }
 .showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .modify-sort-tag { border: 1px solid #148cca; }
 .showlisttag .sort-tag-area .every-sort-tag .sort-tag-operate .delete-sort-tag { border: 1px solid #d6411d; }
 

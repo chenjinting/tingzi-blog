@@ -59,10 +59,10 @@ $(function(){
 
 	/* 文章摘要字数检测 */
 	$('.abstract-input').keyup(function(){
-		if(this.value.length > 100){
-			alert('字数太多啦，最多100字噢~');
+		if(this.value.length > 70){
+			alert('字数太多啦，最多70字噢~');
 		}
-		this.value=this.value.substr(0,100)
+		this.value=this.value.substr(0,70)
 	});
 
 
