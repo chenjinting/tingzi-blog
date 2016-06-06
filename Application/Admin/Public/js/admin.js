@@ -77,4 +77,21 @@ $(function(){
         });
     });
 
+
+    /*在分类/标签文章列表打开添加文章界面，根据相应分类/文章名称默认选中该分类/标签，并且该分类/标签不可选*/
+    var articletag11 = $('.articletag11').val();
+    $('.articletag22').each(function(i){
+        var articletag22 = $(this).val();
+        if(articletag22 == articletag11){
+            $('.articletag22').eq(i).attr({'checked':'checked','disabled':true});
+        }
+    });
+
+
+    /*添加文章界面，点击提交按钮后设置取消分类和标签的相应控件不可选状态*/
+    $('.publish-submit').click(function(){
+        $('.select-sort').attr('disabled',false);
+        $('.articletag22').attr('disabled',false);
+    });
+
 })

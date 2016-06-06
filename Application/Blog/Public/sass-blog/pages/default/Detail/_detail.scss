@@ -1,0 +1,171 @@
+@charset "UTF-8";
+// 文章详情页
+
+.content-left{
+
+	.content-detail-area{
+		width: $blog-content-left-width - 30px;
+		padding: 15px;
+		background-color: #fff;
+
+		.detai-info{
+			margin-bottom: 10px;
+
+			.detail-title{
+				text-align: center;
+				margin-top: 10px;
+				margin-bottom: 15px;
+				font-size: 20px;
+
+			}
+			.detail-baseinfo{
+				text-align: center;
+				margin-bottom: 15px; 
+
+				span{
+					color: #ccc;
+					font-size: 13px;
+				}
+			}
+			.detail-classification{
+				text-align: center;
+
+				.detail-sort{
+					font-size: 14px;
+					color: #339966;
+					margin-bottom: 10px;
+					margin-right: 10px;
+
+					a{
+						color: #339966;
+						margin-right: 3px;
+					}
+				}
+				.detail-tag{
+					font-size: 14px;
+					color: #3399cc;
+					margin-bottom: 10px;
+
+					a{
+						color: #3399cc;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+		.pre-next-article{
+			font-size: 13px;
+			color: #a9a7a7;
+
+			a{
+				color: #a9a7a7;
+
+				&:hover{
+					color: #615f5f;
+				}
+			}
+		}
+	}
+	.article-comment{
+		margin: 20px 0 30px 0;
+
+		.article-comment-title{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 15px;
+			color: #b5b3b3;
+			background-color: #e6e5e5;
+		}
+		.article-comment-list{
+			margin: 15px 0;
+			position: relative;
+
+			.no-comment{
+				text-align: center;
+				font-size: 14px;
+				color: #403f3f;
+			}
+
+			.every-article-comment{
+				padding-top: 5px;
+				margin-bottom: 5px;
+				// background-color: #fff;
+				border-top: 1px solid #ccc;
+
+				.article-comment-author{
+					img{
+						width: 60px;
+						height: 60px;
+					}
+				}
+				.article-comment-info{
+					width: 670px;
+					padding-left: 10px;
+
+					.article-comment-info-author{
+						color: #747474;
+						margin-top: 5px;
+						margin-bottom: 5px;
+						font-weight: bold;
+
+						a{
+							color: #747474;
+						}
+					}
+					.article-comment-info-content{
+						color: #403f3f;
+						min-height: 28px;
+						font-size: 14px;
+						margin-bottom: 5px;
+					}
+					.article-comment-info-time{
+						color: #b1b1b1;
+					}
+				}
+			}
+		}
+	}
+	.article-comment-input{
+		background-color: #e6e5e5;
+		padding: 10px 0;
+
+		.publish-comment{
+			.write-comment-title{
+				font-size: 14px;
+				color: #adadad;
+				text-align: center;
+				padding: 5px 0;
+				margin-bottom: 10px;
+			}
+			.comment-input{
+				text-align: center;
+				margin-bottom: 10px;
+
+				input{
+					width: 500px;
+					height: 20px;
+					padding: 5px;
+					border: 1px solid #e4eaec;
+				}
+				textarea{
+					width: 500px;
+					height: 100px;
+					padding: 5px;
+					border: 1px solid #e4eaec;
+				}
+				.publish-comment{
+					border: 1px solid #0994dc;
+					background-color: #0994dc;
+					color: #fff;
+					width: 510px;
+					height: 35px;
+					cursor: pointer;
+				}
+			}
+
+		}
+	}
+}
+
+

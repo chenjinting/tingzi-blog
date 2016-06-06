@@ -1,0 +1,63 @@
+@charset "UTF-8";
+// 后台模块主界面
+
+.index{
+	h1{
+		background: url(../img/index-h1.png) no-repeat;
+		background-position: $h1-background-position;
+	}
+	.statistics{
+		padding-top: 10px;
+	}
+	.every-statistics{
+		width: 200px;
+		height: 109px;
+		margin: 20px;
+		border-radius: 15px;
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+
+		 .indexh2{
+			margin: 5px 0;
+		}
+		.data{
+			font-size: 2em;
+			font-weight: bold;
+			padding: 10px 0;
+
+			.newcommenttitle{
+				display: block;
+				margin: 9px 0;
+				font-size: 13px;
+				font-weight: normal;
+
+				.newcommentnum{
+					color: #ec2e2e;
+					font-weight: bold;
+				}
+				
+			}
+		}
+	}
+	.statistics1{
+		background-color: #f34f4f;
+		@extend .every-statistics;
+	}
+	.statistics2{
+		background-color: #139c81;
+		@extend .every-statistics;
+	}
+	.statistics3{
+		background-color: #cec61a;
+		@extend .every-statistics;
+	}
+	.statistics4{
+		background-color: #148cca;
+		@extend .every-statistics;
+	}
+	.statistics5{
+		background-color: #40af04;
+		@extend .every-statistics;
+	}
+}

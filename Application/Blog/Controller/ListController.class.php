@@ -23,13 +23,13 @@ class ListController extends Controller {
         $condition['sortid'] = $sortid;
         
         // 分页开始
-        $count = $article->count(); //查询满足要求的记录总数
-        $page = new Page($count,9); // 实例化分页类 传入总记录数和每页显示的记录数(9)
+        $count = $article->where($condition)->count(); //查询该分类下的所有文章
+        $page = new Page($count,10); // 实例化分页类 传入总记录数和每页显示的记录数(9)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_ROW%篇文章 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -45,7 +45,6 @@ class ListController extends Controller {
         foreach($articlecommentnum1 as $k2=>$v2){
             $articleres[$k2]['commentcount1'][] = $v2;
         }
-        // var_dump($articleres);exit();
 
         $this->assign('firstRow',$firstRow);
         $this->assign('articleres',$articleres);    // 赋值数据集
@@ -53,7 +52,6 @@ class ListController extends Controller {
         $this->assign('sortres',$sortres);
         $this->assign('tagres',$tagres);
         $this->assign('sortid',$sortid);
-
 
         $this->display();
     }
@@ -84,8 +82,7 @@ class ListController extends Controller {
 
         // 分页开始
         $count = $articletag->where($condition)->count(); //查询该标签下的记录总数
-        // echo $count;exit();
-        $page = new Page($count,10); // 实例化分页类 传入总记录数和每页显示的记录数(10)
+        $page = new Page($count,10); // 实例化分页类 传入总记录数和每页显示的记录数(9)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');

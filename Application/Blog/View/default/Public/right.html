@@ -1,16 +1,16 @@
-<div class="sidebar">
+<div class="content-right float-left">
 	
-	<div class="widget widget_categories">
-	<h3 class="widget-tit"> </h3>		
-	<ul>
-		<volist name="tagres" id="tagvo">
-			<li class="cat-item cat-item-18 current-cat">
+	<div class="content-right-tag">
+		<h2 class="content-right-tag-head">标签</h2>
+		<div class="content-right-tag-area">
+			<volist name="tagres" id="tagvo">
+			<span class="every-content-right-tag float-left">
 				<a title="{$tagvo.tagname}" href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$tagvo['tagid']))}">	
 				    {$tagvo.tagname}
 				</a>
-			</li>
-		</volist>
-	</ul>
+			</span>
+			</volist>
+		</div>
+	</div>
 
-	</div>		
 </div>

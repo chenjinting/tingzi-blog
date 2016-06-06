@@ -1,0 +1,32 @@
+@charset "UTF-8";
+// 侧边栏导航
+
+.content-right-tag{
+	padding: 5px;
+
+	.content-right-tag-head{
+		margin-bottom: 10px;
+	}
+	.content-right-tag-area{
+		.every-content-right-tag{
+			display: block;
+			margin: 0 5px 5px 0;
+			border: 1px solid #3399cc;
+			font-size: 13px;
+			padding: 4px;
+
+			&:hover{
+				color: #fff;
+				background-color: #3399cc;
+
+				a{
+					color: #fff;
+				}
+			}
+
+			a{
+				color: #3399cc;
+			}
+		}
+	}
+}

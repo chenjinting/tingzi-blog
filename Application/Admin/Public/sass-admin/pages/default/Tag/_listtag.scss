@@ -3,7 +3,7 @@
 
 .showlisttag{
 	h1{
-		background: url(../img/listsort.png) no-repeat;
+		background: url(../img/article-tag.png) no-repeat;
 		background-position: $h1-background-position;
 	}
 	.sort-tag-area{
@@ -39,7 +39,7 @@
 				margin: 0 auto;
 				font-size: 12px;
 				position: relative;
-				top: $every-tag-height / 3;
+				top: $every-tag-height / 2.8;
 				display: none;
 
 				.modify-sort-tag{

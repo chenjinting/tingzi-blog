@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * 后台管理模块
+ */
+
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/button';
+@import 'components/emptydata';
+@import 'components/pagination';
+@import 'components/currentposition';
+@import 'components/listone';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/right';
+
+@import 'pages/default/Index/index';
+@import 'pages/default/List/list';
+@import 'pages/default/Detail/detail';

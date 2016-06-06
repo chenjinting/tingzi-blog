@@ -1,82 +1,92 @@
 <!DOCTYPE HTML>
-<html><head>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<meta content="pc,mobile" name="applicable-device">
-<meta content="no-transform" http-equiv="Cache-Control">
-<meta content="no-siteapp" http-equiv="Cache-Control">
-<meta content="width=device-width" name="viewport">
-<link href="{$Think.const.BLOG_CSS_URL}style.css" media="screen" type="text/css" rel="stylesheet"> 
-<script src="{$Think.const.BLOG_JS_URL}jquery.min.js"></script> 
-<title>人生哲理_人生哲理文章阅读_人生哲理语录句子大全_意空间阅读网</title><meta content="人生哲理_人生哲理文章阅读_人生哲理语录句子大全" name="keywords">
-<meta content="人生哲理栏目为广大网友奉献人生哲理名言，人生哲理故事，人生哲理文章，哲理名人名言名录大全。" name="description">
+<html>
+<head>
+	<meta charset="utf-8">    
+    <meta name="author" content="挺，253018164@qq.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
+    <meta name="description" content="前端与生活">
+    <meta name="keywords" content="前端与生活">
+    <title>挺 | 前端与生活</title>
 
-<script type="text/javascript">
-    $(function(){
-        var current_url = "__CONTROLLER__/index/sortid/{$sortid}";
-        $('.nav li a[href="'+current_url+'"]').addClass('activeli');
-    })
- </script>
+	<link href="{$Think.const.BLOG_CSS_URL}blog.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="{$Think.const.BLOG_JS_URL}jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.BLOG_JS_URL}blog.js"></script>
 
 </head>
-<body class="archive category category-philosophy-life category-18">
+<body>
 
-<include file="Public/header" />
+	<div class="page">
+		<include file="Public/header" />
 
-<div class="wrapper">
-	<p>当前标签为：{$articletagnamestr}</p>
-	<div class="content">
-	
-	<!-- 分享代码 --><!-- 分享代码 -->
-	
-	<ul class="excerpt thumb">
-		<volist name="articlelisttag" id="vo">
-		<li>
-			<a class="pic" href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">
-			<img alt="{$vo.title}" src="/__UPLOADIMG__{$vo.coverpic}"></a>			
-			<h2 class="excerpt-tit"><a href="{:U('__MODULE__/Detail/index',array('id'=>$vo['id']))}">{$vo.title}</a></h2>
-			<p>	分类：	<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a></p>
-			<p>
-				标签：	<volist name="vo['tag']" id="vo3">
-							<a href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$vo3['tagid']))}">{$vo3['tagname']}&nbsp;</a>
-						</volist>
-			</p>
-			<p>	阅读：	{$vo.readnum}</p>
-			<p>	
-				留言：	<volist name="vo['commentcount1']" id="vc">
-                            {$vc.commentcount1}
-                        </volist>
-			</p>
-			<p class="excerpt-desc">				
-				{$vo.abstract}...
-			</p>
-			<div class="excerpt-time">{$vo.time|date="Y-m-d",###}</div>
-		</li>
-		</volist>
-	</ul>
+		<div class="content">
+			<h1 class="current-position">当前标签为：{$articletagnamestr}</h1>
+			<div class="content-left float-left">
+				<notempty name="articlelisttag">
+				<div class="article-list">
+					<volist name="articlelisttag" id="vo22">
+					<div class="every-article">
+						<div class="article-coverpic float-left">
+							<a href="{:U('__MODULE__/Detail/index',array('id'=>$vo22['id']))}">
+								<img alt="{$vo22.title}" src="/__UPLOADIMG__{$vo22.coverpic}">
+							</a>
+						</div>
+						<div class="article-info float-left">
+							<h2 class="article-title">
+								<a href="{:U('__MODULE__/Detail/index',array('id'=>$vo22['id']))}">{$vo22.title}</a>
+							</h2>
+							<p class="article-baseinfo">
+								<span>作者</span>
+								<span>{$vo22.author}</span>
+								<span>时间</span>
+								<span>{$vo22.lastmodifytime|date="Y-m-d",###}</span>
+								<span>阅读</span>
+								<span>{$vo22.readnum}</span>
+								<span>留言</span>
+								<span>
+									<volist name="vo22['commentcount1']" id="vc">
+                            			{$vc.commentcount1}
+                       				</volist>
+								</span>
+							</p>
+							<p class="article-abstract">{$vo22.abstract}...	</p>
+							<p class="article-classification">
+								<div class="article-sort  float-left">
+									<span>分类：</span>
+									<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo22['sortid']))}">{$vo22.sortname}</a>
+								</div>
+								<div class="article-tag float-left">
+									<span>标签:</span>
+									<volist name="vo22['tag']" id="vo3">
+									<a href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$vo3['tagid']))}">{$vo3['tagname']}&nbsp;</a>
+									</volist>
+								</div>
+							</p>
+						</div>
+						<a href="{:U('__MODULE__/Detail/index',array('id'=>$vo22['id']))}" class="article-read-all">阅读全文</a>
+					</div>
+					</volist>
+				</div>
 
-	<div style="height: 30px;text-align: center;">
-        <empty name="articlelisttag">
-            <p>
-                这个标签还没有文章噢~
-            </p>
-        </empty>
-    </div>
+				<div class="pagination">{$page}</div>
 
-<div class="paging">{$page}</div>
+				</notempty>
 
-</div>
+				<empty name="articlelisttag">
+            	<p class="emptydata">这个标签还没有文章噢~</p>
+        		</empty>
 
-<include file="Public/right" />
+			</div>
 
-</div>
+			<include file="Public/right" />
 
-<include file="Public/footer" />
+			<div class="clear"></div>
+		</div>	
 
+		<include file="Public/footer" />
+	</div>
 
-
-
-
-
-
-
-</body></html>
+</body>
+</html>

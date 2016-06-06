@@ -34,13 +34,27 @@
             <h1>正在修改文章：{$articleres.title}</h1>
 
             <div class="cancel-area">
-                <a class="publish-cancel" href="{:U('__CONTROLLER__/showlist')}">返回</a>
+
+                <if condition="$issorttag eq 0">
+                    <a class="publish-cancel" href="{:U('__CONTROLLER__/showlist')}">不改了</a>
+                <elseif condition="$issorttag eq 1" />
+                    <a class="publish-cancel" href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$sortidvalue))}">不改了</a>
+                <elseif condition="$issorttag eq 2" />
+                    <a class="publish-cancel" href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$tagidvalue))}">不改了</a>
+                </if>
+
             </div>
 
             <div class="editarticle">
                 <form action="{:U('__CONTROLLER__/modifyarticle')}" method="post" enctype="multipart/form-data">
                     <div class="layout-wrapper">
                         <div class="every-input">
+                            <!-- 提交后根据获取的issorttag值判断跳转页面，0表示跳转到所有文章列表，1表示跳转到分类文章列表，2表示跳转到标签文章列表 -->
+                            <input type="hidden" name="issorttag" value="{$issorttag}" />
+                            <!-- 判断issorttag值后，获取上一页面的传过来的分类或标签id值，在不修改该文章分类提交以及取消文章修改的情况下，跳转到上一页面（如果修改文章时更改了文章分类，则在提交后获取相应sortid跳转到相应分类列表） -->
+                            <input type="hidden" name="sortidvalue" value="{$sortidvalue}" />
+                            <input type="hidden" name="tagidvalue" value="{$tagidvalue}" />
+
                             <span class="input-head float-left">标题</span>
                             <p class="input-body">
                                 <input class="input-title all-input" type="text" name="title" placeholder="文章标题" value="{$articleres.title}" />

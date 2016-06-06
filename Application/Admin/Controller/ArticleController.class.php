@@ -25,7 +25,7 @@ class ArticleController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_ROW%篇文章 共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -78,7 +78,7 @@ class ArticleController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_ROW%篇文章 共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -110,6 +110,8 @@ class ArticleController extends BaseController {
         $this->assign('articlelistsort',$articlelistsort);
         $this->assign('articlesortnamestr',$articlesortnamestr);
         $this->assign('page',$pageshow);
+        $this->assign('sortid',$sortid);
+        $this->assign('count',$count);
 
         $this->display();
 
@@ -143,7 +145,7 @@ class ArticleController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_ROW%篇文章 共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -174,6 +176,8 @@ class ArticleController extends BaseController {
         $this->assign('articlelisttag',$articlelisttag);
         $this->assign('articletagnamestr',$articletagnamestr);
         $this->assign('page',$pageshow);
+        $this->assign('tagid',$tagid);
+        $this->assign('count',$count);
 
         $this->display();
         
@@ -190,11 +194,16 @@ class ArticleController extends BaseController {
             $data['title'] = I('title'); // 获取文章标题
             $data['author'] = I('author'); // 获取文章作者
             $data['sortid'] = I('sortid'); // 获取文章分类id
+            // var_dump($data['sortid']);exit();
             $tagid = I('tagid'); // 获取文章标签id
             $data['abstract'] = I('abstract'); //获取文章摘要内容
             $data['content'] = I('content'); //获取文章详情内容
             $data['time'] = time(); //获取文章发布时间
             $data['lastmodifytime'] = time(); // 新增文章时设置文章最后编辑时间即为文章发布时间
+
+            $sortidvalue = I('sortidvalue');
+            $tagidvalue = I('tagidvalue');
+            $issorttag = I('issorttag');
 
             /* 图片上传 */
             if($_FILES['coverpic']['tmp_name'] != ''){
@@ -242,7 +251,16 @@ class ArticleController extends BaseController {
                     }
 
                     if($addresult){
-                        $this->success('文章添加成功！',U('showlist'),1);
+                        if($issorttag == 0){
+                            $this->success('文章添加成功！',U('showlist'),1);
+                        }
+                        if($issorttag == 1){
+                            $this->success('文章添加成功！',U("showlistsort/",array('sortid'=>$sortidvalue)),1);
+                        }
+                        if($issorttag == 2){
+                            $this->success('文章添加成功！',U("showlisttag/",array('tagid'=>$tagidvalue)),1);
+                        }
+
                     }else{
                         $this->error('文章添加失败！');
                     }
@@ -250,7 +268,15 @@ class ArticleController extends BaseController {
                 }else{
 
                     if($articleid){
-                        $this->success('文章添加成功！',U('showlist'),1);
+                        if($issorttag == 0){
+                            $this->success('文章添加成功！',U('showlist'),1);
+                        }
+                        if($issorttag == 1){
+                            $this->success('文章添加成功！',U("showlistsort/",array('sortid'=>$sortidvalue)),1);
+                        }
+                        if($issorttag == 2){
+                            $this->success('文章添加成功！',U("showlisttag/",array('tagid'=>$tagidvalue)),1);
+                        }
                     }else{
                         $this->error('文章添加失败！');
                     }
@@ -272,10 +298,17 @@ class ArticleController extends BaseController {
 
         $article = D('Article');
 
+        $issorttag = I('issorttag');
+        $sortidvalue = I('sortidvalue');
+        $tagidvalue = I('tagidvalue');
+
         /* 获取所有标签 */
         $tag = D('Tag');
         $tagres = $tag->select();
         $this->assign('tagres',$tagres);
+        $this->assign('issorttag',$issorttag);
+        $this->assign('sortidvalue',$sortidvalue);
+        $this->assign('tagidvalue',$tagidvalue);
 
         $this->display();
     }
@@ -294,7 +327,10 @@ class ArticleController extends BaseController {
             $data2['articleid'] = I('id');
             $data['title'] = I('title');
             $data['author'] = I('author');
-            $data['sortid'] = I('sortid');
+            $sortidvalue = I('sortid'); // 获取当前正在修改的文章的分类id（使之成功更新数据库，并且提交后返回该分类的文章列表页）
+            $tagidvalue = I('tagidvalue');  // 获取上一个页面的标签id
+            $data['sortid'] = $sortidvalue;
+            $issorttag = I('issorttag');
             // $tagidselected = I('tagidselected'); // 获取文章标签id
             $tagid = I('tagid'); // 获取文章标签id
             $data['abstract'] = I('abstract'); //获取文章摘要内容
@@ -349,7 +385,16 @@ class ArticleController extends BaseController {
                     }
 
                     if($addresult){
-                        $this->success('文章修改成功！',U('showlist'),1);
+                        if($issorttag == 0){
+                            $this->success('文章修改成功！',U('showlist'),1);
+                        }
+                        if($issorttag == 1){
+                            $this->success('文章修改成功！',U("showlistsort/",array('sortid'=>$sortidvalue)),1);
+                        }
+                        if($issorttag == 2){
+                            $this->success('文章修改成功！',U("showlisttag/",array('tagid'=>$tagidvalue)),1);
+                        }
+                                             
                     }else{
                         $this->error('文章修改失败！');
                     }
@@ -359,7 +404,15 @@ class ArticleController extends BaseController {
                     $deleteresult = $Articletag->relation(true)->where(array('articleid'=>$data2['articleid']))->delete();
 
                     if($deleteresult){
-                        $this->success('文章修改成功！',U('showlist'),1);
+                        if($issorttag == 0){
+                            $this->success('文章修改成功！',U('showlist'),1);
+                        }
+                        if($issorttag == 1){
+                            $this->success('文章修改成功！',U("showlistsort/",array('sortid'=>$sortidvalue)),1);
+                        }
+                        if($issorttag == 2){
+                            $this->success('文章修改成功！',U("showlisttag/",array('tagid'=>$tagidvalue)),1);
+                        }
                     }else{
                         $this->error('文章修改失败！');
                     }
@@ -387,13 +440,19 @@ class ArticleController extends BaseController {
         // print_r($tagres);exit();
 
         $id = I('id');
+        $issorttag = I('issorttag');
+        $sortidvalue = I('sortidvalue');
+        $tagidvalue = I('tagidvalue');
         $articleres = $article->relation(true)->find($id);
 
+        $this->assign('issorttag',$issorttag);
         $this->assign('articleres',$articleres);
         $this->assign('sortres',$sortres);
         $this->assign('tagres',$tagres);
         // $this->assign('tagresid',$tagresid);
         $this->assign('articletagid',$articletagid);
+        $this->assign('sortidvalue',$sortidvalue);
+        $this->assign('tagidvalue',$tagidvalue);
 
         $this->display();
     }

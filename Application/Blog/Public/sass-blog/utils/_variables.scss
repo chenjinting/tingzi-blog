@@ -1,0 +1,36 @@
+@charset "UTF-8";
+// 变量
+
+$blog-header-height: 50px;	// 博客页面头部header高度
+$blog-footer-height: 80px;	// 博客页面底部header高度
+$theme-blog-backgoundcolor: #0994dc;	// 博客主题颜色
+$theme-admin-backgoundcolor: #3e3e40;	// 后台模块主题颜色
+$blog-content-width: 1080px;	// 博客宽度
+$blog-content-left-width: 770px;	// 博客左边列表/内容区宽度
+$blog-content-right-width: 300px;	// 博客右边标签等内容区宽度
+
+// 文章列表的封面相关
+$coverpic-margin-right: 10px;
+$coverpic-padding-top: 5px;
+$coverpic-img-width: 170px;
+$coverpic-img-height: 135px;
+
+// 文章列表简要信息中的分类和标签基本样式
+$sort-span-display: inline-block;
+$sort-span-height: 17px;
+$sort-span-padding: 3px; 
+$sort-font-size: 15px;
+$sort-color: #339966;
+$tag-color: #25a3a4;
+
+// 分页
+$pagination-num-color: #0897e0;
+
+// 分类管理列表的每个分类高度
+$every-sort-height: 60px;
+
+// 标签管理列表的每个标签高度
+$every-tag-height: 25px;
+
+// 每个页面的<h1>背景位置
+$h1-background-position: 0 3px;

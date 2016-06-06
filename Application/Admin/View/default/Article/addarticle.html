@@ -17,7 +17,6 @@
     <script type="text/javascript" src="{$Think.const.ADMIN_VENDOR_URL}Ueditor/ueditor.config.js"></script>
     <script type="text/javascript" src="{$Think.const.ADMIN_VENDOR_URL}Ueditor/ueditor.all.min.js"></script>
     
-    
 </head>
 <body>
     <div class="page">
@@ -32,13 +31,24 @@
             <h1>正在写文章...</h1>
 
             <div class="cancel-area">
-                <a class="publish-cancel" href="{:U('__CONTROLLER__/showlist')}">返回</a>
+                <if condition="$issorttag eq 0">
+                    <a class="publish-cancel" href="{:U('__CONTROLLER__/showlist')}">不写了</a>
+                <elseif condition="$issorttag eq 1" />
+                    <a class="publish-cancel" href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$sortidvalue))}">不写了</a>
+                <elseif condition="$issorttag eq 2" />
+                    <a class="publish-cancel" href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$tagidvalue))}">不写了</a>
+                </if>
             </div>
 
             <div class="editarticle">
                 <form action="{:U('__CONTROLLER__/addarticle')}" method="post" enctype="multipart/form-data">
                     <div class="layout-wrapper">
                         <div class="every-input">
+
+                            <input type="hidden" name="issorttag" value="{$issorttag}" />
+                            <input type="hidden" name="sortidvalue" value="{$sortidvalue}" />
+                            <input type="hidden" name="tagidvalue" value="{$tagidvalue}" />
+
                             <span class="input-head float-left">标题</span>
                             <p class="input-body"><input class="input-title all-input" type="text" name="title" placeholder="文章标题" /></p>
                         </div>
@@ -49,11 +59,11 @@
                         <div class="every-input">
                             <span class="input-head float-left">分类</span>
                             <p class="input-body">
-                                <select class="select-sort all-input" name="sortid">
+                                <select <if condition="$issorttag eq 1"> disabled="disabled" </if> class="select-sort all-input" name="sortid">
                                     <option value="0">选择一个分类</option>
 
                                     <volist name='sortres' id='sort'>
-                                        <option value="{$sort.sortid}">{$sort.sortname}</option>
+                                        <option <if condition="$sortidvalue eq $sort['sortid']"> selected="selected" </if> value="{$sort.sortid}">{$sort.sortname}</option>
                                     </volist>
                                 </select>
                             </p>
@@ -61,9 +71,10 @@
                         <div class="every-input">
                             <span class="input-head float-left">标签</span>
                             <p class="input-body">
+                                <input class="articletag11" type="hidden" value="{$tagidvalue}" />
                                 <volist name="tagres" id='v'>
                                     <p class="everytag float-left">
-                                        <input class="articletag2" id="{$v.tagid}" type="checkbox" name="tagid[]" value="{$v.tagid}" />
+                                        <input class="articletag22" id="{$v.tagid}" type="checkbox" name="tagid[]" value="{$v.tagid}" />
                                         <label for="{$v.tagid}">{$v.tagname}</label>
                                         &nbsp;
                                     </p>                            

@@ -7,8 +7,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+
     <title>挺 | 后台管理 - {$articletagnamestr} - 文章列表</title>
 
     <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
@@ -27,9 +26,9 @@
 
         <div class="showlisttag main">
 
-            <h1>当前列表标签为：{$articletagnamestr}</h1>
+            <h1>当前列表标签为：{$articletagnamestr}({$count})</h1>
 
-            <a class="addnew" href="{:U('__CONTROLLER__/addarticle')}">写文章</a>
+            <a class="addnew" href="{:U('__CONTROLLER__/addarticle',array('issorttag'=>'2','tagidvalue'=>$tagid))}">写文章</a>
 
             <notempty name="articlelisttag">
 
@@ -84,7 +83,7 @@
 
                     <!-- 修改、删除按钮 -->
                     <div class="operate">
-                        <a href="{:U('__CONTROLLER__/modifyarticle',array('id'=>$vo['id']))}">
+                        <a href="{:U('__CONTROLLER__/modifyarticle',array('issorttag'=>'2','tagidvalue'=>$tagid,'id'=>$vo['id']))}">
                             <span class="modifybutton">修改</span>
                         </a>
                         <a href="{:U('__CONTROLLER__/deletearticle',array('id'=>$vo['id']))}" onclick="return confirm('你真的要删除这篇文章吗？');">

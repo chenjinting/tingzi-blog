@@ -1,0 +1,12 @@
+@charset "UTF-8";
+// 排版规范
+
+.float-left{
+	@include float-left;
+}
+.float-right{
+	@include float-right;
+}
+.clear{
+	@include clear;
+}

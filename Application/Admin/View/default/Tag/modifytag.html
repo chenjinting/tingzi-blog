@@ -7,8 +7,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+
     <title>挺 | 后台管理 - {$tagname} - 修改标签</title>
 
     <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
@@ -29,14 +28,14 @@
             <h1>正在修改标签：{$tagname}</h1>
 
             <div class="cancel-area">
-                <a class="publish-cancel" href="{:U('__CONTROLLER__/showlist')}">取消</a>
+                <a class="publish-cancel" href="{:U('__CONTROLLER__/showlist')}">取消修改</a>
             </div>
 
             <div class="addmodify-sorttag">
                 <form action="{:U('__CONTROLLER__/modifytag')}" method="post" enctype="multipart/form-data">
                     <p class="addmodify-srottag-input">
                         <span class="sorttag-name">分类名称</span>
-                        <input class="sorttag-input" type="text" name="tagname" value="{$tagname}" />
+                        <input class="sorttag-input" type="text" name="tagname" value="{$tagname}" placeholder="填写一个新的标签名称" />
                         <input type="hidden" name="tagid" value="{$tagid}" />
                     </p>
                     <p class="sorttag-submit">

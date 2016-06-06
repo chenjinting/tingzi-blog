@@ -1,0 +1,33 @@
+@charset "UTF-8";
+// 基本样式
+
+body{
+	@include font-familys;
+	background-color: #eee;
+	overflow-x: hidden;
+}
+
+.page{
+	min-width: 1080px;
+	
+	.content{
+		width: $blog-content-width;
+		margin: 0 auto;
+		margin-top: $blog-header-height + 20px;
+		margin-bottom: $blog-footer-height - 30px;
+
+		.content-left{
+			width: $blog-content-left-width;
+		}
+		.content-right{
+			width: $blog-content-right-width;
+			margin-left: $blog-content-width - $blog-content-left-width - $blog-content-right-width;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+			background-color: #fff;
+		}
+	}
+}
+a{
+	@include a-link;
+}

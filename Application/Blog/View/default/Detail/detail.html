@@ -1,190 +1,164 @@
  <!DOCTYPE HTML>
-<html><head>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<meta content="pc,mobile" name="applicable-device">
-<meta content="no-transform" http-equiv="Cache-Control">
-<meta content="no-siteapp" http-equiv="Cache-Control">
-<meta content="width=device-width" name="viewport">
-<link href="{$Think.const.BLOG_CSS_URL}style.css" media="screen" type="text/css" rel="stylesheet">
-<link href="{$Think.const.BLOG_CSS_URL}base.css" media="screen" type="text/css" rel="stylesheet">
+<html>
+<head>
+	<meta charset="utf-8">    
+    <meta name="author" content="挺，253018164@qq.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
+    <meta name="description" content="{$articleres.abstract}">
+    <meta name="keywords" content="<volist name="articleres['tag']" id="vo2">{$vo2.tagname} | </volist>">
+    <title>挺 | 前端与生活</title>
 
-<script src="{$Think.const.BLOG_JS_URL}jquery.min.js"></script> 
-<title>人生哲理_人生哲理文章阅读_人生哲理语录句子大全_意空间阅读网</title><meta content="人生哲理_人生哲理文章阅读_人生哲理语录句子大全" name="keywords">
-<meta content="人生哲理栏目为广大网友奉献人生哲理名言，人生哲理故事，人生哲理文章，哲理名人名言名录大全。" name="description">
-
-<script type="text/javascript">
-
-	// 设置当前页面的导航栏高亮
-    $(function(){
-        var current_url = "__MODULE__/List/showlistsort/sortid/{$articleres.sortid}";
-        $('a[href="'+current_url+'"]').addClass('activeli');
-    });
-
-    // 设置页面评论跳转锚点速度
-    // $(function(){
-    // 	var anchor = "{$commentlist.commentid}";
-    // 	$('html,body').animate({scrollTop:$('#'.anchor).offset().top},500);
-    // });
-
- </script>
+    <link href="{$Think.const.BLOG_CSS_URL}blog.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="{$Think.const.BLOG_JS_URL}jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.BLOG_JS_URL}blog.js"></script>
 
 </head>
-<body class="archive category category-philosophy-life category-18">
+<body>
 
-<include file="Public/header" />
+	<div class="page">
+		
+		<include file="Public/header" />
 
-<div class="wrapper">
-	<div class="content">
+		<!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮导航栏的效果 -->
+    	<input type="hidden" id="currenturl" value="__MODULE__/List/showlistsort/sortid/{$articleres.sortid}" />
 
-<div class="meta">
-	<h1 class="meta-tit">{$articleres.title}</h1>
-	<p class="meta-info">
-		分类：	<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$articleres['sortid']))}">{$articleres.sortname}</a> <br />
-		标签：	<volist name="articleres['tag']" id="vo2">
-					<a href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$vo2['tagid']))}">{$vo2.tagname}&nbsp;&nbsp; </a>
-				</volist> <br />
-		发表日期：{$articleres.time|date="Y-m-d",###} &nbsp;&nbsp; 
-		阅读：{$articleres.readnum}次&nbsp;&nbsp; 
-		留言：{$commentnum}
-	</p>
-</div>
+		<div class="content">
+			<div class="content-left float-left">
+				<div class="content-detail-area">
+					<div class="detai-info">
+						<p class="detail-title">{$articleres.title}</p>
+						<p class="detail-baseinfo">
+							<span>作者</span>
+							<span>{$articleres.author}</span>
+							<span>时间</span>
+							<span>{$articleres.lastmodifytime|date="Y-m-d",###}</span>
+							<span>阅读</span>
+							<span>{$articleres.readnum}</span>
+							<span>留言</span>
+							<span>{$commentnum}</span>
+						</p>
+						<p class="detail-classification">
+							<span class="detail-sort">
+							<span class="detail-srot-head">分类:</span>
+							<a class="detail-sort-name" href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$articleres['sortid']))}">{$articleres.sortname}</a>
+							</span>
+							<span class="detail-tag">
+								<span class="detail-tag-head">标签:</span>
+								<volist name="articleres['tag']" id="vo2">
+								<a class="detail-tag-name" href="{:U('__MODULE__/List/showlisttag',array('tagid'=>$vo2['tagid']))}">{$vo2.tagname}</a>
+								</volist>
+							</span>
+						</p>
+						
+					</div>
 
-<div class="entry">
-	<img width="630" alt="{$articleres.title}" src="/__UPLOADIMG__{$articleres.coverpic}" class="aligncenter size-full wp-image-38074">
-	{$articleres.content|htmlspecialchars_decode|stripslashes}
-</div>
+					<div class="detail-content">{$articleres.content|htmlspecialchars_decode|stripslashes}</div>
 
-<div>文章版权属于文章作者所有，转载请注明：<a href="{:U('__MODULE__/Detail/index',array('id'=>$articleres['id']))}" title=" 诸葛亮写给儿子的一封信，仅86字！ " rel="bookmark">{$articleres.title}</a></div> 
+					<div class="pre-next-article">
+						<p class="pre-article float-left">
+						上一篇：<empty name="frontres">
+									<span>前面没有文章啦</span>
+								<else/>
+									<span><a href="{:U('__CONTROLLER__/index',array('id'=>$frontres['id']))}">{$frontres.title}</a></span>
+								</empty>
+						</p>
+						<p class="next-article float-right">
+							下一篇：<empty name="afterres">
+										<span>后面没有文章啦</span>
+									<else/>
+										<span><a href="{:U('__CONTROLLER__/index',array('id'=>$afterres['id']))}">{$afterres.title}</a></span>
+									</empty>
+						</p>
+						<div class="clear"></div>
+					</div>
 
-<p>
-上一篇：<empty name="frontres">
-			<span>前面没有文章啦</span>
-		<else/>
-			<span><a href="{:U('__CONTROLLER__/index',array('id'=>$frontres['id']))}">{$frontres.title}</a></span>
-		</empty>
-</p>
-<p>
-下一篇：<empty name="afterres">
-			<span>后面没有文章啦</span>
-		<else/>
-			<span><a href="{:U('__CONTROLLER__/index',array('id'=>$afterres['id']))}">{$afterres.title}</a></span>
-		</empty>
-</p>
+				</div>
 
-<!-- 百度分享 -->
-<div class="bdsharebuttonbox" data-tag="share_1">
-	<a class="bds_mshare" data-cmd="mshare"></a>
-	<a class="bds_qzone" data-cmd="qzone" href="#"></a>
-	<a class="bds_tsina" data-cmd="tsina"></a>
-	<a class="bds_baidu" data-cmd="baidu"></a>
-	<a class="bds_renren" data-cmd="renren"></a>
-	<a class="bds_tqq" data-cmd="tqq"></a>
-	<a class="bds_more" data-cmd="more">更多</a>
-	<a class="bds_count" data-cmd="count"></a>
-</div>    
+				<!-- 百度分享 -->
+				<div class="bdsharebuttonbox" data-tag="share_1">
+					<a class="bds_mshare" data-cmd="mshare"></a>
+					<a class="bds_qzone" data-cmd="qzone" href="#"></a>
+					<a class="bds_tsina" data-cmd="tsina"></a>
+					<a class="bds_baidu" data-cmd="baidu"></a>
+					<a class="bds_renren" data-cmd="renren"></a>
+					<a class="bds_tqq" data-cmd="tqq"></a>
+					<a class="bds_more" data-cmd="more">更多</a>
+					<a class="bds_count" data-cmd="count"></a>
+				</div>    
 
-<!-- 评论 -->
-<div class="comment">
-	<h2>评论</h2>
-	<volist name="commentlist" id="c">
-	<div class="comment-list" id="{$c.commentid}">
-		<div class="every-comment">
-			<div class="comment-img">
-				<img src="{$Think.const.BLOG_IMG_URL}commentauthor-img.png" />
-			</div>		
-			<div class="comment-author comment-paddingleft">
-				<empty name="c.personsite">
-					<strong>{$c.commentauthor}</strong>
-				<else />
-					<a href="{$c.personsite}" target="_blank"><strong>{$c.commentauthor}</strong></a>
-				</empty>				
+				<!-- 留言列表 -->
+				<div class="article-comment">
+					<p class="article-comment-title">留言（{$commentnum}）</p>
+					<div class="article-comment-list">				
+
+						<volist name="commentlist" id="c">
+							<div class="every-article-comment" id="{$c.commentid}">
+								<div class="article-comment-author float-left">
+									<img src="{$Think.const.BLOG_IMG_URL}commentauthor-img.png" />
+								</div>
+								<div class="article-comment-info float-left">
+									<p class="article-comment-info-author">
+										<empty name="c.personsite">
+											{$c.commentauthor}
+										<else />
+											<a href="{$c.personsite}" target="_blank"><strong>{$c.commentauthor}</strong></a>
+										</empty>
+									</p>
+									<p class="article-comment-info-content">
+										{$c.commentcontent}
+									</p>
+									<p class="article-comment-info-time">
+										{$c.commenttime|date="Y-m-d",###}
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</volist>
+
+						<empty name="commentlist">
+            			<p class="no-comment">还没有留言，写条留言吧~</p>
+        				</empty>
+
+					</div>
+				</div>
+
+				<!-- 留言输入 -->
+				<div class="article-comment-input">
+					<form action="{:U('__CONTROLLER__/addcomment')}" method="post"  enctype="multipart/form-data">
+						<div class="publish-comment">
+							<h3 class="write-comment-title">写留言</h3>
+							<p class="comment-author comment-input">
+								<input type="hidden" name="articleid" value="{$articleres.id}" />		
+								<input type="text" name="commentauthor" placeholder="你的昵称（必填）" />
+							</p>
+							<p class="comment-input">		
+								<input type="text" name="personsite" placeholder="你的个人站点网址" />
+							</p>
+							<p class="comment-input">		
+								<textarea name="commentcontent" placeholder="在这写下你的留言吧~"></textarea>
+							</p>
+							<p class="comment-input">
+								<button class="publish-comment" type="submit">发表留言</button>
+							</p>
+						</div>
+					</form>
+				</div>
+				
+				
 			</div>
-			<div class="comment-content comment-paddingleft">
-				{$c.commentcontent}
-			</div>
-			<div class="comment-time comment-paddingleft">
-				{$c.commenttime|date="Y-m-d",###}
-			</div>
+
+			<include file="Public/right" />
+
+			<div class="clear"></div>
+
 		</div>
+
+		<include file="Public/footer" />
+
 	</div>
-	</volist>
 
-	<div style="height: 30px;text-align: center;">
-        <empty name="commentlist">
-            <p>
-                还没有留言噢，写条留言吧~
-            </p>
-        </empty>
-    </div>
-
-	<form action="{:U('__CONTROLLER__/addcomment')}" method="post"  enctype="multipart/form-data">
-		<div class="publish-comment">
-			<h3>留言</h3>
-			<p>
-				<input type="hidden" name="articleid" value="{$articleres.id}" />		
-				<input type="text" name="commentauthor" placeholder="你的昵称（必填）" />
-			</p>
-			<p>		
-				<input type="text" name="personsite" placeholder="你的个人站点网址" />
-			</p>
-			<p>		
-				<textarea name="commentcontent" placeholder="在这写下你的留言吧~"></textarea>
-			</p>
-			<p>
-				<button type="submit">发表留言</button>
-			</p>
-		</div>
-	</form>
-
-
-</div>
-
-<include file="Public/right" />
-
-</div>
-
-
-
-<include file="Public/footer" />
-
-
-<script type="text/javascript">
-	// 百度分享
-    window._bd_share_config = {
-    	// 通用设置
-		common : {
-			bdText: "{$articleres.content}",  // 分享的内容
-			bdDesc: "{$articleres.abstract}", //分享的摘要
-			bdUrl: "http://www.chenjinting.com/Blog/Detail/index/id/{$articleres['id']}", //分享的Url地址
-			bdPic: "http://www.chenjinting.com/__UPLOADIMG__{$articleres.coverpic}", // 分享的图片
-			// onAfterClick: 'function(cmd){}', // 在用户点击分享按钮后执行代码，cmd为分享目标id。可用于统计等
-
-		},
-		// 分享按钮设置
-		share : [{
-			"tag": "share_1", // 与data-tag一致，表示该配置只会应用于data-tag值一致的分享按钮。如果不设置tag，该配置将应用于所有分享按钮
-			"bdSize": 24, //分享按钮的尺寸
-			// "bdCustomStyle": "样式文件地址", //自定义样式，引入样式文件
-		}],
-		// 浮窗分享设置
-		slide : [{
-			bdImg : 0, // 分享浮窗图标的颜色
-			bdPos : "right", // 分享浮窗的位置
-			bdTop : 100, // 分享浮窗与可视区域顶部的距离(px)
-		}],
-		// 图片分享设置
-		image : [{
-			//此处放置图片分享设置
-		
-		}],
-		selectShare : [{
-			//此处放置划词分享设置
-		
-		}]
-	}
-
-	//以下为js加载部分
-	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-</script>
-
-</body></html>
+</body>
+</html>

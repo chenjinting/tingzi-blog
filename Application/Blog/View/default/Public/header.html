@@ -1,13 +1,18 @@
-<div class="topbar">
-	<div class="inner">
-		<a title="意空间阅读网_青春励志文章_励志文章阅读" href="{:U('__MODULE__')}" class="logo">意空间阅读网</a>
-		<ul class="nav">
-			<volist name="sortres" id="vo">
-				<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-180">
-					<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo['sortid']))}" >{$vo.sortname}</a>
-				</li>
-			</volist>
-		</ul>
-
+<div class="header">
+	<div class="header-area">
+		<div class="blog-logo float-left">
+			<a href="{:U('__MODULE__')}"><img src="{$Think.const.BLOG_IMG_URL}logo.png" alt="挺子的博客"></a>
+		</div>
+		<div class="head-sort float-right">
+			<ul>
+				<volist name="sortres" id="vo">
+				<a href="{:U('__MODULE__/List/showlistsort',array('sortid'=>$vo['sortid']))}" >
+					<li class="every-head-sort float-left">
+						{$vo.sortname}
+					</li>
+				</a>
+				</volist>
+			</ul>
+		</div>
 	</div>
-</div> 
+</div>

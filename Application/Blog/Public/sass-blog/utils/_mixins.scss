@@ -1,0 +1,19 @@
+@charset "UTF-8";
+// 样式重用
+
+@mixin font-familys{
+	font-family: "hiragino sans gb","microsoft yahei";
+}
+@mixin float-left{
+	float: left;
+}
+@mixin float-right{
+	float: right;
+}
+@mixin clear{
+	clear: both;
+}
+@mixin a-link{
+	color: #fff;
+	text-decoration: none;
+}

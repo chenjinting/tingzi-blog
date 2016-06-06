@@ -1,0 +1,27 @@
+@charset "UTF-8";
+// 博客尾部footer
+
+.footer{
+	height: $blog-header-height + 20px;
+	background-color: $theme-admin-backgoundcolor;
+	width: 100%;
+	z-index: 999;
+
+	.footer-area{
+		height: $blog-header-height + 20px;
+		line-height: $blog-header-height + 20px;
+		width: 1080px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 13px;
+		color: #ccc;
+
+		a{
+			color: #ccc;
+
+			&:hover{
+				color: #eee;
+			}
+		}
+	}
+}

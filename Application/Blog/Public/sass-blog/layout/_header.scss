@@ -1,0 +1,40 @@
+@charset "UTF-8";
+// 头部header
+
+.header{
+	height: $blog-header-height;
+	background-color: $theme-blog-backgoundcolor;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+
+	.header-area{
+		height: $blog-header-height;
+		width: 1080px;
+		margin: 0 auto;
+
+		.blog-logo{
+			img{
+				width: 100px;
+				height: 50px;
+			}
+		}
+		.head-sort{
+			.every-head-sort{
+				height: $blog-header-height;
+				line-height: $blog-header-height;
+				padding: 0 10px;
+
+				&:hover{
+					background-color: #047DBB;
+				}
+			}
+			.active-header{
+				background-color: #2085cc;
+			}
+		}
+	}
+}
+
+
