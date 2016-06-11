@@ -11,7 +11,7 @@
     <meta name="keywords" content="前端与生活">
     <title>挺 | 工作与生活</title>
 
-    <link href="<?php echo (BLOG_CSS_URL); ?>blog.css" type="text/css" rel="stylesheet" />
+	<link href="<?php echo (BLOG_CSS_URL); ?>blog.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="<?php echo (BLOG_JS_URL); ?>jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="<?php echo (BLOG_JS_URL); ?>blog.js"></script>
 
@@ -44,9 +44,10 @@
 </div>
 
 		<div class="content">
+			<h1 class="current-position">当前标签为：<?php echo ($articletagnamestr); ?></h1>
 			<div class="content-left float-left">
-				<?php if(!empty($articleres)): ?><div class="article-list">
-					<?php if(is_array($articleres)): $i = 0; $__LIST__ = $articleres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo22): $mod = ($i % 2 );++$i;?><div class="every-article">
+				<?php if(!empty($articlelisttag)): ?><div class="article-list">
+					<?php if(is_array($articlelisttag)): $i = 0; $__LIST__ = $articlelisttag;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo22): $mod = ($i % 2 );++$i;?><div class="every-article">
 						<div class="article-coverpic float-left">
 							<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>">
 								<img alt="<?php echo ($vo22["title"]); ?>" src="/Uploads/image/<?php echo ($vo22["coverpic"]); ?>">
@@ -82,13 +83,13 @@
 						</div>
 						<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>" class="article-read-all">阅读全文</a>
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
-				</div>	
+				</div>
 
 				<div class="pagination"><?php echo ($page); ?></div><?php endif; ?>
 
-				<?php if(empty($articleres)): ?><p class="emptydata">博主好懒啊，一篇文章都没有~</p><?php endif; ?>       		
+				<?php if(empty($articlelisttag)): ?><p class="emptydata">这个标签还没有文章噢~</p><?php endif; ?>
 
-			</div>		
+			</div>
 
 			<div class="content-right float-left">
 	

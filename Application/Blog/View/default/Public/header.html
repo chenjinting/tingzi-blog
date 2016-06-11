@@ -3,6 +3,12 @@
 		<div class="blog-logo float-left">
 			<a href="{:U('__MODULE__')}"><img src="{$Think.const.BLOG_IMG_URL}logo.png" alt="挺子的博客"></a>
 		</div>
+		<div class="search-area float-right">
+	        <form action="{:U('__MODULE__/List/search')}" method="get">
+	            <input type="text" placeholder="搜索文章标题..." class="search-input float-left" name="search-key" value="{$keywords}" />
+	            <button type="submit" class="search-submit float-left">搜索</button>
+	        </form>   
+        </div>
 		<div class="head-sort float-right">
 			<ul>
 				<volist name="sortres" id="vo">
@@ -14,5 +20,6 @@
 				</volist>
 			</ul>
 		</div>
+
 	</div>
 </div>

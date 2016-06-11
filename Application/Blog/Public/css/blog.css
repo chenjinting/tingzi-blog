@@ -50,6 +50,7 @@ a { color: #fff; text-decoration: none; }
 .every-article .article-info .article-title a:hover { color: #0994dc; }
 .every-article .article-info .article-baseinfo { color: #a9a7a7; font-size: 13px; margin-bottom: 6px; }
 .every-article .article-info .article-abstract { width: 555px; height: 45px; font-size: 14px; color: #757575; line-height: 18px; margin-bottom: 6px; padding-top: 5px; }
+.every-article .article-info .article-classification { margin-bottom: -5px; }
 .every-article .article-info .article-sort { border: 1px solid #339966; color: #339966; font-size: 14px; height: 15px; padding: 3px; margin-right: 5px; }
 .every-article .article-info .article-sort:hover { border: 1px solid #339966; color: #fff; background-color: #339966; }
 .every-article .article-info .article-sort:hover a { color: #fff; }
@@ -64,6 +65,9 @@ a { color: #fff; text-decoration: none; }
 .header { height: 50px; background-color: #0994dc; width: 100%; position: fixed; top: 0; z-index: 999; }
 .header .header-area { height: 50px; width: 1080px; margin: 0 auto; }
 .header .header-area .blog-logo img { width: 100px; height: 50px; }
+.header .header-area .search-area { width: 300px; padding: 9px 0; margin-left: 10px; }
+.header .header-area .search-area .search-input { width: 210px; height: 20px; padding: 5px 10px; border: 1px solid #fff; }
+.header .header-area .search-area .search-submit { border: 1px solid #fff; background-color: #0994dc; color: #fff; width: 66px; height: 32px; cursor: pointer; padding: 0; }
 .header .header-area .head-sort .every-head-sort { height: 50px; line-height: 50px; padding: 0 20px; }
 .header .header-area .head-sort .every-head-sort:hover { background-color: #047DBB; }
 .header .header-area .head-sort .active-header { background-color: #2085cc; }
@@ -105,6 +109,8 @@ a { color: #fff; text-decoration: none; }
 .index .statistics3 { background-color: #cec61a; }
 .index .statistics4 { background-color: #148cca; }
 .index .statistics5 { background-color: #40af04; }
+
+.searchkey-in-articletitle { color: #eC2e2e; }
 
 .content-left .content-detail-area { width: 740px; padding: 15px; background-color: #fff; }
 .content-left .content-detail-area .detai-info { margin-bottom: 10px; }

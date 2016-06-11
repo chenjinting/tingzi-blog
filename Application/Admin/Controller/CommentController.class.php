@@ -17,12 +17,12 @@ class CommentController extends BaseController {
         
         // 分页开始
         $count = $comment->count(); //查询满足要求的记录总数
-        $page = new Page($count,30); // 实例化分页类 传入总记录数和每页显示的记录数(10)
+        $page = new Page($count,15); // 实例化分页类 传入总记录数和每页显示的记录数(15)
 
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_ROW%条留言 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 
@@ -55,7 +55,7 @@ class CommentController extends BaseController {
         // 分页样式配置
         $page->setConfig('prev','上一页');
         $page->setConfig('next','下一页');
-        $page->setConfig('theme','共%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page->setConfig('theme','共%TOTAL_ROW%条留言 有%TOTAL_PAGE%页 %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 
         $pageshow = $page->show(); // 分页显示输出
 

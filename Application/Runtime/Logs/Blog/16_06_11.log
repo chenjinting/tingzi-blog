@@ -1,0 +1,1741 @@
+[ 2016-06-11T17:45:41+08:00 ] 127.0.0.1 /Blog/Detail/index/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0040s ]
+SQL: UPDATE `cjt_article` SET `readnum`=readnum+1 WHERE `id` = 15 [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cjt_comment` WHERE `articleid` = 15 AND `status` = 1 ORDER BY commenttime DESC  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 15 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id<15 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id>15 ) ORDER BY id ASC LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0031s ]
+NOTIC: [2] Illegal string offset 'articleid' E:\wamp\www\chenjt_website\Application\Blog\Controller\DetailController.class.php 第 40 行.
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='15' [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-06-11T21:15:27+08:00 ] 127.0.0.1 /Blog/Article/search?search-key=
+ERR: 无法加载控制器:Article
+
+[ 2016-06-11T21:20:13+08:00 ] 127.0.0.1 /Blog/Article/search?search-key=github
+ERR: 无法加载控制器:Article
+
+[ 2016-06-11T21:20:22+08:00 ] 127.0.0.1 /Blog/Article/search?search-key=github
+ERR: 无法加载控制器:Article
+
+[ 2016-06-11T21:20:39+08:00 ] 127.0.0.1 /Blog/Article/search?search-key=
+ERR: 无法加载控制器:Article
+
+[ 2016-06-11T21:21:15+08:00 ] 127.0.0.1 /Blog/Article/search?search-key=github
+ERR: 无法加载控制器:Article
+
+[ 2016-06-11T21:22:10+08:00 ] 127.0.0.1 /Blog/Article/search?search-key=github
+ERR: 无法加载控制器:Article
+
+[ 2016-06-11T21:23:44+08:00 ] 127.0.0.1 /Blog/Article/search?search-key=github
+ERR: 无法加载控制器:Article
+
+[ 2016-06-11T22:22:36+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0065s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-06-11T22:22:44+08:00 ] 127.0.0.1 /Blog/Index/index/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 10,10   [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='15' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='14' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='11' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='10' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='1' [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 15 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 14 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 11 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 10 AND `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2016-06-11T22:22:48+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001162s ]
+
+[ 2016-06-11T22:23:39+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004337s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2016-06-11T23:32:24+08:00 ] 127.0.0.1 /Blog/Detail/index/id/%7B$articleres[%27id%27]%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0719s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0043s ]
+SQL: UPDATE `cjt_article` SET `readnum`=readnum+1 WHERE `id` = 0 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_comment` WHERE `articleid` = 0 AND `status` = 1 ORDER BY commenttime DESC  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['id']} ) ORDER BY id DESC LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cjt_article` WHERE ( id<{$articleres['id']} ) ORDER BY id DESC LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['id']} ) ORDER BY id DESC LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cjt_article` WHERE ( id<{$articleres['id']} ) ORDER BY id DESC LIMIT 1  
+
+[ 2016-06-11T23:33:25+08:00 ] 127.0.0.1 /Blog/Detail/index/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0041s ]
+SQL: UPDATE `cjt_article` SET `readnum`=readnum+1 WHERE `id` = 3 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 ORDER BY commenttime DESC  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id<3 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id>3 ) ORDER BY id ASC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0045s ]
+NOTIC: [2] Illegal string offset 'articleid' E:\wamp\www\chenjt_website\Application\Blog\Controller\DetailController.class.php 第 40 行.
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\67bc5e4bbe1d0d4e657e44b32b1323b1.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003160s ]
+
+[ 2016-06-11T23:33:32+08:00 ] 127.0.0.1 /Blog/Detail/index/id/%7B$articleres[%27id%27]%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0047s ]
+SQL: UPDATE `cjt_article` SET `readnum`=readnum+1 WHERE `id` = 0 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_comment` WHERE `articleid` = 0 AND `status` = 1 ORDER BY commenttime DESC  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['id']} ) ORDER BY id DESC LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cjt_article` WHERE ( id<{$articleres['id']} ) ORDER BY id DESC LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['id']} ) ORDER BY id DESC LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cjt_article` WHERE ( id<{$articleres['id']} ) ORDER BY id DESC LIMIT 1  
+
+[ 2016-06-11T23:35:42+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000712s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001940s ]
+
+[ 2016-06-11T23:35:55+08:00 ] 127.0.0.1 /Blog/Detail/index/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.2209s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0029s ]
+SQL: UPDATE `cjt_article` SET `readnum`=readnum+1 WHERE `id` = 3 [ RunTime:0.2347s ]
+SQL: SELECT * FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 ORDER BY commenttime DESC  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id<3 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id>3 ) ORDER BY id ASC LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0028s ]
+NOTIC: [2] Illegal string offset 'articleid' E:\wamp\www\chenjt_website\Application\Blog\Controller\DetailController.class.php 第 40 行.
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\67bc5e4bbe1d0d4e657e44b32b1323b1.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2016-06-11T23:36:09+08:00 ] 127.0.0.1 /Blog/Detail/index/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0063s ]
+SQL: UPDATE `cjt_article` SET `readnum`=readnum+1 WHERE `id` = 3 [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 ORDER BY commenttime DESC  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id<3 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id>3 ) ORDER BY id ASC LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0027s ]
+NOTIC: [2] Illegal string offset 'articleid' E:\wamp\www\chenjt_website\Application\Blog\Controller\DetailController.class.php 第 40 行.
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\67bc5e4bbe1d0d4e657e44b32b1323b1.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2016-06-11T23:36:32+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2016-06-11T23:37:05+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003099s ]
+
+[ 2016-06-11T23:37:46+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0063s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002157s ]
+
+[ 2016-06-11T23:38:00+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001728s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0062s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0069s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005946s ]
+
+[ 2016-06-11T23:38:07+08:00 ] 127.0.0.1 /Blog/Index/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007784s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0074s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2016-06-11T23:38:33+08:00 ] 127.0.0.1 /Blog/List/showlistsort/sortid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` WHERE `sortid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 2 ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='1' [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 28 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-06-11T23:38:38+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0056s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2016-06-11T23:38:54+08:00 ] 127.0.0.1 /Blog/Detail/index/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0061s ]
+SQL: UPDATE `cjt_article` SET `readnum`=readnum+1 WHERE `id` = 3 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 ORDER BY commenttime DESC  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id<3 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cjt_article` WHERE ( id>3 ) ORDER BY id ASC LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0063s ]
+NOTIC: [2] Illegal string offset 'articleid' E:\wamp\www\chenjt_website\Application\Blog\Controller\DetailController.class.php 第 40 行.
+SQL: SELECT * FROM `cjt_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\67bc5e4bbe1d0d4e657e44b32b1323b1.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001572s ]
+
+[ 2016-06-11T23:45:37+08:00 ] 127.0.0.1 /Blog/List/showlistsort/sortid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` WHERE `sortid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 1 ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='14' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='11' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='10' [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 14 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 11 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 10 AND `status` = 1 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 28 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+
+[ 2016-06-11T23:45:40+08:00 ] 127.0.0.1 /Blog/List/showlistsort/sortid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` WHERE `sortid` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 3 ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 28 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-06-11T23:45:41+08:00 ] 127.0.0.1 /Blog/List/showlistsort/sortid/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` WHERE `sortid` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 5 ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 28 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001447s ]
+
+[ 2016-06-11T23:45:45+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2016-06-11T23:45:46+08:00 ] 127.0.0.1 /Blog/List/showlistsort/sortid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` WHERE `sortid` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_article` WHERE `sortid` = 3 ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 28 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\66a5e3c199b5189ce1ee01d0083958d9.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2016-06-11T23:45:50+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0055s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002134s ]
+
+[ 2016-06-11T23:46:28+08:00 ] 127.0.0.1 /Blog/List/showlisttag/tagid/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `cjt_articletag` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0047s ]
+SQL: SELECT `articleid` FROM `cjt_articletag` WHERE `tagid` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0011s ]
+SQL: SELECT `tagname` FROM `cjt_tag` WHERE `tagid` = 7  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_articletag` WHERE `tagid` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_article` WHERE `id` IN ('3') ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\be6f1463f22fc8f76132bd473a653c5e.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\be6f1463f22fc8f76132bd473a653c5e.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001544s ]
+
+[ 2016-06-11T23:49:31+08:00 ] 127.0.0.1 /Blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `cjt_sort` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cjt_sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cjt_tag`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjt_article` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cjt_comment` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_article` ORDER BY lastmodifytime DESC LIMIT 0,10   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjt_tag` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='3' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='2' [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='3' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='4' [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='5' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='4' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='6' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='7' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='13' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='8' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='6' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='9' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cjt_sort` WHERE ( 1=1 AND sortid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\wamp\www\chenjt_website\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM cjt_articletag AS a, cjt_tag AS b WHERE a.tagid = b.tagid AND a. articleid='12' [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 3 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 4 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 5 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 6 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 7 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 13 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 8 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 9 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cjt_comment` WHERE `articleid` = 12 AND `status` = 1 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined variable: keywords E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 29 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+NOTIC: [2] Illegal string offset 'commentcount1' E:\wamp\www\chenjt_website\Application\Runtime\Cache\Blog\da38aaaeab14a3f431ea394c96895f42.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+

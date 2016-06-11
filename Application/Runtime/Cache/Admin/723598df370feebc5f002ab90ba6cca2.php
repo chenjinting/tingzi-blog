@@ -98,7 +98,7 @@
                             <span class="every-listarticle-baseinfo"><?php echo (date("Y-m-d H:i:s",$vo["lastmodifytime"])); ?></span>
                         </div>
                         <!-- 文章摘要 -->
-                        <p class="article-abstract"><?php echo ($vo["abstract"]); ?></p>
+                        <p class="article-abstract"><?php echo ($vo["abstract"]); ?>...</p>
                         <!-- 分类、标签 -->
                         <p class="sort-tag">
                             <span class="sort">

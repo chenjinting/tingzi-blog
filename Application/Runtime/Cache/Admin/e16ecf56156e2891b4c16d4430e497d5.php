@@ -28,6 +28,12 @@
         <div class="header-menu float-right">
             <ul>
                 <li class="float-left">
+                    <form action="<?php echo U('/Admin/Article/search');?>" method="get">
+                        <input type="text" placeholder="在这里搜索..." name="search-key" />
+                        <button type="submit">搜索</button>
+                    </form>                  
+                </li>
+                <li class="float-left">
                     <a class="blog-a" href="<?php echo U('http://www.chenjinting.com/Blog');?>" target="_blank">博客主页</a>
                 </li>
                 <li class="float-left">
@@ -98,7 +104,7 @@
                             <span class="every-listarticle-baseinfo"><?php echo (date("Y-m-d H:i:s",$vo["lastmodifytime"])); ?></span>
                         </div>
                         <!-- 文章摘要 -->
-                        <p class="article-abstract"><?php echo ($vo["abstract"]); ?></p>
+                        <p class="article-abstract"><?php echo ($vo["abstract"]); ?>...</p>
                         <!-- 分类、标签 -->
                         <p class="sort-tag">
                             <span class="sort">

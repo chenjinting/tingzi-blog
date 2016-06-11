@@ -9,9 +9,9 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
     <meta name="description" content="前端与生活">
     <meta name="keywords" content="前端与生活">
-    <title>挺 | 工作与生活</title>
+    <title>挺 | 工作与生活 - 搜索 - “{$keywords}”</title>
 
-    <link href="{$Think.const.BLOG_CSS_URL}blog.css" type="text/css" rel="stylesheet" />
+	<link href="{$Think.const.BLOG_CSS_URL}blog.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="{$Think.const.BLOG_JS_URL}jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="{$Think.const.BLOG_JS_URL}blog.js"></script>
 
@@ -22,10 +22,11 @@
 		<include file="Public/header" />
 
 		<div class="content">
+			<h1 class="current-position">当前搜素关键词：{$keywords}（{$count} 篇文章）</h1>
 			<div class="content-left float-left">
-				<notempty name="articleres">
+				<notempty name="searchres">
 				<div class="article-list">
-					<volist name="articleres" id="vo22">
+					<volist name="searchres" id="vo22">
 					<div class="every-article">
 						<div class="article-coverpic float-left">
 							<a href="{:U('__MODULE__/Detail/index',array('id'=>$vo22['id']))}">
@@ -67,17 +68,17 @@
 						<a href="{:U('__MODULE__/Detail/index',array('id'=>$vo22['id']))}" class="article-read-all">阅读全文</a>
 					</div>
 					</volist>
-				</div>	
+				</div>
 
 				<div class="pagination">{$page}</div>
 
 				</notempty>
 
-				<empty name="articleres">
-            	<p class="emptydata">博主好懒啊，一篇文章都没有~</p>
-        		</empty>       		
+				<empty name="searchres">
+            	<p class="emptydata">没有搜索到标题包含“{$keywords}”的文章~</p>
+        		</empty>
 
-			</div>		
+			</div>
 
 			<include file="Public/right" />
 

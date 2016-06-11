@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">    
+    <meta name="author" content="陈锦挺，253018164@qq.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
+
+    <title>挺 | 后台管理 - 搜索 - “{$keywords}” - 文章列表</title>
+
+    <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}admin.js"></script>
+    
+</head>
+<body>
+    <div class="page">
+        <include file="Public/header" />
+
+        <include file="Public/sidebar" />
+
+        <!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮左侧导航栏的效果 -->
+        <input type="hidden" id="currenturl" value="__CONTROLLER__/showlist" />
+
+        <div class="showlistarticle main">
+
+            <h1>当前搜素关键词：{$keywords}（{$count} 篇文章）</h1>
+
+            <notempty name="searchres">
+
+            <div class="listarticle">
+                <volist name="searchres" id="vo" key="k">
+                <div class="every-article">
+                    <!-- 文章封面 -->
+                    <div class="coverpic float-left">
+                        <a href="{:U('Blog/Detail/index',array('id'=>$vo['id']))}" target="_blank">
+                            <img src="/__UPLOADIMG__{$vo.coverpic}" alt="文章封面：{$vo.title}" />
+                        </a>
+                    </div>
+                    <!-- 文章简要信息 -->
+                    <div class="article-info">
+                        <!-- 文章标题 -->
+                        <h2 class="listarticleh2"><a href="{:U('Blog/Detail/index',array('id'=>$vo['id']))}" target="_blank">{$vo.title}</a></h2>
+                        <!-- 作者、阅读次数、留言数量、发布时间、最后修改时间 -->
+                        <div class="listarticle-baseinfo">
+                            <span class="every-listarticle-baseinfo">作者&nbsp;{$vo.author}</span>
+                            <span class="every-listarticle-baseinfo">阅读&nbsp;{$vo.readnum}</span>
+                            <span class="every-listarticle-baseinfo">
+                                留言&nbsp;<volist name="vo['commentcount']" id="va">
+                                            <if condition="$va neq 0">
+                                                <a href="{:U('__MODULE__/Comment/showlistarticle',array('articleid'=>$vo['id']))}">{$va}</a>
+                                            <else />
+                                                0
+                                            </if>                     
+                                            </volist>
+                                            <volist name="vo['commentcount0']" id="va0">
+                                                <neq name="va0" value="0">(<span class="newcommentnum">{$va0}</span>)</neq>
+                                            </volist>
+                            </span>
+                            <span class="every-listarticle-baseinfo">发布时间</span>
+                            <span class="every-listarticle-baseinfo">{$vo.time|date="Y-m-d H:i:s",###}</span>
+                            <span class="every-listarticle-baseinfo">最后修改时间</span>
+                            <span class="every-listarticle-baseinfo">{$vo.lastmodifytime|date="Y-m-d H:i:s",###}</span>
+                        </div>
+                        <!-- 文章摘要 -->
+                        <p class="article-abstract">{$vo.abstract}...</p>
+                        <!-- 分类、标签 -->
+                        <p class="sort-tag">
+                            <span class="sort">
+                                &nbsp;分类&nbsp;<a href="{:U('__CONTROLLER__/showlistsort',array('sortid'=>$vo['sortid']))}">{$vo.sortname}</a>&nbsp;
+                            </span>
+                            <span class="tag">
+                                &nbsp;标签&nbsp;<volist name="vo['tag']" id="v">
+                                          <a href="{:U('__CONTROLLER__/showlisttag',array('tagid'=>$v['tagid']))}">{$v['tagname']}</a>&nbsp;
+                                      </volist>
+                            </span>
+                        </p>
+                    </div>
+
+                    <!-- 修改、删除按钮 -->
+                    <div class="operate">
+                        <a href="{:U('__CONTROLLER__/modifyarticle',array('issorttag'=>'0','id'=>$vo['id']))}">
+                            <span class="modifybutton">修改</span>
+                        </a>
+                        <a href="{:U('__CONTROLLER__/deletearticle',array('id'=>$vo['id']))}" onclick="return confirm('你真的要删除这篇文章吗？');">
+                            <span class="deletebutton">删除</span>
+                        </a>
+                    </div>
+                </div>
+                </volist>
+            </div>
+
+            <div class="pagination">{$page}</div>
+
+            </notempty>
+
+            <empty name="searchres">
+            <div class="emptydata"><p>没有搜索到标题包含“{$keywords}”的文章~</p></div>
+            </empty>
+        </div>
+
+        <div class="clear"></div>
+
+        <include file="Public/footer" />
+    </div>
+
+</body>
+</html>

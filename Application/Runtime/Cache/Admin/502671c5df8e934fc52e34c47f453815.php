@@ -31,6 +31,12 @@
                 <img class="logo02" src="<?php echo (ADMIN_IMG_URL); ?>logoadmin.png" />
             </a>
         </div>
+        <div class="search-area float-left">
+            <form action="<?php echo U('/Admin/Article/search');?>" method="get">
+                <input type="text" placeholder="搜索文章标题..." class="search-input" name="search-key" value="<?php echo ($keywords); ?>" />
+                <button type="submit" class="search-submit">搜索</button>
+            </form>   
+        </div>
         <div class="header-menu float-right">
             <ul>
                 <li class="float-left">

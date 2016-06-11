@@ -23,10 +23,16 @@
         <div class="page-header">
     <div class="header">
         <div class="header-logo float-left">
-            <a href="<?php echo U('http://www.chenjinting.com/Admin');?>">
+            <a href="<?php echo U('/Admin');?>">
                 <img class="logo01" src="<?php echo (ADMIN_IMG_URL); ?>logo.png" />
                 <img class="logo02" src="<?php echo (ADMIN_IMG_URL); ?>logoadmin.png" />
             </a>
+        </div>
+        <div class="search-area float-left">
+            <form action="<?php echo U('/Admin/Article/search');?>" method="get">
+                <input type="text" placeholder="搜索文章标题..." class="search-input" name="search-key" value="<?php echo ($keywords); ?>" />
+                <button type="submit" class="search-submit">搜索</button>
+            </form>   
         </div>
         <div class="header-menu float-right">
             <ul>
@@ -131,7 +137,7 @@
                         <div class="every-input">
                             <span class="input-head float-left">摘要</span>
                             <p class="input-body">
-                                <textarea class="abstract-input all-input" name="abstract" placeholder="摘要不能超过100字！标点符号也算一个字噢~"></textarea>
+                                <textarea class="abstract-input all-input" name="abstract" placeholder="摘要不能超过70字！标点符号也算一个字噢~"></textarea>
                             </p>
                         </div>
                         <div class="every-input">

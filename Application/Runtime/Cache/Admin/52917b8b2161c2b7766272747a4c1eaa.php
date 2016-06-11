@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
 
-    <title>挺 | 后台管理 - 文章列表</title>
+    <title>挺 | 后台管理 - 搜索 - “<?php echo ($keywords); ?>” - 文章列表</title>
 
     <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>jquery-1.12.4.min.js"></script>
@@ -72,12 +72,10 @@
 
         <div class="showlistarticle main">
 
-            <h1>当前共有文章：<?php echo ($articlenum); ?></h1>
+            <h1>当前搜素关键词：<?php echo ($keywords); ?>（<?php echo ($count); ?> 篇文章）</h1>
 
-            <a class="addnew" href="<?php echo U('/Admin/Article/addarticle',array('issorttag'=>'0'));?>">写文章</a>
-
-            <?php if(!empty($articlelist)): ?><div class="listarticle">
-                <?php if(is_array($articlelist)): $k = 0; $__LIST__ = $articlelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><div class="every-article">
+            <?php if(!empty($searchres)): ?><div class="listarticle">
+                <?php if(is_array($searchres)): $k = 0; $__LIST__ = $searchres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><div class="every-article">
                     <!-- 文章封面 -->
                     <div class="coverpic float-left">
                         <a href="<?php echo U('Blog/Detail/index',array('id'=>$vo['id']));?>" target="_blank">
@@ -130,7 +128,7 @@
 
             <div class="pagination"><?php echo ($page); ?></div><?php endif; ?>
 
-            <?php if(empty($articlelist)): ?><div class="emptydata"><p>还没有文章噢，快写篇文章吧~</p></div><?php endif; ?>
+            <?php if(empty($searchres)): ?><div class="emptydata"><p>没有搜索到标题包含“<?php echo ($keywords); ?>”的文章~</p></div><?php endif; ?>
         </div>
 
         <div class="clear"></div>

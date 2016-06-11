@@ -20,6 +20,30 @@
 				height: 50px;
 			}
 		}
+
+		.search-area{
+			width: $blog-content-right-width;
+			padding: ($blog-header-height - 32px)/2 0;
+			margin-left: $blog-content-width - $blog-content-left-width - $blog-content-right-width;
+
+			.search-input{
+				width: 210px;
+				height: 20px;
+				padding: 5px 10px;
+				border: 1px solid #fff;
+			}
+
+			.search-submit{
+				border: 1px solid #fff;
+				background-color: $theme-blog-backgoundcolor;
+				color: #fff;
+				width: $blog-content-right-width - 234px;
+				height: 32px;
+				cursor: pointer;
+				padding: 0;
+			}
+		}
+
 		.head-sort{
 			.every-head-sort{
 				height: $blog-header-height;

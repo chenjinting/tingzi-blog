@@ -9,9 +9,9 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
     <meta name="description" content="前端与生活">
     <meta name="keywords" content="前端与生活">
-    <title>挺 | 工作与生活</title>
+    <title>挺 | 前端与生活 - 搜索 - “<?php echo ($keywords); ?>”</title>
 
-    <link href="<?php echo (BLOG_CSS_URL); ?>blog.css" type="text/css" rel="stylesheet" />
+	<link href="<?php echo (BLOG_CSS_URL); ?>blog.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="<?php echo (BLOG_JS_URL); ?>jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="<?php echo (BLOG_JS_URL); ?>blog.js"></script>
 
@@ -44,9 +44,10 @@
 </div>
 
 		<div class="content">
+			<h1 class="current-position">当前搜素关键词：<?php echo ($keywords); ?>（<?php echo ($count); ?> 篇文章）</h1>
 			<div class="content-left float-left">
-				<?php if(!empty($articleres)): ?><div class="article-list">
-					<?php if(is_array($articleres)): $i = 0; $__LIST__ = $articleres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo22): $mod = ($i % 2 );++$i;?><div class="every-article">
+				<?php if(!empty($searchres)): ?><div class="article-list">
+					<?php if(is_array($searchres)): $i = 0; $__LIST__ = $searchres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo22): $mod = ($i % 2 );++$i;?><div class="every-article">
 						<div class="article-coverpic float-left">
 							<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>">
 								<img alt="<?php echo ($vo22["title"]); ?>" src="/Uploads/image/<?php echo ($vo22["coverpic"]); ?>">
@@ -82,13 +83,13 @@
 						</div>
 						<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>" class="article-read-all">阅读全文</a>
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
-				</div>	
+				</div>
 
 				<div class="pagination"><?php echo ($page); ?></div><?php endif; ?>
 
-				<?php if(empty($articleres)): ?><p class="emptydata">博主好懒啊，一篇文章都没有~</p><?php endif; ?>       		
+				<?php if(empty($searchres)): ?><p class="emptydata">没有搜索到标题包含“<?php echo ($keywords); ?>”的文章~</p><?php endif; ?>
 
-			</div>		
+			</div>
 
 			<div class="content-right float-left">
 	
@@ -110,7 +111,7 @@
 
 		<div class="footer">
 	<div class="footer-area">
-		<p>Copyright © 2011-2016 <a href="<?php echo U('/Blog');?>">挺子 | 工作与生活</a></p>
+		<p>Copyright © 2011-2016 <a href="<?php echo U('/Blog');?>">挺子 | 前端与生活</a></p>
 	</div>
 </div> 
 	</div>

@@ -17,7 +17,6 @@
 
 </head>
 <body>
-
 	<div class="page">
 		<div class="header">
 	<div class="header-area">
@@ -43,53 +42,57 @@
 	</div>
 </div>
 
+		<!-- 用于存储当前导航菜单的URL值，使引入的外部js文件获取到该值，以达到高亮导航栏的效果 -->
+    	<input type="hidden" id="currenturl" value="/Blog/List/showlistsort/sortid/<?php echo ($sortid); ?>" />
+
 		<div class="content">
+
 			<div class="content-left float-left">
 				<?php if(!empty($articleres)): ?><div class="article-list">
-					<?php if(is_array($articleres)): $i = 0; $__LIST__ = $articleres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo22): $mod = ($i % 2 );++$i;?><div class="every-article">
+					<?php if(is_array($articleres)): $i = 0; $__LIST__ = $articleres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="every-article">
 						<div class="article-coverpic float-left">
-							<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>">
-								<img alt="<?php echo ($vo22["title"]); ?>" src="/Uploads/image/<?php echo ($vo22["coverpic"]); ?>">
+							<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo['id']));?>">
+								<img alt="<?php echo ($vo["title"]); ?>" src="/Uploads/image/<?php echo ($vo["coverpic"]); ?>">
 							</a>
 						</div>
 						<div class="article-info float-left">
 							<h2 class="article-title">
-								<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>"><?php echo ($vo22["title"]); ?></a>
+								<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo['id']));?>"><?php echo ($vo["title"]); ?></a>
 							</h2>
 							<p class="article-baseinfo">
 								<span>作者</span>
-								<span><?php echo ($vo22["author"]); ?></span>
+								<span><?php echo ($vo["author"]); ?></span>
 								<span>时间</span>
-								<span><?php echo (date("Y-m-d",$vo22["lastmodifytime"])); ?></span>
+								<span><?php echo (date("Y-m-d",$vo["lastmodifytime"])); ?></span>
 								<span>阅读</span>
-								<span><?php echo ($vo22["readnum"]); ?></span>
+								<span><?php echo ($vo["readnum"]); ?></span>
 								<span>留言</span>
 								<span>
-									<?php if(is_array($vo22['commentcount1'])): $i = 0; $__LIST__ = $vo22['commentcount1'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vc): $mod = ($i % 2 );++$i; echo ($vc["commentcount1"]); endforeach; endif; else: echo "" ;endif; ?>
+									<?php if(is_array($vo['commentcount1'])): $i = 0; $__LIST__ = $vo['commentcount1'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vc): $mod = ($i % 2 );++$i; echo ($vc["commentcount1"]); endforeach; endif; else: echo "" ;endif; ?>
 								</span>
 							</p>
-							<p class="article-abstract"><?php echo ($vo22["abstract"]); ?>...	</p>
+							<p class="article-abstract"><?php echo ($vo["abstract"]); ?>...</p>
 							<p class="article-classification">
 								<div class="article-sort  float-left">
 									<span>分类：</span>
-									<a href="<?php echo U('/Blog/List/showlistsort',array('sortid'=>$vo22['sortid']));?>"><?php echo ($vo22["sortname"]); ?></a>
+									<a href="<?php echo U('/Blog/List/showlistsort',array('sortid'=>$vo['sortid']));?>"><?php echo ($vo["sortname"]); ?></a>
 								</div>
 								<div class="article-tag float-left">
 									<span>标签:</span>
-									<?php if(is_array($vo22['tag'])): $i = 0; $__LIST__ = $vo22['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$vo3['tagid']));?>"><?php echo ($vo3['tagname']); ?>&nbsp;</a><?php endforeach; endif; else: echo "" ;endif; ?>
+									<?php if(is_array($vo['tag'])): $i = 0; $__LIST__ = $vo['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Blog/List/showlisttag',array('tagid'=>$vo3['tagid']));?>"><?php echo ($vo3['tagname']); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
 								</div>
 							</p>
 						</div>
-						<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo22['id']));?>" class="article-read-all">阅读全文</a>
+						<a href="<?php echo U('/Blog/Detail/index',array('id'=>$vo['id']));?>" class="article-read-all">阅读全文</a>
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
-				</div>	
+				</div>
 
 				<div class="pagination"><?php echo ($page); ?></div><?php endif; ?>
 
-				<?php if(empty($articleres)): ?><p class="emptydata">博主好懒啊，一篇文章都没有~</p><?php endif; ?>       		
+				<?php if(empty($articleres)): ?><p class="emptydata">这个分类还没有文章噢~</p><?php endif; ?>       		
 
-			</div>		
-
+			</div>
+			
 			<div class="content-right float-left">
 	
 	<div class="content-right-tag">
@@ -106,14 +109,15 @@
 </div>
 
 			<div class="clear"></div>
-		</div>	
+
+		</div>
 
 		<div class="footer">
 	<div class="footer-area">
 		<p>Copyright © 2011-2016 <a href="<?php echo U('/Blog');?>">挺子 | 工作与生活</a></p>
 	</div>
 </div> 
-	</div>
 
+	</div>
 </body>
 </html>

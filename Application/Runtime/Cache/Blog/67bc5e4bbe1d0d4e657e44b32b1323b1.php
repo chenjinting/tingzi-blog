@@ -9,11 +9,50 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
     <meta name="description" content="<?php echo ($articleres["abstract"]); ?>">
     <meta name="keywords" content="<?php if(is_array($articleres['tag'])): $i = 0; $__LIST__ = $articleres['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i; echo ($vo2["tagname"]); ?> |<?php endforeach; endif; else: echo "" ;endif; ?>">
-    <title>挺 | 前端与生活</title>
+    <title>挺 | 工作与生活 - <?php echo ($articleres["title"]); ?></title>
 
     <link href="<?php echo (BLOG_CSS_URL); ?>blog.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="<?php echo (BLOG_JS_URL); ?>jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="<?php echo (BLOG_JS_URL); ?>blog.js"></script>
+    <script type="text/javascript">
+    	/*百度分享*/
+	    window._bd_share_config = {
+	    	// 通用设置
+			common : {
+				bdText: "<?php echo ($articleres["content"]); ?>",  // 分享的内容
+				bdDesc: "<?php echo ($articleres["abstract"]); ?>", //分享的摘要
+				bdUrl: "http://www.chenjinting.com/Blog/Detail/index/id/<?php echo ($articleres['id']); ?>", //分享的Url地址
+				bdPic: "http://www.chenjinting.com/Uploads/image/<?php echo ($articleres["coverpic"]); ?>", // 分享的图片
+				// onAfterClick: 'function(cmd){}', // 在用户点击分享按钮后执行代码，cmd为分享目标id。可用于统计等
+
+			},
+			// 分享按钮设置
+			share : [{
+				"tag": "share_1", // 与data-tag一致，表示该配置只会应用于data-tag值一致的分享按钮。如果不设置tag，该配置将应用于所有分享按钮
+				"bdSize": 24, //分享按钮的尺寸
+				// "bdCustomStyle": "样式文件地址", //自定义样式，引入样式文件
+			}],
+			// 浮窗分享设置
+			slide : [{
+				bdImg : 0, // 分享浮窗图标的颜色
+				bdPos : "right", // 分享浮窗的位置
+				bdTop : 100, // 分享浮窗与可视区域顶部的距离(px)
+			}],
+			// 图片分享设置
+			image : [{
+				//此处放置图片分享设置
+			
+			}],
+			selectShare : [{
+				//此处放置划词分享设置
+			
+			}]
+		}
+
+		//以下为js加载部分
+		with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+
+    </script>
 
 </head>
 <body>
@@ -25,6 +64,12 @@
 		<div class="blog-logo float-left">
 			<a href="<?php echo U('/Blog');?>"><img src="<?php echo (BLOG_IMG_URL); ?>logo.png" alt="挺子的博客"></a>
 		</div>
+		<div class="search-area float-right">
+	        <form action="<?php echo U('/Blog/List/search');?>" method="get">
+	            <input type="text" placeholder="搜索文章标题..." class="search-input float-left" name="search-key" value="<?php echo ($keywords); ?>" />
+	            <button type="submit" class="search-submit float-left">搜索</button>
+	        </form>   
+        </div>
 		<div class="head-sort float-right">
 			<ul>
 				<?php if(is_array($sortres)): $i = 0; $__LIST__ = $sortres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/Blog/List/showlistsort',array('sortid'=>$vo['sortid']));?>" >
@@ -34,6 +79,7 @@
 				</a><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
+
 	</div>
 </div>
 
@@ -174,7 +220,7 @@
 
 		<div class="footer">
 	<div class="footer-area">
-		<p>Copyright © 2011-2016 <a href="<?php echo U('/Blog');?>">挺子 | 前端与生活</a></p>
+		<p>Copyright © 2011-2016 <a href="<?php echo U('/Blog');?>">挺子 | 工作与生活</a></p>
 	</div>
 </div> 
 

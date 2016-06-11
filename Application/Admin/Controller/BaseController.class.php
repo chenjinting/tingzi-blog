@@ -32,6 +32,5 @@ class BaseController extends Controller {
             $this->assign('newcommentnum',$newcommentnum);
         }
     }
-    
 
 }
