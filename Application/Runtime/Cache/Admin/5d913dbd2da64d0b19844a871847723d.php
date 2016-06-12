@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html class="login-body">
 <head>
     <meta charset="utf-8">    
@@ -9,11 +9,9 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度转码 -->
     <title>挺 | 后台管理 - 留言列表</title>
 
-    <link rel="shortcut icon" href="{$Think.const.ADMIN_IMG_URL}favicon.ico" type="image/x-icon">
-    <link rel="icon" href="{$Think.const.ADMIN_IMG_URL}favicon.ico" type="image/x-icon">
-    <link href="{$Think.const.ADMIN_CSS_URL}admin.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}admin.js"></script>
+    <link href="<?php echo (ADMIN_CSS_URL); ?>admin.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="<?php echo (ADMIN_JS_URL); ?>admin.js"></script>
 
 </head>
 
@@ -21,10 +19,10 @@
     <div class="login-layout">
         <div class="login-area">
             <h1>
-                <img src="{$Think.const.ADMIN_IMG_URL}logo.png" />
-                <img src="{$Think.const.ADMIN_IMG_URL}logoadmin.png" />
+                <img src="<?php echo (ADMIN_IMG_URL); ?>logo.png" />
+                <img src="<?php echo (ADMIN_IMG_URL); ?>logoadmin.png" />
             </h1>
-            <form action="{:U('__CONTROLLER__/login')}" method="post">
+            <form action="<?php echo U('/Admin/Login/login');?>" method="post">
                 <div class="login-input">
                     <p>
                         <span class="user-input-head input-head"></span>
@@ -36,7 +34,7 @@
                     </p>
                     <p>
                         <input class="float-left" id="captcha" name="captcha" type="text" placeholder="验证码" />
-                        <img class="verifycation float-left" src="{:U('__CONTROLLER__/loginverify')}" alt="登录验证码" onclick= this.src="__CONTROLLER__/loginverify/"+Math.random() style="cursor: pointer;" title="看不清？点击更换验证码" />
+                        <img class="verifycation float-left" src="<?php echo U('/Admin/Login/loginverify');?>" alt="登录验证码" onclick= this.src="/Admin/Login/loginverify/"+Math.random() style="cursor: pointer;" title="看不清？点击更换验证码" />
                     </p>
                     <p>
                         <input class="login-submit" type="submit" value="登录" />
