@@ -94,4 +94,31 @@ $(function(){
         $('.articletag22').attr('disabled',false);
     });
 
+
+    /*使用键盘左右方向键控制实现上一篇下一篇文章*/
+    var pre_page = $('.pagination .prev').attr("href");
+    var next_page = $('.pagination .next').attr("href");
+    var pre_num = $('.current').prev('.num').length;
+    var next_num = $('.current').next('.num').length;
+
+    $(document).keydown(function(e){
+        // 上一页下一页列表
+        if((pre_page || next_page)){
+            if(e.which == 37){
+                if(pre_num == 0){
+                    alert('前面没有啦');
+                }else{
+                    location.href = pre_page;
+                }
+            }
+            if(e.which == 39){
+                if(next_num == 0){
+                    alert('后面没有啦');
+                }else{
+                    location.href = next_page;
+                }
+            }   
+        }
+    });
+
 })

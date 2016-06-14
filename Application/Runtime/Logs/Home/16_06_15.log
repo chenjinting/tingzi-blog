@@ -1,0 +1,10 @@
+[ 2016-06-15T01:39:14+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+
+[ 2016-06-15T01:39:31+08:00 ] 127.0.0.1 /images/codecolorer_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+
