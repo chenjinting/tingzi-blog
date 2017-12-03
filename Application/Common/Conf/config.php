@@ -8,8 +8,8 @@ return array(
 	'DEFAULT_THEME'				      =>   		    'default',                  // 设置默认主题
 
 	/* 设置可访问模块以及默认模块 */
-	'MODULE_ALLOW_LIST'			      =>			array('Home','Admin','Blog'),
-	'DEFAULT_MODULE'			      =>			'Home',
+	'MODULE_ALLOW_LIST'			      =>			array('Admin','Blog'),
+	'DEFAULT_MODULE'			      =>			'Blog',
        
 	'URL_MODEL'					      =>			2,                         // 设置URL访问模式		
 
